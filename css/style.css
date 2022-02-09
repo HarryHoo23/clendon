@@ -246,12 +246,28 @@ ul.nav li:last-child .nav-link {
   opacity: 0.5;
 }
 
-.fp-viewing-sd-every #menu-arrow path,
-.fp-viewing-sd-every .btn-right-box svg path,
-.fp-viewing-sd-every #menu-arrow-down path,
 .fp-viewing-sd-partners #menu-arrow path,
 .fp-viewing-sd-partners .btn-right-box svg path,
 .fp-viewing-sd-partners #menu-arrow-down path,
+.fp-viewing-sd-welcomeHome #menu-arrow path,
+.fp-viewing-sd-welcomeHome .btn-right-box svg path,
+.fp-viewing-sd-welcomeHome #menu-arrow-down path,
+.fp-viewing-sd-floorplans #menu-arrow path,
+.fp-viewing-sd-floorplans .btn-right-box svg path,
+.fp-viewing-sd-floorplans #menu-arrow-down path,
+.fp-viewing-sd-map #menu-arrow path,
+.fp-viewing-sd-map .btn-right-box svg path,
+.fp-viewing-sd-map #menu-arrow-down path,
+.fp-viewing-sd-disclaimer #menu-arrow path,
+.fp-viewing-sd-disclaimer .btn-right-box svg path,
+.fp-viewing-sd-disclaimer #menu-arrow-down path
+ {
+  opacity: 0.5;
+}
+
+.fp-viewing-sd-every #menu-arrow path,
+.fp-viewing-sd-every .btn-right-box svg path,
+.fp-viewing-sd-every #menu-arrow-down path,
 .fp-viewing-sd-fixtures #menu-arrow path,
 .fp-viewing-sd-fixtures .btn-right-box svg path,
 .fp-viewing-sd-fixtures #menu-arrow-down path,
@@ -672,6 +688,7 @@ p.home-modal-title::before {
   line-height: 40px;
   font-family: 'bicyclette';
   color: #353535;
+  text-transform: uppercase;
   position: relative;
   border-top: unset !important;
   overflow: unset !important;
@@ -1053,9 +1070,6 @@ a.logo-link {
 
 .creative-section .sunday-title p {
   color: #fff;
-  position: sticky;
-  top: 10rem;
-  text-transform: unset;
 }
 
 .partner-info-text {
@@ -2070,12 +2084,15 @@ button.btn.btn-link[aria-expanded='true'] {
 
 .contact-container {
   height: 100%;
-  padding-top: 60px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 20px;
+}
+
+.contact-container .sunday-title {
+  margin-top: 3rem;
 }
 
 /* .contacts {
