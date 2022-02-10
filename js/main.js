@@ -1,22 +1,22 @@
 $(document).ready(function () {
   'use strict';
 
-  // $(window).on('load', function () { // makes sure that whole site is loaded
-  //     $('#status').fadeOut();
-  //     $('#loader').delay(250).fadeOut('slow');
-  //     $('#preloader').addClass('show');
-  //     setTimeout(function () {
-  //         $('#preloader img').addClass('fadeIn');
-  //     }, 2000);
-  //     setTimeout(function () {
-  //         $('#preloader').removeClass('show');
-  //         $('#preloader img').addClass('fadeOut');
-  //     }, 5000);
-  //     setTimeout(function () {
-  //         $('#home-bg-video').addClass('animate__animated animate__fadeInRight homeShow');
-  //         $('#home-bg-video').trigger('play');
-  //     }, 5000);
-  // });
+  $(window).on('load', function () { // makes sure that whole site is loaded
+      $('#status').fadeOut();
+      $('#loader').delay(250).fadeOut('slow');
+      $('#preloader').addClass('show');
+      setTimeout(function () {
+          $('#preloader img').addClass('fadeIn');
+      }, 2000);
+      setTimeout(function () {
+          $('#preloader').removeClass('show');
+          $('#preloader img').addClass('fadeOut');
+      }, 5000);
+      setTimeout(function () {
+          $('#home-bg-video').addClass('animate__animated animate__fadeInRight homeShow');
+          $('#home-bg-video').trigger('play');
+      }, 5000);
+  });
 
   var myFullpage = new fullpage('#fullpage', {
     navigation: true,
