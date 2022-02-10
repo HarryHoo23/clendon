@@ -25,10 +25,8 @@ $(document).ready(function () {
       'sd-intro',
       'sd-every',
       'sd-partners',
-      'sd-welcomeHome',
       'sd-floorplans',
       'sd-fixtures',
-      'sd-doorstep',
       'sd-doorstep-1',
       'sd-doorstep-2',
       'sd-doorstep-3',
@@ -74,10 +72,10 @@ $(document).ready(function () {
         $('#scroll-up').text('Creative partners');
       }
 
-      if ($('body').hasClass('fp-viewing-sd-welcomeHome')) {
-        $('#scroll-down').text('Floor plans');
-        $('#scroll-up').text('Welcome Home');
-      }
+      // if ($('body').hasClass('fp-viewing-sd-welcomeHome')) {
+      //   $('#scroll-down').text('Floor plans');
+      //   $('#scroll-up').text('Welcome Home');
+      // }
 
       if ($('body').hasClass('fp-viewing-sd-floorplans')) {
         $('#scroll-down').text('Fixtures & finishes');
@@ -87,17 +85,6 @@ $(document).ready(function () {
       if ($('body').hasClass('fp-viewing-sd-fixtures')) {
         $('#scroll-down').text('On your Doorstep');
         $('#scroll-up').text('Fixtures & finishes');
-      }
-
-      // Door step 1.
-      if ($('body').hasClass('fp-viewing-sd-doorstep')) {
-        $('#scroll-down').text('On your Doorstep');
-        $('#scroll-up').text('ON YOUR DOORSTEP');
-        $('.doorstep-img-container-right img.first-img').addClass('show');
-        setTimeout(function () {
-          $('.doorstep-img-container-right img.second-img').addClass('show');
-        }, 1500);
-        $('.doorstep-container-top .col-md-4').addClass('show');
       }
 
       if ($('body').hasClass('fp-viewing-sd-doorstep-1')) {
