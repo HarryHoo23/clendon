@@ -1310,7 +1310,7 @@ $(document).ready(function () {
   // First Swiper
   const bathroom_Swiper = new Swiper('#bathroom-swiper', {
     // Optional parameters
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: false,
     spaceBetween: 10,
     slidesPerGroup: 1,
@@ -1330,7 +1330,7 @@ $(document).ready(function () {
 
   const kitchen_Swiper = new Swiper('#kitchen-swiper', {
     // Optional parameters
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: false,
     spaceBetween: 10,
     slidesPerGroup: 1,
@@ -1350,7 +1350,7 @@ $(document).ready(function () {
 
   const living_Swiper = new Swiper('#penthouse-swiper', {
     // Optional parameters
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: false,
     spaceBetween: 10,
     slidesPerGroup: 1,
@@ -1370,8 +1370,8 @@ $(document).ready(function () {
 
   const laundry_Swiper = new Swiper('#laundry-swiper', {
     // Optional parameters
-    direction: 'vertical',
-    loop: true,
+    direction: 'horizontal',
+    loop: false,
     spaceBetween: 10,
     slidesPerGroup: 1,
     slidesPerView: 3,
@@ -1629,7 +1629,7 @@ function initMap() {
   var sundayMarker = new google.maps.Marker({
     position: sunday,
     title: 'Sunday Hawksburn',
-    icon: './assets/img/icons/map-sunday.svg',
+    icon: './assets/img/icons/map-cursor.png',
   });
 
   sundayMarker.setMap(map);

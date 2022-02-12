@@ -4,6 +4,12 @@
     url('../assets/pala.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: "Palatino Bold";
+  src: url('../assets/palab.ttf') format('woff'),
+    url('../assets/palab.ttf') format('truetype');
+}
+
 html,
 body {
   height: 100%;
@@ -23,6 +29,10 @@ p {
   font-size: 16px;
   line-height: 24px;
   color: #727272;
+}
+
+.strong {
+  font-family: 'Palatino Bold';
 }
 
 :root {
@@ -1548,21 +1558,14 @@ a.logo-link {
   background: linear-gradient(
       rgba(228, 224, 217, 0.5),
       rgba(228, 224, 217, 0.5)
-    ),
-    url('../assets/img/bg\ –\ Fixtures.png');
-  height: 100vh !important;
-  z-index: 2 !important;
+    );
+  padding: 5rem;
 }
 
 .fixtures-row {
   height: 100%;
 }
 
-.fixtures-container {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  padding-left: calc(5rem + 15px);
-}
 
 .fx-type {
   position: absolute;
@@ -1574,13 +1577,24 @@ a.logo-link {
 }
 
 .vs-img {
-  max-height: 100%;
+  max-height: 80%;
   z-index: 2;
+}
+
+.fixture-content-box {
+  margin-top: 4rem;
+  text-align: center;
 }
 
 .fixture-swiper {
   width: 100%;
-  height: 100%;
+  height: 80%;
+}
+
+.fixtures-container {
+  width: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .fixture-swiper .swiper-pagination-bullet-active {
@@ -2909,11 +2923,6 @@ textarea.form-control:focus {
   height: 100%;
   width: 100%;
   object-fit: contain;
-}
-
-.vertical-fx {
-  display: flex;
-  align-items: center;
 }
 
 .fixture-item {

@@ -32,15 +32,15 @@
 
 
     <link rel="manifest" href="./manifest.json">
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicons/icon.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicons/icon.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicons/icon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicons/icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/icon.png">
-    <link rel="icon" type="image/png" href="./assets/favicons/icon.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="./assets/favicons/icon.png" sizes="194x194">
-    <link rel="icon" type="image/png" href="./assets/favicons/icon.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="./assets/favicons/icon.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicons/favicon.jpg">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicons/favicon.jpg">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicons/favicon.jpg">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicons/favicon.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/favicon.jpg">
+    <link rel="icon" type="image/png" href="./assets/favicons/favicon.jpg" sizes="32x32">
+    <link rel="icon" type="image/png" href="./assets/favicons/favicon.jpg" sizes="194x194">
+    <link rel="icon" type="image/png" href="./assets/favicons/favicon.jpg" sizes="96x96">
+    <link rel="icon" type="image/png" href="./assets/favicons/favicon.jpg" sizes="16x16">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6PJ13WKR2"></script>
     <script>
@@ -990,20 +990,41 @@
         <!-- Fixtures section -->
         <section id="fixtures" class="section">
             <div class="row fixtures-row">
-                <div class="col-md-6 fixtures-container">
+                <div class="fixtures-container">
                     <div class="sunday-title">
                         <p style="padding-top: 2rem;">Fixtures <br>& finishes.</p>
                     </div>
-                    <ul class="info-list" id="fixture-list">
-                        <li class="fixture-category active">Bathroom</li>
-                        <li class="fixture-category">Kitchen</li>
-                        <li class="fixture-category">Bedroom</li>
-                        <li class="fixture-category">Penthouse</li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <ul class="info-list" id="fixture-list">
+                                <li class="fixture-category active">Bathroom</li>
+                                <li class="fixture-category">Kitchen</li>
+                                <li class="fixture-category">Bedroom</li>
+                                <li class="fixture-category">Penthouse</li>
+                            </ul>
+                        </div>
+    
+                        <div class="col-md-4 vertical-fx">
+                            <div class="fixture-content-box">
+                                <p class="fixture-item strong">
+                                    Item                            
+                                </p>
+                                <span class="fixture-item-content">Freestanding bathtub</span>
+                                <p class="fixture-item strong" style="margin-top: 20px">
+                                    Location
+                                </p>
+                                <span class="fixture-location-content">
+                                    Master ensuite
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+
+                    </div>
                 </div>
 
                 <!-- Vertical Slider -->
-                <div class="col-md-3 vs-img">
+                <div class="col-md-12 vs-img">
 
                     <!-- Bathroom fixture swiper -->
                     <div class="fixture-swiper swiper-container swiper" id="bathroom-swiper">
@@ -1166,22 +1187,6 @@
                         <div class="swiper-button-next modal-swiper-button-next" id="laundry-swiper-arrow-next"></div> -->
                     </div>
                 </div>
-
-                <div class="col-md-3 vertical-fx">
-                    <div class="fixture-content-box">
-                        <p class="fixture-item">
-                            Item                            
-                        </p>
-                        <span class="fixture-item-content">Freestanding bathtub</span>
-                        <p class="fixture-item" style="margin-top: 20px">
-                            Location
-                        </p>
-                        <span class="fixture-location-content">
-                            Master ensuite
-                        </span>
-                    </div>
-                </div>
-
 
             </div>
         </section>
