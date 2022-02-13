@@ -44,7 +44,7 @@ $(document).ready(function () {
     scrollHorizontally: true,
     scrollingSpeed: 800,
     autoScrolling: true,
-    normalScrollElements: '.vs-img, .sale-intro, #map',
+    normalScrollElements: '.sale-intro, #map',
     touchSensitivity: 15,
     fitToSectionDelay: 100,
     fitToSection: true,
@@ -360,18 +360,17 @@ $(document).ready(function () {
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
           $('#replaced-content .sunday-title p').html(
-            `APT. G01 <br /> Ground Level`
+            `APARTMENT 12`
           );
           $('.property-info').html(`<ul class="info-list">
-                        <li>Bedroom: <span>3</span></li>
-                        <li>Bathroom: <span>2</span></li>
-                        <li>Car: <span>2</span></li>
+                        <li><span>3 BED</span></li>
+                        <li><span>2 BATH</span></li>
+                        <li><span>2 CAR</span></li>
                     </ul>
 
                     <ul class="info-area">
-                        <li>Internal:<span> 161 sqm</span></li>
-                        <li>External:<span> 123 sqm</span></li>
-                        <li>Total:<span> 284 sqm</span></li>
+                        <li><span>161 sqm</span></li>
+                        <li><span>LEVEL 4</span></li>
                     </ul>`);
           modalImg.attr('src', './assets/img/floorplan/2.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-1.jpg');
@@ -400,19 +399,18 @@ $(document).ready(function () {
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
           $('#replaced-content .sunday-title p').html(
-            `APT. G02 <br /> Ground Level`
+            `APARTMENT 12`
           );
           $('.property-info').html(`<ul class="info-list">
-                        <li>Bedroom: <span>3</span></li>
-                        <li>Bathroom: <span>2</span></li>
-                        <li>Car: <span>2</span></li>
-                    </ul>
+                <li><span>3 BED</span></li>
+                <li><span>2 BATH</span></li>
+                <li><span>2 CAR</span></li>
+            </ul>
 
-                    <ul class="info-area">
-                        <li>Internal:<span> 161 sqm</span></li>
-                        <li>External:<span> 123 sqm</span></li>
-                        <li>Total:<span> 284 sqm</span></li>
-                    </ul>`);
+            <ul class="info-area">
+                <li><span>161 sqm</span></li>
+                <li><span>LEVEL 4</span></li>
+            </ul>`);
           modalImg.attr('src', './assets/img/floorplan/2.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-1.jpg');
           carouselImg.eq(0).attr('src', imgSrc[5]);
@@ -440,18 +438,17 @@ $(document).ready(function () {
         dropdownBtn.eq(n).click(function () {
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html('APT. 103 | Level One');
+          $('#replaced-content .sunday-title p').html('APARTMENT 12');
           $('.property-info').html(`<ul class="info-list">
-                        <li>Bedroom: <span>3</span></li>
-                        <li>Bathroom: <span>2</span></li>
-                        <li>Car: <span>2</span></li>
-                    </ul>
+                <li><span>3 BED</span></li>
+                <li><span>2 BATH</span></li>
+                <li><span>2 CAR</span></li>
+            </ul>
 
-                    <ul class="info-area">
-                        <li>Internal: <span>156 sqm</span></li>
-                        <li>External:<span> 14 sqm</span></li>
-                        <li>Total: <span>170 sqm</span></li>
-                    </ul>`);
+            <ul class="info-area">
+                <li><span>161 sqm</span></li>
+                <li><span>LEVEL 4</span></li>
+            </ul>`);
           modalImg.attr('src', './assets/img/floorplan/3.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-2.jpg');
           carouselImg.eq(0).attr('src', imgSrc[10]);
@@ -477,21 +474,20 @@ $(document).ready(function () {
         dropdownBtn.eq(n).click(function () {
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html('APT. 104 | Level One');
+          $('#replaced-content .sunday-title p').html('APARTMENT 12');
           $('.property-info').html(`<ul class="info-list">
-                        <li>Bedroom: <span>3</span></li>
-                        <li>Bathroom: <span>2</span></li>
-                        <li>Car: <span>2</span></li>
-                    </ul>
+                  <li><span>3 BED</span></li>
+                  <li><span>2 BATH</span></li>
+                  <li><span>2 CAR</span></li>
+              </ul>
 
-                    <ul class="info-area">
-                        <li>Internal: <span>154 sqm</span></li>
-                        <li>External:<span> 14 sqm</span></li>
-                        <li>Total: <span>168 sqm</span></li>
-                    </ul>`);
+              <ul class="info-area">
+                  <li><span>161 sqm</span></li>
+                  <li><span>LEVEL 4</span></li>
+              </ul>`);
           modalImg.attr('src', './assets/img/floorplan/4.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-2.jpg');
-          modalTitle.html('APT. 104 | Level One');
+          modalTitle.html('APARTMENT 12');
 
           carouselImg.eq(0).attr('src', imgSrc[14]);
           carouselImg.eq(1).attr('src', imgSrc[15]);
@@ -517,21 +513,20 @@ $(document).ready(function () {
         dropdownBtn.eq(n).click(function () {
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html('APT. 205 | Level Two');
+          $('#replaced-content .sunday-title p').html('APARTMENT 12');
           $('.property-info').html(`<ul class="info-list">
-                        <li>Bedroom: <span>3</span></li>
-                        <li>Bathroom: <span>2</span></li>
-                        <li>Car: <span>2</span></li>
-                    </ul>
+                  <li><span>3 BED</span></li>
+                  <li><span>2 BATH</span></li>
+                  <li><span>2 CAR</span></li>
+              </ul>
 
-                    <ul class="info-area">
-                        <li>Internal: <span>156 sqm</span></li>
-                        <li>External:<span> 14 sqm</span></li>
-                        <li>Total: <span>170 sqm</span></li>
-                    </ul>`);
+              <ul class="info-area">
+                  <li><span>161 sqm</span></li>
+                  <li><span>LEVEL 4</span></li>
+              </ul>`);
           modalImg.attr('src', './assets/img/floorplan/5.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-3.jpg');
-          modalTitle.html('APT. 205 | Level Two');
+          modalTitle.html('APARTMENT 12');
 
           carouselImg.eq(0).attr('src', imgSrc[18]);
           carouselImg.eq(1).attr('src', imgSrc[19]);
@@ -557,18 +552,17 @@ $(document).ready(function () {
         dropdownBtn.eq(n).click(function () {
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html('APT. 206 | Level Two');
+          $('#replaced-content .sunday-title p').html('APARTMENT 12');
           $('.property-info').html(`<ul class="info-list">
-                        <li>Bedroom: <span>3</span></li>
-                        <li>Bathroom: <span>2</span></li>
-                        <li>Car: <span>2</span></li>
-                    </ul>
+                  <li><span>3 BED</span></li>
+                  <li><span>2 BATH</span></li>
+                  <li><span>2 CAR</span></li>
+              </ul>
 
-                    <ul class="info-area">
-                        <li>Internal: <span>154 sqm</span></li>
-                        <li>External:<span> 14 sqm</span></li>
-                        <li>Total: <span>168 sqm</span></li>
-                    </ul>`);
+              <ul class="info-area">
+                  <li><span>161 sqm</span></li>
+                  <li><span>LEVEL 4</span></li>
+              </ul>`);
           modalImg.attr('src', './assets/img/floorplan/6.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-3.jpg');
           modalTitle.html('APT. 206 | Level Two');
@@ -599,19 +593,18 @@ $(document).ready(function () {
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
           $('#replaced-content .sunday-title p').html(
-            'APT. 307 - Penthouse | Level Three'
+            'APARTMENT 12'
           );
           $('.property-info').html(`<ul class="info-list">
-                        <li>Bedroom: <span>3</span></li>
-                        <li>Bathroom: <span>2</span></li>
-                        <li>Car: <span>2</span></li>
-                    </ul>
+                  <li><span>3 BED</span></li>
+                  <li><span>2 BATH</span></li>
+                  <li><span>2 CAR</span></li>
+              </ul>
 
-                    <ul class="info-area">
-                        <li>Internal: <span>199 sqm</span></li>
-                        <li>External: <span>211 sqm</span></li>
-                        <li>Total: <span>410 sqm</span></li>
-                    </ul>`);
+              <ul class="info-area">
+                  <li><span>161 sqm</span></li>
+                  <li><span>LEVEL 4</span></li>
+              </ul>`);
           modalImg.attr('src', './assets/img/floorplan/7.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-4.jpg');
           modalTitle.html('APT. 307 - Penthouse | Level Three');

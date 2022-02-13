@@ -25,8 +25,12 @@ h1, h2, h3, h4, h5, h6, .welcome-title {
     font-weight: 300;
 }
 
+a {
+  font-family: "Palatino";
+}
+
 p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: #727272;
 }
@@ -326,30 +330,14 @@ ul.nav li:last-child .nav-link {
   opacity: 0.5;
 }
 
-/* bottom row grey color */
-.fp-viewing-sd-every .nav-bottom-row,
-.fp-viewing-sd-partners .nav-bottom-row,
-.fp-viewing-sd-fixtures .nav-bottom-row,
-.fp-viewing-sd-doorstep .nav-bottom-row,
-.fp-viewing-sd-doorstep-1 .nav-bottom-row,
-.fp-viewing-sd-doorstep-2 .nav-bottom-row,
-.fp-viewing-sd-doorstep-3 .nav-bottom-row,
-.fp-viewing-sd-doorstep-4 .nav-bottom-row,
-.fp-viewing-sd-contact-us .nav-bottom-row {
+.fp-viewing-sd-fixtures .nav-bottom-row {
   border-top: 1px solid #e5e5e5;
 }
 
-.fp-viewing-sd-every .nav-top-row,
-.fp-viewing-sd-partners .nav-top-row,
-.fp-viewing-sd-fixtures .nav-top-row,
-.fp-viewing-sd-doorstep .nav-top-row,
-.fp-viewing-sd-doorstep-1 .nav-top-row,
-.fp-viewing-sd-doorstep-2 .nav-top-row,
-.fp-viewing-sd-doorstep-3 .nav-top-row,
-.fp-viewing-sd-doorstep-4 .nav-top-row,
-.fp-viewing-sd-contact-us .nav-top-row {
+.fp-viewing-sd-fixtures .nav-top-row {
   border-bottom: 1px solid #e5e5e5;
 }
+
 
 /* Nav top bar */
 .nav-wrapper-top {
@@ -707,6 +695,10 @@ ul.nav li:last-child .nav-link {
   background-size: 50% 50%;
 }
 
+.partners-logo-container:last-child {
+  background-size: 75% 50%;
+}
+
 .logo-row {
   position: absolute;
   left: 5rem;
@@ -805,11 +797,13 @@ span.title {
   color: #969696;
   font-weight: 600;
   font-size: 18px;
+  font-family: "bicyclette";
 }
 
 a.logo-link {
   color: #969696;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: "Palatino";
 }
 
 .quote {
@@ -1389,10 +1383,12 @@ a.logo-link {
 #floor-plan .residencies-dropdown .dropdown-menu .dropdown-item {
   padding: 0.25rem 1rem;
   color: #353535;
+  font-family: "bicyclette";
 }
 
 #floor-plan .rs-btn {
   padding: 0.375rem 2rem;
+  font-family: "bicyclette";
 }
 
 .rs-btn {
@@ -1679,14 +1675,9 @@ a.logo-link {
 }
 
 /* Doorstep section */
-#doorstep,
 #doorstep-1 #doorstep-2 #doorstep-3 {
   background-color: #fafafa;
   height: 100vh !important;
-}
-
-#doorstep {
-  z-index: 1;
 }
 
 .doorstep-section {
@@ -1697,11 +1688,6 @@ a.logo-link {
 .doorstep-container-top .sunday-title {
   margin-top: 10rem;
   margin-left: 5rem;
-}
-
-#doorstep .sunday-title p::before {
-  background-color: #e0e0e0;
-  opacity: 0.7;
 }
 
 .title {
@@ -1890,6 +1876,7 @@ a.logo-link {
   font-size: 16px;
   color: #656565;
   line-height: 24px;
+  font-family: "bicyclette";
 }
 
 button.btn.btn-link[aria-expanded='true'] {
@@ -2465,11 +2452,11 @@ ul.sale-contact li a {
 }
 
 #replaced-content .sunday-title p {
-  color: #727272;
+  color: #969696;
 }
 
 #replaced-content .sunday-title p::before {
-  background-color: #727272;
+  background-color: #969696;
 }
 
 #replaced-content .row {
@@ -2481,14 +2468,14 @@ ul.sale-contact li a {
 .info-area {
   list-style-type: none;
   padding-inline-start: 0px;
-  color: #727272;
+  color: #969696;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: 'bicylette';
+  font-family: 'bicyclette';
 }
 
 .info-area {
-  border-top: 1px solid #727272;
+  border-top: 1px solid #dddfdd;
   padding-top: 15px;
 }
 
@@ -2509,13 +2496,18 @@ ul.sale-contact li a {
 
 .property-link a {
   text-decoration: underline !important;
-  color: #727272 !important;
+  color: #969696 !important;
   display: block;
 }
 
 .property-intro p {
   margin-bottom: 30px;
-  color: #727272;
+  color: #969696;
+}
+
+.property-info span,
+.property-desc p {
+  color: #969696;
 }
 
 .property-contact-btn {
@@ -2862,6 +2854,7 @@ textarea.form-control:focus {
 
 /* /Form controls */
 .property-info {
+  margin-top: 4rem;
   z-index: 2;
 }
 
@@ -2899,6 +2892,8 @@ textarea.form-control:focus {
   z-index: 2000;
   margin-left: 30px;
   display: inline;
+  text-transform: uppercase;
+  font-family: "bicyclette";
 }
 
 .btn-contact-purchase {
