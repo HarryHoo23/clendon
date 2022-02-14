@@ -269,6 +269,8 @@ $(document).ready(function () {
     $('#original-content').css('display', 'block');
     $('#replaced-content').css('display', 'none');
     $('.residencies-dropdown').removeClass('dropdown-movetop');
+    $('.nav-top-row').css('visibility', 'visible');
+    $('.nav-bottom-row').css('visibility', 'visible');
     $('.back-btn').addClass('unshown');
   });
 
@@ -289,14 +291,14 @@ $(document).ready(function () {
   $('#floorPlateModalCloseBtn').click(() => {
     $('#floor-plan .residencies-dropdown.dropdown-movetop').css(
       'z-index',
-      '1101'
+      '1000'
     );
   });
 
   $('#floorPlanModalCloseBtn').click(() => {
     $('#floor-plan .residencies-dropdown.dropdown-movetop').css(
       'z-index',
-      '1101'
+      '1000'
     );
   });
 
@@ -318,7 +320,8 @@ $(document).ready(function () {
       propertySwiper.update();
       switch (n) {
         case 0:
-          return false;
+          dropdownBtn.eq(n).trigger('click');
+          break;
         case 1:
           dropdownBtn.eq(n).trigger('click');
           break;
@@ -353,6 +356,8 @@ $(document).ready(function () {
       propertySwiper.update();
       $('.residencies-dropdown').addClass('dropdown-movetop');
       $('.back-btn').removeClass('unshown');
+      $('.nav-top-row').css('visibility', 'hidden');
+      $('.nav-bottom-row').css('visibility', 'hidden');
     });
     switch (n) {
       case 0:
@@ -685,7 +690,6 @@ $(document).ready(function () {
           fixture_location_content.html(`Kitchen <br>
                     Purchaser upgrade`);
           kitchen_Swiper.update();
-          console.log('2');
         });
         break;
       case 2:
@@ -818,7 +822,6 @@ $(document).ready(function () {
         break;
       case 'after-dark-accordion':
             accordionBtn.eq(0).click(function () {
-            console.log('clicked');
           $('#doorstep-4 .dp-container-right').css({
             background: "url('./assets/img/doorstep/carolina.jpg')",
             'background-size': 'auto 100%',
@@ -904,7 +907,6 @@ $(document).ready(function () {
     var fixture_location_content = $('.fixture-location-content');
     switch (id) {
       case 'bathroom-swiper':
-        console.log(fixtureSsbox.length);
         fixtureBox.eq(0).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
@@ -1122,7 +1124,7 @@ $(document).ready(function () {
           },
         };
 
-        console.log(JSON.stringify(data).replace(/\\n/g, '\\n'));
+        // console.log(JSON.stringify(data).replace(/\\n/g, '\\n'));
 
         $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
           type: 'POST',
@@ -1626,18 +1628,7 @@ function initMap() {
   });
 
   sundayMarker.setMap(map);
-  // if (navigator.geolocation) {
-  //     navigator.geolocation.getCurrentPosition(
-  //         function (position) {
-  //            var initializedPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-  //             map.setCenter(initializedPosition);
-  //         },
-  //     );
-  // } else {
-  //     console.log('denied');
-  //     handleLocationError(false, infoWindow, map.getCenter());
-  // }
-
+ 
   var cafeMarker =
     'https://firebasestorage.googleapis.com/v0/b/neat-vent-254802.appspot.com/o/marker.svg?alt=media&token=cd4f760a-2182-4e93-bf2b-3eace89f0dc1';
   var foodMarker = './assets/img/icons/foodMarker.svg';

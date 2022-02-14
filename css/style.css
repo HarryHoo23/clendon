@@ -206,6 +206,7 @@ p {
   display: flex;
   align-items: center;
   margin-top: 1px;
+  font-family: 'bicyclette';
 }
 
 #scroll-down {
@@ -221,6 +222,7 @@ ul.nav li:last-child .nav-link {
 
 .menu-title {
   color: #727272;
+  font-family: 'bicyclette';
   font-size: 21px;
   width: 100%;
   border-bottom: 2px solid #727272;
@@ -339,6 +341,34 @@ ul.nav li:last-child .nav-link {
 }
 
 
+/* bottom row grey color */
+.fp-viewing-sd-every .nav-bottom-row,
+.fp-viewing-sd-partners .nav-bottom-row,
+.fp-viewing-sd-fixtures .nav-bottom-row,
+.fp-viewing-sd-doorstep .nav-bottom-row,
+.fp-viewing-sd-doorstep-1 .nav-bottom-row,
+.fp-viewing-sd-doorstep-2 .nav-bottom-row,
+.fp-viewing-sd-doorstep-3 .nav-bottom-row,
+.fp-viewing-sd-doorstep-4 .nav-bottom-row,
+.fp-viewing-sd-contact-us .nav-bottom-row,
+.fp-viewing-sd-fixtures .nav-bottom-row{
+  border-top: 1px solid #e5e5e5;
+}
+
+.fp-viewing-sd-every .nav-top-row,
+.fp-viewing-sd-partners .nav-top-row,
+.fp-viewing-sd-fixtures .nav-top-row,
+.fp-viewing-sd-doorstep .nav-top-row,
+.fp-viewing-sd-doorstep-1 .nav-top-row,
+.fp-viewing-sd-doorstep-2 .nav-top-row,
+.fp-viewing-sd-doorstep-3 .nav-top-row,
+.fp-viewing-sd-doorstep-4 .nav-top-row,
+.fp-viewing-sd-contact-us .nav-top-row,
+.fp-viewing-sd-fixtures .nav-top-row {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
 /* Nav top bar */
 .nav-wrapper-top {
   width: 100%;
@@ -361,7 +391,7 @@ ul.nav li:last-child .nav-link {
   margin-right: 5rem;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .nav-link-no-border {
@@ -1349,6 +1379,7 @@ a.logo-link {
   padding-top: 2rem;
   font-weight: 600;
   font-size: 14px;
+  font-family: "bicyclette";
 }
 
 #floor-plan .residencies-dropdown {
@@ -1356,7 +1387,7 @@ a.logo-link {
   transition: all 300ms ease;
   left: 5rem;
   top: 15rem;
-  z-index: 1101;
+  z-index: 1000;
   position: absolute;
 }
 
@@ -1900,6 +1931,7 @@ button.btn.btn-link[aria-expanded='true'] {
   color: #656565;
   padding: 0.375rem 0;
   opacity: 0.7;
+  text-transform: uppercase;
 }
 
 .card-header .btn-link:hover {
@@ -2020,7 +2052,7 @@ button.btn.btn-link[aria-expanded='true'] {
 #map-accordion .card-header .btn-link,
 #map-accordion .card-body {
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #map-accordion .card-body {
@@ -2156,7 +2188,7 @@ ul.sale-contact li a {
 .contact-btn-container button {
   text-transform: uppercase;
   flex: 1 1 auto;
-  border-color: #727272;
+  border-color: #d2d2d2;
   border-radius: 0px;
   padding: 0.35rem 0.75rem 0.4rem 0.75rem;
 }
@@ -2166,30 +2198,13 @@ ul.sale-contact li a {
   border: #727272;
 }
 
-.email,
-.call {
+.email {
   font-weight: 600;
   font-size: 12px;
   letter-spacing: 0.1rem;
-}
-
-.call {
-  background-color: #727272;
-  color: #fff;
-}
-
-.call a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.call:hover {
-  background-color: #fff;
-  border-color: #727272;
-}
-
-.call:hover a {
-  color: #727272;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .gallery-thumbs {
@@ -2443,7 +2458,6 @@ ul.sale-contact li a {
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: 1100;
 }
 
 #replaced-content .sunday-title {
@@ -2658,7 +2672,7 @@ ul.sale-contact li a {
 }
 
 .claimer-content {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .claimer-title {
@@ -2724,6 +2738,8 @@ ul.sale-contact li a {
 #purchase-form label,
 #message-form label {
   color: #8b958e;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
 .form-control,
@@ -2832,6 +2848,7 @@ textarea.form-control:focus {
   margin-top: 25px;
   width: 100%;
   border-radius: 0;
+  text-transform: uppercase;
 }
 
 .contact-us-title {
