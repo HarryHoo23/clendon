@@ -11,11 +11,11 @@ $(document).ready(function () {
       setTimeout(function () {
           $('#preloader').removeClass('show');
           $('#preloader img').addClass('fadeOut');
-      }, 5000);
+      }, 7000);
       setTimeout(function () {
           $('#home-bg-video').addClass('animate__animated animate__fadeInRight homeShow');
           $('#home-bg-video').trigger('play');
-      }, 5000);
+      }, 8000);
   });
 
   var myFullpage = new fullpage('#fullpage', {
@@ -918,7 +918,6 @@ $(document).ready(function () {
         fixtureBox.eq(1).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-
           fixture_item_content.html('Toilet rimless');
           fixture_location_content.html(`Powder room<br>
                     Typical bathroom <br>
@@ -928,7 +927,6 @@ $(document).ready(function () {
         fixtureBox.eq(2).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-
           fixture_item_content.html('Towel rail set heated');
           fixture_location_content.html(
             `Penthouse ensuite and purchaser upgrade`
@@ -954,26 +952,18 @@ $(document).ready(function () {
         fixtureBox.eq(0).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Fridge freezer');
-          fixture_location_content.html(`Kitchen <br>
-                    Purchaser upgrade`);
-        });
-
-        fixtureBox.eq(1).click(function () {
-          fixtureSsbox.removeClass('active');
-          fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Gas cooktop');
           fixture_location_content.html(`Kitchen`);
         });
 
-        fixtureBox.eq(2).click(function () {
+        fixtureBox.eq(1).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Fully integrated dishwasher');
           fixture_location_content.html(`Kitchen`);
         });
 
-        fixtureBox.eq(3).click(function () {
+        fixtureBox.eq(2).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Gas cooktop');
@@ -981,29 +971,29 @@ $(document).ready(function () {
                     Purchaser upgrade`);
         });
 
-        fixtureBox.eq(4).click(function () {
+        fixtureBox.eq(3).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Oven');
           fixture_location_content.html(`Kitchen`);
         });
 
-        fixtureBox.eq(5).click(function () {
-          fixtureBox.children().removeClass('active');
-          fixtureBox.eq(5).children().first().addClass('active');
+        fixtureBox.eq(4).click(function () {
+          fixtureSsbox.children().removeClass('active');
+          fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Pendant light');
           fixture_location_content.html(`Kitchen`);
         });
 
-        fixtureBox.eq(6).click(function () {
+        fixtureBox.eq(5).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Pullout pantry');
           fixture_location_content.html(`Kitchen`);
         });
-        fixtureBox.eq(7).click(function () {
-          fixtureBox.children().removeClass('active');
-          fixtureBox.eq(7).children().first().addClass('active');
+        fixtureBox.eq(6).click(function () {
+          fixtureSsbox.children().removeClass('active');
+          fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Wine fridge');
           fixture_location_content.html(`Bar/kitchen <br> Purchaser upgrade`);
         });

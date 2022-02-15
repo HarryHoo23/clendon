@@ -44,13 +44,13 @@ p {
 }
 
 #loader {
-  background-color: #ffffff;
+  background-color: #aca69d;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 2000;
 }
 
 #status {
@@ -66,21 +66,29 @@ p {
 }
 
 #preloader {
-  background-color: #353535;
+  background-color: #aca69d;
   position: fixed;
   height: 100%;
-  width: 0px;
+  width: 0;
   z-index: 99999;
   transition: all 2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
 }
 
 #preloader img {
-  transition: 1s all ease;
+  transition: 2s all ease;
   transform: translateY(50px);
   opacity: 0;
+  -webkit-transition: 2s all ease;
+  -moz-transition: 2s all ease;
+  -ms-transition: 2s all ease;
+  -o-transition: 2s all ease;
 }
 
 #preloader .fadeIn {
@@ -2558,7 +2566,7 @@ ul.sale-contact li a {
 }
 
 .property-modal img {
-  height: 100%;
+  height: auto;
   width: 100%;
   object-fit: contain;
 }
@@ -2596,6 +2604,7 @@ ul.sale-contact li a {
   position: relative;
   text-align: center;
   top: 2rem;
+  font-family: "bicyclette";
 }
 
 .floorplan-modal-title::after {
@@ -2881,8 +2890,7 @@ textarea.form-control:focus {
 
 /* Backpage */
 #backpage {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../assets/img/bw.jpg');
+  background-color: #aca69d;
   padding: 5rem;
   background-size: cover;
   position: relative;
@@ -3008,4 +3016,17 @@ textarea.form-control:focus {
   right: 60%;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   z-index: 0;
+}
+
+.modal-btn {
+  border: 1px solid #D2D2CB;
+  color: #D2D2CB;
+  right: 2rem;
+  position: absolute;
+  bottom: 2rem;
+}
+
+.modal-btn:hover {
+  color: #727272;
+  border-color: #727272;
 }

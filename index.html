@@ -59,7 +59,7 @@
 
     <!-- Preloader -->
     <div id="preloader">
-        <img src="./assets/logo/clendon-logo-white.svg" alt="Sunday" />
+        <img src="./assets/logo/clendon_logo_animation.gif" alt="Sunday" />
     </div>
 
     <div id="menubar-overlay"></div>
@@ -71,11 +71,11 @@
                         <label class="menu-title" href="#home">Navigation</label>
                         <ul class="nav navbar-nav">
                             <li><a class="nav-link" href="#sd-home">Introduction</a></li>
-                            <li><a class="nav-link" href="#sd-every">Creative partners</a></li>
-                            <li><a class="nav-link" href="#sd-partners">The residences</a></li>
-                            <li><a class="nav-link" href="#sd-welcomeHome">The interior</a></li>
-                            <li><a class="nav-link" href="#sd-floorplans">The finer details</a></li>
-                            <li><a class="nav-link" href="#sd-doorstep">The surrounds</a></li>
+                            <li><a class="nav-link" href="#sd-partners">Creative partners</a></li>
+                            <li><a class="nav-link" href="#sd-floorplans">The residences</a></li>
+                            <li><a class="nav-link" href="#sd-fixtures">The interior</a></li>
+                            <li><a class="nav-link" href="#sd-doorstep-1">The finer details</a></li>
+                            <li><a class="nav-link" href="#sd-map">The surrounds</a></li>
                             <li><a class="nav-link nav-link-no-border" href="#sd-contact-us">Contact</a></li>
                         </ul>
                     </div>
@@ -459,12 +459,6 @@
             <div class="overlay_home">
             </div>
         </section>
-
-        <!-- Modal Home section2 -->
-        <!-- <section id="home-modal" class="section">
-            <div id="home-modal-container">
-            </div>
-        </section> -->
         
          <!-- Video Section -->
         <section id="home-modal" class="section">
@@ -901,21 +895,13 @@
                                         <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
                                     <img class="property-show-img" src="./assets/img/residence/APTG01/slider-11.jpg"
                                         alt="Popup slide">
-                                </div>
-                                <div class="swiper-slide">
-                                    <!-- 2 -->
-                                    <a class="expand-icon" href="./assets/img/residence/APTG01/slider-3.jpg"
-                                        data-toggle="lightbox" data-gallery="property-gallery">
-                                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                                    <img class="property-show-img" src="./assets/img/residence/APT G01/slider-3.jpg"
-                                        alt="Popup slide">
-                                </div>
+                                </div>                                
                                 <div class="swiper-slide">
                                     <!-- 3-->
                                     <a class="expand-icon" href="./assets/img/residence/APTG01/slider-4.jpg"
                                         data-toggle="lightbox" data-gallery="property-gallery">
                                         <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                                    <img class="property-show-img" src="./assets/img/residence/APT G01/slider-4.jpg"
+                                    <img class="property-show-img" src="./assets/img/residence/APTG01/slider-4.jpg"
                                         alt="Popup slide">
                                 </div>
                                 <div class="swiper-slide">
@@ -923,7 +909,7 @@
                                     <a class="expand-icon" href="./assets/img/residence/APTG01/slider-7.jpg"
                                         data-toggle="lightbox" data-gallery="property-gallery">
                                         <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                                    <img class="property-show-img" src="./assets/img/residence/APT G01/slider-7.jpg"
+                                    <img class="property-show-img" src="./assets/img/residence/APTG01/slider-7.jpg"
                                         alt="Popup slide">
                                 </div>
                             </div>
@@ -967,8 +953,9 @@
                                     <span aria-hidden="true"><img src="./assets/img/icons/close.svg" alt="close"></span>
                                 </button>
                                 <div class="modal-body">
-                                    <p class="floorplan-modal-title">APARTMENT 12</p>
-                                    <img src="./assets/img/floorplan/1.jpg" alt="floorplan">
+                                    <p class="floorplan-modal-title">Outdoor</p>
+                                    <img class="mt-5" src="./assets/img/floorplan/1.jpg" alt="floorplan">
+                                    <a href="#" download="#" class="btn property-contact-btn modal-btn">Purchase</a>
                                 </div>
                             </div>
                         </div>
@@ -982,6 +969,7 @@
                                 </button>
                                 <div class="modal-body">
                                     <img src="./assets/img//floorplan/1.jpg" alt="floorplan">
+                                    <a href="#" download="#" class="btn property-contact-btn modal-btn">Purchase</a>
                                 </div>
                             </div>
                         </div>
@@ -1070,13 +1058,7 @@
 
                     <!-- Kitchen Fixture Swiper -->
                     <div class="fixture-swiper swiper-container swiper" id="kitchen-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal active">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
-                                    <img src="./assets/img/fixtures/kitchen/COLUMN FRIDGE:FREEZER_KITCHEN -PURCHASER UPGRADE.jpg" alt="freezer">                                   
-                                </div>                                                                
-                            </div>
+                        <div class="swiper-wrapper">                            
                             <div class="swiper-slide">
                                 <div class="ss-box showModal">
                                     <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
@@ -1144,8 +1126,6 @@
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
-                        <!-- <div class="swiper-button-prev modal-swiper-button-prev" id="penthouse-swiper-arrow-prev"></div>
-                        <div class="swiper-button-next modal-swiper-button-next" id="penthouse-swiper-arrow-next"></div> -->
                     </div>
 
                     <!-- Penthouse Fixture Swiper -->
@@ -1186,8 +1166,6 @@
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
-                        <!-- <div class="swiper-button-prev modal-swiper-button-prev" id="laundry-swiper-arrow-prev"></div>
-                        <div class="swiper-button-next modal-swiper-button-next" id="laundry-swiper-arrow-next"></div> -->
                     </div>
                 </div>
 
@@ -2007,7 +1985,7 @@
 
         <section id="backpage" class="section">
             <div class="backpageContainer">
-                <img src="./assets/logo/SUNDAY_WHITE (1).gif" alt="sunday-img">
+                <img src="./assets/logo/clendon_logo_animation.gif" alt="sunday-img">
             </div>
         </section>
     </div>
