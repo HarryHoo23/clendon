@@ -30,9 +30,13 @@ a {
 }
 
 p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
   color: #727272;
+}
+
+.btn {
+  font-size: 15px;
 }
 
 .strong {
@@ -236,19 +240,16 @@ ul.nav li:last-child .nav-link {
   border-bottom: 2px solid #727272;
   text-transform: uppercase;
   padding-bottom: 0.5rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 0;
-}
-
-#scroll-down {
-  opacity: 0.5;
 }
 
 .fp-viewing-sd-backpage #scroll-down,
 .fp-viewing-sd-backpage #menu-arrow {
   display: none;
 }
-
+.fp-viewing-sd-intro #scroll-down,
+.fp-viewing-sd-intro #scroll-up,
 .fp-viewing-sd-every #scroll-down,
 .fp-viewing-sd-every #scroll-up,
 .fp-viewing-sd-partners-2 #scroll-down,
@@ -268,7 +269,7 @@ ul.nav li:last-child .nav-link {
 .fp-viewing-sd-contact-us #scroll-up,
 .fp-viewing-sd-contact-us #scroll-down {
   color: #727272;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .fp-viewing-sd-partners #menu-arrow path,
@@ -290,6 +291,9 @@ ul.nav li:last-child .nav-link {
   opacity: 0.5;
 }
 
+.fp-viewing-sd-intro #menu-arrow path,
+.fp-viewing-sd-intro .btn-right-box svg path,
+.fp-viewing-sd-intro #menu-arrow-down path,
 .fp-viewing-sd-every #menu-arrow path,
 .fp-viewing-sd-every .btn-right-box svg path,
 .fp-viewing-sd-every #menu-arrow-down path,
@@ -315,7 +319,7 @@ ul.nav li:last-child .nav-link {
 .fp-viewing-sd-contact-us .btn-right-box svg path,
 .fp-viewing-sd-contact-us #menu-arrow-down path {
   fill: #727272;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .fp-viewing-sd-intro .nav-bottom-row {
@@ -351,28 +355,24 @@ ul.nav li:last-child .nav-link {
 
 /* bottom row grey color */
 .fp-viewing-sd-every .nav-bottom-row,
-.fp-viewing-sd-partners .nav-bottom-row,
 .fp-viewing-sd-fixtures .nav-bottom-row,
 .fp-viewing-sd-doorstep .nav-bottom-row,
 .fp-viewing-sd-doorstep-1 .nav-bottom-row,
 .fp-viewing-sd-doorstep-2 .nav-bottom-row,
 .fp-viewing-sd-doorstep-3 .nav-bottom-row,
 .fp-viewing-sd-doorstep-4 .nav-bottom-row,
-.fp-viewing-sd-contact-us .nav-bottom-row,
-.fp-viewing-sd-fixtures .nav-bottom-row{
+.fp-viewing-sd-contact-us .nav-bottom-row {
   border-top: 1px solid #e5e5e5;
 }
 
 .fp-viewing-sd-every .nav-top-row,
-.fp-viewing-sd-partners .nav-top-row,
 .fp-viewing-sd-fixtures .nav-top-row,
 .fp-viewing-sd-doorstep .nav-top-row,
 .fp-viewing-sd-doorstep-1 .nav-top-row,
 .fp-viewing-sd-doorstep-2 .nav-top-row,
 .fp-viewing-sd-doorstep-3 .nav-top-row,
 .fp-viewing-sd-doorstep-4 .nav-top-row,
-.fp-viewing-sd-contact-us .nav-top-row,
-.fp-viewing-sd-fixtures .nav-top-row {
+.fp-viewing-sd-contact-us .nav-top-row {
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -476,7 +476,7 @@ ul.nav li:last-child .nav-link {
   color: #ffffff;
   font-size: 14px;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .sunday-navbar-active .nav-bottom-row .btn-right-box svg path,
@@ -552,7 +552,7 @@ ul.nav li:last-child .nav-link {
 
 .menu-carousel-container .carousel-caption h5 {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0;
   text-transform: uppercase;
 }
@@ -685,7 +685,7 @@ ul.nav li:last-child .nav-link {
 }
 
 .home-modal-content strong {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* Section 3 */
@@ -720,7 +720,7 @@ ul.nav li:last-child .nav-link {
   width: 25px;
   height: 1px;
   background-color: #e5e5e5;
-  bottom: calc(0% - 2rem);
+  bottom: calc(0% - 2rem + 6px);
 }
 
 
@@ -833,7 +833,7 @@ ul.nav li:last-child .nav-link {
 span.title {
   text-transform: uppercase;
   color: #969696;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   font-family: "bicyclette";
 }
@@ -841,7 +841,7 @@ span.title {
 a.logo-link {
   color: #969696;
   font-size: 16px;
-  font-family: "Palatino";
+  font-family: "bicyclette";
 }
 
 .quote {
@@ -856,10 +856,6 @@ a.logo-link {
   height: 1px;
   background-color: rgba(136, 145, 139, 0.25);
   top: -10px;
-}
-
-#fixtures .sunday-title p:before {
-  background-color: #656565;
 }
 
 .everyday-section .sunday-title {
@@ -933,10 +929,6 @@ a.logo-link {
 .sd-everyday-row {
   position: relative;
   height: 100%;
-}
-
-#sunday-everyday .sunday-title p::before {
-  background-color: #353535;
 }
 
 .sd-prev::after {
@@ -1105,6 +1097,7 @@ a.logo-link {
   bottom: 7rem;
   text-transform: uppercase;
   font-size: 12px;
+  font-family: "bicyclette";
 }
 
 .creative-content-box-right {
@@ -1385,8 +1378,8 @@ a.logo-link {
   color: #fff;
   text-transform: uppercase;
   padding-top: 2rem;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 15px;
   font-family: "bicyclette";
 }
 
@@ -1436,7 +1429,7 @@ a.logo-link {
   background-color: #ccc8c2;
   border: 1px solid #ccc8c2;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
 }
 
@@ -1730,7 +1723,7 @@ a.logo-link {
 }
 
 .title {
-  font-weight: 600;
+  font-weight: 500;
   color: #656565;
 }
 
@@ -1910,10 +1903,10 @@ a.logo-link {
   transform: translateX(0);
 }
 
-.dp-container-title {
-  font-weight: 600;
-  font-size: 16px;
-  color: #656565;
+.dp-container-title p{
+  font-weight: 500;
+  font-size: 15px;
+  color: #727272;
   line-height: 24px;
   font-family: "bicyclette";
 }
@@ -1962,6 +1955,7 @@ button.btn.btn-link[aria-expanded='true'] {
 
 .card-body {
   padding: 16px 10px 16px 0px;
+  color: #727272;
 }
 
 .right .sunday-title p::before {
@@ -2060,7 +2054,7 @@ button.btn.btn-link[aria-expanded='true'] {
 #map-accordion .card-header .btn-link,
 #map-accordion .card-body {
   color: #fff;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 #map-accordion .card-body {
@@ -2084,17 +2078,12 @@ button.btn.btn-link[aria-expanded='true'] {
 #map-accordion .card-body ul a {
   color: #fff;
   font-weight: 300;
-  font-style: italic;
   font-family: 'bicyclette';
 }
 
 /* Contact us section */
 #contact-us {
   padding: 5rem;
-}
-
-#contact-us .sunday-title p::before {
-  background-color: #88918b;
 }
 
 .contact-container {
@@ -2145,7 +2134,7 @@ button.btn.btn-link[aria-expanded='true'] {
 .sale-name {
   font-size: 18px;
   letter-spacing: 0.02rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #656565;
   padding-bottom: 0.5rem;
   border-bottom: 3px solid #727272;
@@ -2159,6 +2148,7 @@ button.btn.btn-link[aria-expanded='true'] {
   color: #656565;
   border-bottom: 1px solid rgba(143, 143, 143, 0.43);
   font-size: 14px;
+  font-family: "bicyclette";
 }
 
 .sale-intro {
@@ -2199,6 +2189,7 @@ ul.sale-contact li a {
   border-color: #d2d2d2;
   border-radius: 0px;
   padding: 0.35rem 0.75rem 0.4rem 0.75rem;
+  font-family: "bicyclette";
 }
 
 .email:hover {
@@ -2207,7 +2198,7 @@ ul.sale-contact li a {
 }
 
 .email {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.1rem;
   display: flex;
@@ -2477,10 +2468,6 @@ ul.sale-contact li a {
   color: #969696;
 }
 
-#replaced-content .sunday-title p::before {
-  background-color: #969696;
-}
-
 #replaced-content .row {
   height: calc(100% - 8rem);
   flex-grow: 1;
@@ -2491,7 +2478,7 @@ ul.sale-contact li a {
   list-style-type: none;
   padding-inline-start: 0px;
   color: #969696;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   font-family: 'bicyclette';
 }
@@ -2643,7 +2630,7 @@ ul.sale-contact li a {
 #fixture-list li {
   color: #727272;
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 5px;
   width: 60%;
@@ -2700,6 +2687,7 @@ ul.sale-contact li a {
   left: 15px;
   color: #fff;
   font-size: 12px;
+  font-family: "bicyclette";
 }
 
 .claimer-right {
@@ -2719,6 +2707,8 @@ ul.sale-contact li a {
   color: #fff;
   font-size: 12px;
   letter-spacing: 0.01em;
+  font-family: "bicyclette";
+  text-transform: capitalize;
 }
 
 .whitefox-logo {
@@ -2736,6 +2726,7 @@ ul.sale-contact li a {
 #contact-form,
 #purchase-form,
 #message-form {
+  font-family: "bicyclette";
   position: absolute;
   left: 5rem;
   right: 5rem;
@@ -2748,6 +2739,7 @@ ul.sale-contact li a {
 #message-form label {
   color: #8b958e;
   text-transform: uppercase;
+  font-family: "bicyclette";
   font-size: 16px;
 }
 
@@ -2915,6 +2907,9 @@ textarea.form-control:focus {
 .back-btn {
   color: #fff;
   z-index: 2000;
+  font-weight: 400;
+  border: 1px solid #ffffff;
+  padding: 0.5rem 1rem;
   margin-left: 30px;
   display: inline;
   text-transform: uppercase;
@@ -2946,9 +2941,16 @@ textarea.form-control:focus {
 }
 
 .fixture-item {
-  font-weight: 600;
-  color: #353535;
+  font-weight: 500;
+  color: #727272;
+  font-family: "bicyclette";
+  text-transform: uppercase;
   margin-bottom: 0;
+}
+
+
+.fixture-item-content, .fixture-location-content {
+  font-family: "bicyclette";
 }
 
 .ss-box,

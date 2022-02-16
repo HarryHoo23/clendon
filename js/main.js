@@ -10,8 +10,10 @@ $(document).ready(function () {
       }, 2000);
       setTimeout(function () {
           $('#preloader').removeClass('show');
-          $('#preloader img').addClass('fadeOut');
       }, 7000);
+      setTimeout(() => {
+        $('#preloader img').addClass('fadeOut');
+      }, 6000);
       setTimeout(function () {
           $('#home-bg-video').addClass('animate__animated animate__fadeInRight homeShow');
           $('#home-bg-video').trigger('play');
@@ -31,7 +33,6 @@ $(document).ready(function () {
       'sd-doorstep-2',
       'sd-doorstep-3',
       'sd-doorstep-4',
-      'sd-video',
       'sd-map',
       'sd-contact-us',
       'sd-disclaimer',
@@ -113,14 +114,6 @@ $(document).ready(function () {
         $('#scroll-up').text('ON YOUR DOORSTEP');
         $('#doorstep-4 .dp-container-right').addClass('show');
         $('#doorstep-4 .doorstep-container-mid .col-md-4').addClass('show');
-      }
-
-      if ($('body').hasClass('fp-viewing-sd-video')) {
-        $('#scroll-down').text('Out and about');
-        $('#scroll-up').text('ON YOUR DOORSTEP');
-        $('#video-bg .home-modal-box').addClass('show');
-        $('#video-bg .home-modal-content').addClass('show');
-        $('#bg-video')[0].currentTime = 0;
       }
 
       if ($('body').hasClass('fp-viewing-sd-map')) {
@@ -270,7 +263,7 @@ $(document).ready(function () {
     $('#replaced-content').css('display', 'none');
     $('.residencies-dropdown').removeClass('dropdown-movetop');
     $('.nav-top-row').css('visibility', 'visible');
-    $('.nav-bottom-row').css('visibility', 'visible');
+    $('.nav-wrapper').css('visibility', 'visible');
     $('.back-btn').addClass('unshown');
   });
 
@@ -357,7 +350,7 @@ $(document).ready(function () {
       $('.residencies-dropdown').addClass('dropdown-movetop');
       $('.back-btn').removeClass('unshown');
       $('.nav-top-row').css('visibility', 'hidden');
-      $('.nav-bottom-row').css('visibility', 'hidden');
+      $('.nav-wrapper').css('visibility', 'hidden');
     });
     switch (n) {
       case 0:
