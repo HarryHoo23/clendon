@@ -1607,7 +1607,7 @@ function initMap() {
   var sundayMarker = new google.maps.Marker({
     position: sunday,
     title: 'Sunday Hawksburn',
-    icon: './assets/img/icons/map-cursor.png',
+    icon: { url: './assets/img/icons/map-cursor.png', scaledSize: new google.maps.Size(200,200)}
   });
 
   sundayMarker.setMap(map);
