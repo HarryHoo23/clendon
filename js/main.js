@@ -55,7 +55,7 @@ $(document).ready(function () {
       }
 
       if ($('body').hasClass('fp-viewing-sd-intro')) {
-        $('#scroll-down').text('sunday every day');
+        $('#scroll-down').text('Living in Toorak');
         $('#scroll-up').text('home');
         $('#home-modal #home-modal-container').addClass('show');
         $('#home-modal .home-modal-box').addClass('show');
@@ -64,7 +64,7 @@ $(document).ready(function () {
 
       if ($('body').hasClass('fp-viewing-sd-every')) {
         $('#scroll-down').text('creative partners');
-        $('#scroll-up').text('Sunday Every day');
+        $('#scroll-up').text('Living in Toorak');
         $('#sd-everyday-carousel').addClass('show');
       }
 
@@ -1606,7 +1606,7 @@ function initMap() {
 
   var sundayMarker = new google.maps.Marker({
     position: sunday,
-    title: 'Sunday Hawksburn',
+    title: 'Clendon',
     icon: { url: './assets/img/icons/map-cursor.png', scaledSize: new google.maps.Size(200,200)}
   });
 
