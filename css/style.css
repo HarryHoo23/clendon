@@ -590,7 +590,7 @@ ul.nav li:last-child .nav-link {
   width: 100%;
   background: #727272;
   background-blend-mode: multiply;
-  background-image: url('../assets/img/hero-image.jpg');
+  background-image: url('../assets/img/hero.jpg');
   background-size: cover;
   overflow: hidden;
 }
@@ -1349,7 +1349,7 @@ a.logo-link {
 /* Floor plan */
 
 #floor-plan {
-  background: url('../assets/img/slide-residences-bg.jpg') no-repeat;
+  background: url('../assets/img/background.jpg') no-repeat;
   background-size: cover;
   height: 100vh;
   transition: all 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -1822,7 +1822,7 @@ a.logo-link {
 }
 
 #doorstep-3 .dp-container-left {
-  background: url('../assets/img/doorstep/Auterra.jpg');
+  background: url('../assets/img/doorstep/amaru.jpg');
   background-position: 50%, 50%;
   background-repeat: no-repeat;
   background-size: auto 120%;

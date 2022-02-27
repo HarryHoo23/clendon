@@ -773,7 +773,7 @@ $(document).ready(function () {
         });
         accordionBtn.eq(2).click(function () {
           $('#doorstep-2 .dp-container-right').css({
-            background: "url('./assets/img/doorstep/High-Street.jpg')",
+            background: "url('./assets/img/doorstep/armadale.jpg')",
             'background-size': 'cover',
           });
         });
@@ -799,7 +799,7 @@ $(document).ready(function () {
       case 'dusk-dawn-accordion':
         accordionBtn.eq(0).click(function () {
           $('#doorstep-3 .dp-container-left').css({
-            background: "url('./assets/img/doorstep/Amura.jpg')",
+            background: "url('./assets/img/doorstep/amura.jpg')",
             'background-size': 'auto 100%',
             'background-position': '50% 50%',
             'background-repeat': 'no-repeat',
