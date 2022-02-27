@@ -2622,7 +2622,7 @@ ul.sale-contact li a {
   display: none;
 }
 
-#penthouse-swiper {
+#throughout-swiper {
   display: none;
 }
 
@@ -2925,7 +2925,7 @@ textarea.form-control:focus {
 /*  Fixture */
 #bathroom-swiper .swiper-slide,
 #kitchen-swiper .swiper-slide,
-#penthouse-swiper .swiper-slide,
+#throughout-swiper .swiper-slide,
 #laundry-swiper .swiper-slide {
   padding: 10px 0;
   border: 1px solid #fff;
@@ -2933,7 +2933,7 @@ textarea.form-control:focus {
 
 #bathroom-swiper .swiper-slide .ss-box img,
 #kitchen-swiper .swiper-slide .ss-box img,
-#penthouse-swiper .swiper-slide .ss-box img,
+#throughout-swiper .swiper-slide .ss-box img,
 #laundry-swiper .swiper-slide .ss-box img {
   height: 100%;
   width: 100%;
@@ -2962,7 +2962,7 @@ textarea.form-control:focus {
 
 #bathroom-swiper .swiper-slide::before,
 #kitchen-swiper .swiper-slide::before,
-#penthouse-swiper .swiper-slide::before,
+#throughout-swiper .swiper-slide::before,
 #laundry-swiper .swiper-slide::before {
   content: ' ';
   display: block;
@@ -2978,7 +2978,7 @@ textarea.form-control:focus {
 
 #bathroom-swiper .swiper-slide-active::before,
 #kitchen-swiper .swiper-slide-active::before,
-#penthouse-swiper .swiper-slide-active::before,
+#throughout-swiper .swiper-slide-active::before,
 #laundry-swiper .swiper-slide-active::before {
   background-color: rgba(0, 0, 0, 0) !important;
 }
