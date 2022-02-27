@@ -735,25 +735,25 @@ $(document).ready(function () {
       case 'slow-start-accordion':
         accordionBtn.eq(0).click(function () {
           $('#doorstep-1 .dp-container-left').css({
-            background: "url('./assets/img/doorstep/barrys.jpg')",
+            background: "url('./assets/img/doorstep/Fourth-Chapter.jpg')",
             'background-size': 'cover',
           });
         });
         accordionBtn.eq(1).click(function () {
           $('#doorstep-1 .dp-container-left').css({
-            background: "url('./assets/img/doorstep/abacus.jpg')",
+            background: "url('./assets/img/doorstep/Mammoth.jpg')",
             'background-size': 'cover',
           });
         });
         accordionBtn.eq(2).click(function () {
           $('#doorstep-1 .dp-container-left').css({
-            background: "url('./assets/img/doorstep/gilson.jpg')",
+            background: "url('./assets/img/doorstep/morning-market.jpg')",
             'background-size': 'cover',
           });
         });
         accordionBtn.eq(3).click(function () {
           $('#doorstep-1 .dp-container-left').css({
-            background: "url('./assets/img/doorstep/tivoli.jpg')",
+            background: "url('./assets/img/doorstep/moby.jpg')",
             'background-size': 'cover',
           });
         });
@@ -761,25 +761,37 @@ $(document).ready(function () {
       case 'hours-leisure-accordion':
         accordionBtn.eq(0).click(function () {
           $('#doorstep-2 .dp-container-right').css({
-            background: "url('./assets/img/doorstep/botanic-gardens.jpg')",
+            background: "url('./assets/img/doorstep/Hawksburn.jpg')",
             'background-size': 'cover',
           });
         });
         accordionBtn.eq(1).click(function () {
           $('#doorstep-2 .dp-container-right').css({
-            background: "url('./assets/img/doorstep/chapel.jpg')",
+            background: "url('./assets/img/doorstep/Toorak-Village.jpg')",
             'background-size': 'cover',
           });
         });
         accordionBtn.eq(2).click(function () {
           $('#doorstep-2 .dp-container-right').css({
-            background: "url('./assets/img/doorstep/stables.jpg')",
+            background: "url('./assets/img/doorstep/High-Street.jpg')",
             'background-size': 'cover',
           });
         });
         accordionBtn.eq(3).click(function () {
           $('#doorstep-2 .dp-container-right').css({
-            background: "url('./assets/img/doorstep/parahn.jpg')",
+            background: "url('./assets/img/doorstep/Sarah-&-Sebastian.jpg')",
+            'background-size': 'cover',
+          });
+        });
+        accordionBtn.eq(4).click(function () {
+          $('#doorstep-2 .dp-container-right').css({
+            background: "url('./assets/img/doorstep/Kooyong.jpg')",
+            'background-size': 'cover',
+          });
+        });
+        accordionBtn.eq(5).click(function () {
+          $('#doorstep-2 .dp-container-right').css({
+            background: "url('./assets/img/doorstep/Studio-Pilates.jpg')",
             'background-size': 'cover',
           });
         });
@@ -787,7 +799,7 @@ $(document).ready(function () {
       case 'dusk-dawn-accordion':
         accordionBtn.eq(0).click(function () {
           $('#doorstep-3 .dp-container-left').css({
-            background: "url('./assets/img/doorstep/carolina.jpg')",
+            background: "url('./assets/img/doorstep/Amura.jpg')",
             'background-size': 'auto 100%',
             'background-position': '50% 50%',
             'background-repeat': 'no-repeat',
@@ -795,19 +807,25 @@ $(document).ready(function () {
         });
         accordionBtn.eq(1).click(function () {
           $('#doorstep-3 .dp-container-left').css({
-            background: "url('./assets/img/doorstep/entrecote.jpg')",
+            background: "url('./assets/img/doorstep/Bistro-Thierry.jpg')",
             'background-size': 'cover',
           });
         });
         accordionBtn.eq(2).click(function () {
           $('#doorstep-3 .dp-container-left').css({
-            background: "url('./assets/img/doorstep/atlas.jpg')",
+            background: "url('./assets/img/doorstep/Sonny-Chiba.jpg')",
             'background-size': 'cover',
           });
         });
         accordionBtn.eq(3).click(function () {
           $('#doorstep-3 .dp-container-left').css({
-            background: "url('./assets/img/doorstep/france.jpg')",
+            background: "url('./assets/img/doorstep/Neighbourhood-Pizza.jpg')",
+            'background-size': 'cover',
+          });
+        });
+        accordionBtn.eq(4).click(function () {
+          $('#doorstep-3 .dp-container-left').css({
+            background: "url('./assets/img/doorstep/Chez-bob.jpg')",
             'background-size': 'cover',
           });
         });
@@ -815,7 +833,7 @@ $(document).ready(function () {
       case 'after-dark-accordion':
             accordionBtn.eq(0).click(function () {
           $('#doorstep-4 .dp-container-right').css({
-            background: "url('./assets/img/doorstep/carolina.jpg')",
+            background: "url('./assets/img/doorstep/Toorak-Cellars.jpg')",
             'background-size': 'auto 100%',
             'background-position': '50% 50%',
             'background-repeat': 'no-repeat',
@@ -823,19 +841,19 @@ $(document).ready(function () {
         });
         accordionBtn.eq(1).click(function () {
           $('#doorstep-4 .dp-container-right').css({
-            background: "url('./assets/img/doorstep/entrecote.jpg')",
+            background: "url('./assets/img/doorstep/Bouzy-Bar-a-Vins.jpg')",
             'background-size': 'cover',
           });
         });
         accordionBtn.eq(2).click(function () {
           $('#doorstep-4 .dp-container-right').css({
-            background: "url('./assets/img/doorstep/atlas.jpg')",
+            background: "url('./assets/img/doorstep/Auterra.jpg')",
             'background-size': 'cover',
           });
         });
         accordionBtn.eq(3).click(function () {
           $('#doorstep-4 .dp-container-right').css({
-            background: "url('./assets/img/doorstep/france.jpg')",
+            background: "url('./assets/img/doorstep/Milton-Wine-Bar.jpg')",
             'background-size': 'cover',
           });
         });
@@ -843,7 +861,7 @@ $(document).ready(function () {
     }
   }
   clickAccordion('slow-start-accordion');
-  clickAccordion('stop-by-accordion');
+  clickAccordion('hours-leisure-accordion');
   clickAccordion('dusk-dawn-accordion');
   clickAccordion('after-dark-accordion');
 

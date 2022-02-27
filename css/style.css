@@ -1810,19 +1810,19 @@ a.logo-link {
 }
 
 #doorstep-1 .dp-container-left {
-  background: url('../assets/img/doorstep/barrys.jpg');
+  background: url('../assets/img/doorstep/Fourth-Chapter.jpg');
   background-size: auto 120%;
   transition: background-size 3s ease;
 }
 
 #doorstep-2 .dp-container-right {
-  background: url('../assets/img/doorstep/botanic-gardens.jpg');
+  background: url('../assets/img/doorstep/Hawksburn.jpg');
   background-size: auto 120%;
   transition: background-size 3s ease;
 }
 
 #doorstep-3 .dp-container-left {
-  background: url('../assets/img/doorstep/carolina.jpg');
+  background: url('../assets/img/doorstep/Auterra.jpg');
   background-position: 50%, 50%;
   background-repeat: no-repeat;
   background-size: auto 120%;
@@ -1830,7 +1830,7 @@ a.logo-link {
 }
 
 #doorstep-4 .dp-container-right {
-  background: url('../assets/img/doorstep/carolina.jpg');
+  background: url('../assets/img/doorstep/Toorak-Cellars.jpg');
   background-position: 50%, 50%;
   background-repeat: no-repeat;
   background-size: auto 120%;
