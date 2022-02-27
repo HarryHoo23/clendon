@@ -653,8 +653,8 @@ $(document).ready(function () {
     var dropdownBtn = $('#fixture-list li');
     var bathroomSwiper = $('#bathroom-swiper');
     var kitchenSwiper = $('#kitchen-swiper');
-    var penthouseSwiper = $('#penthouse-swiper');
     var laundrySwiper = $('#laundry-swiper');
+    var penthouseSwiper = $('#throughout-swiper');
     var fixture_item_content = $('.fixture-item-content');
     var fixture_location_content = $('.fixture-location-content');
     switch (n) {
@@ -666,8 +666,8 @@ $(document).ready(function () {
           kitchenSwiper.css('display', 'none');
           penthouseSwiper.css('display', 'none');
           laundrySwiper.css('display', 'none');
-          fixture_item_content.html('Shower rail');
-          fixture_location_content.html('Typical bathroom <br> Master ensuite');
+          fixture_item_content.html('Basin Mixer');
+          fixture_location_content.html('Bathroom <br> Ensuite');
           bathroom_Swiper.update();
         });
         break;
@@ -679,9 +679,8 @@ $(document).ready(function () {
           kitchenSwiper.css('display', 'block');
           penthouseSwiper.css('display', 'none');
           laundrySwiper.css('display', 'none');
-          fixture_item_content.html('Fridge freezer');
-          fixture_location_content.html(`Kitchen <br>
-                    Purchaser upgrade`);
+          fixture_item_content.html('Cooktop');
+          fixture_location_content.html(`Kitchen`);
           kitchen_Swiper.update();
         });
         break;
@@ -691,11 +690,11 @@ $(document).ready(function () {
           dropdownBtn.eq(n).addClass('active');
           bathroomSwiper.css('display', 'none');
           kitchenSwiper.css('display', 'none');
-          penthouseSwiper.css('display', 'block');
-          laundrySwiper.css('display', 'none');
-          fixture_item_content.html('Joinery handle');
-          fixture_location_content.html(`Master walk-in-robe`);
-          living_Swiper.update();
+          penthouseSwiper.css('display', 'none');
+          laundrySwiper.css('display', 'block');
+          fixture_item_content.html('Laundry Mixer');
+          fixture_location_content.html(`Laundry`);
+          laundry_Swiper.update();
         });
         break;
       case 3:
@@ -704,11 +703,11 @@ $(document).ready(function () {
           dropdownBtn.eq(n).addClass('active');
           bathroomSwiper.css('display', 'none');
           kitchenSwiper.css('display', 'none');
-          penthouseSwiper.css('display', 'none');
-          laundrySwiper.css('display', 'block');
-          fixture_item_content.html('Gas fireplace');
-          fixture_location_content.html(`Penthouse terrace`);
-          laundry_Swiper.update();
+          penthouseSwiper.css('display', 'block');
+          laundrySwiper.css('display', 'none');
+          fixture_item_content.html('Carpet');
+          fixture_location_content.html(`Typical apartments`);
+          living_Swiper.update();
         });
         break;
     }
@@ -903,41 +902,103 @@ $(document).ready(function () {
         fixtureBox.eq(0).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Shower rail');
-          fixture_location_content.html(`Typical bathroom <br>
-                    Master ensuite`);
+          fixture_item_content.html('Basin Mixer');
+          fixture_location_content.html(`Bathroom <br>
+                    Ensuite`);
         });
 
         fixtureBox.eq(1).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Toilet rimless');
-          fixture_location_content.html(`Powder room<br>
-                    Typical bathroom <br>
-                    Master ensuite`);
+          fixture_item_content.html('Basin Spout');
+          fixture_location_content.html(`Bathroom <br>
+          Ensuite`);
         });
 
         fixtureBox.eq(2).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Towel rail set heated');
+          fixture_item_content.html('Flush Plate');
           fixture_location_content.html(
-            `Penthouse ensuite and purchaser upgrade`
+            `Bathrooms <br> Ensuites`
           );
         });
 
         fixtureBox.eq(3).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Wall light');
-          fixture_location_content.html(`Master ensuite`);
+          fixture_item_content.html('Glass');
+          fixture_location_content.html(`Bathroom <br> Ensuites`);
         });
 
         fixtureBox.eq(4).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Freestanding bathtub');
-          fixture_location_content.html('Master ensuite');
+          fixture_item_content.html('Tower Rail');
+          fixture_location_content.html('Bathroom <br> Ensuites');
+        });
+
+        fixtureBox.eq(5).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Handshower');
+          fixture_location_content.html('Bathroom <br> Ensuites');
+        });
+
+        fixtureBox.eq(6).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Robe Hook');
+          fixture_location_content.html('Powder room <br> Bathroom <br> Ensuites');
+        });
+
+        fixtureBox.eq(7).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Shower');
+          fixture_location_content.html('Apartment');
+        });
+
+        fixtureBox.eq(8).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Toilet Roll Holder');
+          fixture_location_content.html('Powder room <br> Bathroom <br> Ensuites');
+        });
+
+        fixtureBox.eq(9).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Toilet Suite');
+          fixture_location_content.html('Powder room <br> Bathroom <br> Ensuites');
+        });
+
+        fixtureBox.eq(10).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Towel Rail');
+          fixture_location_content.html('Ensuites');
+        });
+
+        fixtureBox.eq(11).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Towel Rail');
+          fixture_location_content.html('Bathroom <br> Ensuites');
+        });
+
+        fixtureBox.eq(12).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Bath');
+          fixture_location_content.html('Ensuites');
+        });
+
+        fixtureBox.eq(13).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Bath Spout');
+          fixture_location_content.html('Ensuites');
         });
         break;
 
@@ -945,108 +1006,116 @@ $(document).ready(function () {
         fixtureBox.eq(0).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Gas cooktop');
+          fixture_item_content.html('Cooktop');
           fixture_location_content.html(`Kitchen`);
         });
 
         fixtureBox.eq(1).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Fully integrated dishwasher');
-          fixture_location_content.html(`Kitchen`);
+          fixture_item_content.html('2PAC');
+          fixture_location_content.html(`Kitchen joinen`);
         });
 
         fixtureBox.eq(2).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Gas cooktop');
-          fixture_location_content.html(`Kitchen <br>
-                    Purchaser upgrade`);
+          fixture_item_content.html('Kitchen Mixer');
+          fixture_location_content.html(`Kitchen`);
         });
 
         fixtureBox.eq(3).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Oven');
+          fixture_item_content.html('Microwave Oven');
           fixture_location_content.html(`Kitchen`);
         });
 
         fixtureBox.eq(4).click(function () {
           fixtureSsbox.children().removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Pendant light');
+          fixture_item_content.html('Oven');
           fixture_location_content.html(`Kitchen`);
         });
 
         fixtureBox.eq(5).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Pullout pantry');
+          fixture_item_content.html('Rangehood');
           fixture_location_content.html(`Kitchen`);
         });
         fixtureBox.eq(6).click(function () {
           fixtureSsbox.children().removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Wine fridge');
-          fixture_location_content.html(`Bar/kitchen <br> Purchaser upgrade`);
+          fixture_item_content.html('Refrigerator');
+          fixture_location_content.html(`Kitchen`);
+        });
+        fixtureBox.eq(7).click(function () {
+          fixtureSsbox.children().removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Stone Slab');
+          fixture_location_content.html(`Kitchen`);
         });
         break;
-      case 'penthouse-swiper':
-        fixtureBox.eq(0).click(function () {
-          fixtureSsbox.removeClass('active');
-          fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Joinery handle');
-          fixture_location_content.html(`Master walk-in-robe`);
-        });
-        fixtureBox.eq(1).click(function () {
-          fixtureSsbox.removeClass('active');
-          fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Wall light');
-          fixture_location_content.html(`Bedroom`);
-        });
-        break;
+      
       case 'laundry-swiper':
         fixtureBox.eq(0).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Gas fireplace');
-          fixture_location_content.html(`Penthouse terrace`);
+          fixture_item_content.html('Laundry Mixer');
+          fixture_location_content.html(`Laundry`);
         });
-
+  
         fixtureBox.eq(1).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Single draw integrated dishwasher');
-          fixture_location_content.html(`Penthouse scullery`);
+          fixture_item_content.html('Laundry Trough');
+          fixture_location_content.html(`Select Laundries`);
         });
         fixtureBox.eq(2).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Oven');
+          fixture_item_content.html('Laundry Trough');
           fixture_location_content.html(
-            `Penthouse kitchen <br> Purchaser upgrade`
+            `Select Laundries`
           );
         });
         fixtureBox.eq(3).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Outdoor BBQ');
-          fixture_location_content.html(`Penthouse terrace`);
+          fixture_item_content.html('Tile');
+          fixture_location_content.html(`Powder room <br> Bathroom <br> Ensuite <br> Laundry floors`);
         });
-        fixtureBox.eq(4).click(function () {
+  
+      break;
+       
+      case 'penthouse-swiper':
+        fixtureBox.eq(0).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Wall light');
-          fixture_location_content.html(`Master Ensuite <br> Penthouse Only`);
+          fixture_item_content.html('Carpet');
+          fixture_location_content.html(`Typical apartments`);
         });
-
+        fixtureBox.eq(1).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Paint');
+          fixture_location_content.html(`Typical apartments`);
+        });
+        fixtureBox.eq(2).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Timber Flooring');
+          fixture_location_content.html(`Typical apartments`);
+        });
         break;
+      
+      }
     }
-  }
-  clickFixtureBox('bathroom-swiper');
-  clickFixtureBox('kitchen-swiper');
-  clickFixtureBox('penthouse-swiper');
-  clickFixtureBox('laundry-swiper');
+    clickFixtureBox('bathroom-swiper');
+    clickFixtureBox('kitchen-swiper');
+    clickFixtureBox('laundry-swiper');
+    clickFixtureBox('throughout-swiper');
 
   //Form Controls
   $('.form-control')
@@ -1326,7 +1395,7 @@ $(document).ready(function () {
     // }
   });
 
-  const living_Swiper = new Swiper('#penthouse-swiper', {
+  const living_Swiper = new Swiper('#throughout-swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
