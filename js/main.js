@@ -2,6 +2,7 @@ $(document).ready(function () {
   'use strict';
 
   $(window).on('load', function () { // makes sure that whole site is loaded
+      $('html, body').scrollTop(0);
       $('#status').fadeOut();
       $('#loader').delay(250).fadeOut('slow');
       $('#preloader').addClass('show');
@@ -66,6 +67,7 @@ $(document).ready(function () {
         $('#scroll-down').text('creative partners');
         $('#scroll-up').text('Living in Toorak');
         $('#sd-everyday-carousel').addClass('show');
+        $('.sunday-paragraph').removeClass('collapse')
       }
 
       if ($('body').hasClass('fp-viewing-sd-partners')) {
@@ -305,9 +307,6 @@ $(document).ready(function () {
   callclickFloorplanLinksFunction();
 
   function clickFloorplanLinks(n) {
-    // var modalImg = $('#floorplanModal .modal-body img');
-    // var modalTitle = $('#floorplanModal .modal-body .floorplan-modal-title');
-    // var modalPlateImg = $('#floorplateModal .modal-body img');
     var dropdownBtn = $('#floorplan-dropdown .dropdown-item');
     floorplan_links.eq(n).click(function () {
       propertySwiper.update();
@@ -355,11 +354,10 @@ $(document).ready(function () {
     switch (n) {
       case 0:
         dropdownBtn.eq(n).click(function () {
+          console.log('number1 clicked' + 'the number is: ' + n);
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(
-            `APARTMENT 12`
-          );
+          $('#replaced-content .sunday-title p').html('G01');
           $('.property-info').html(`<ul class="info-list">
                         <li><span>3 BED</span></li>
                         <li><span>2 BATH</span></li>
@@ -378,7 +376,6 @@ $(document).ready(function () {
           carouselImg.eq(3).attr('src', imgSrc[8]);
 
           carouselPopup.attr('data-gallery', 'property-gallery');
-
           carouselPopup.eq(0).attr('href', imgSrc[5]);
           carouselPopup.eq(1).attr('href', imgSrc[6]);
           carouselPopup.eq(2).attr('href', imgSrc[7]);
@@ -392,15 +389,16 @@ $(document).ready(function () {
                     </div>`);
           modalTitle.html('APT. G01 | Ground Level');
         });
+        break;
       case 1:
         dropdownBtn.eq(n).click(function () {
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
           $('#replaced-content .sunday-title p').html(
-            `APARTMENT 12`
+            `G02`
           );
           $('.property-info').html(`<ul class="info-list">
-                <li><span>3 BED</span></li>
+                <li><span>3000 BED</span></li>
                 <li><span>2 BATH</span></li>
                 <li><span>2 CAR</span></li>
             </ul>
@@ -436,7 +434,7 @@ $(document).ready(function () {
         dropdownBtn.eq(n).click(function () {
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html('APARTMENT 12');
+          $('#replaced-content .sunday-title p').html('G03');
           $('.property-info').html(`<ul class="info-list">
                 <li><span>3 BED</span></li>
                 <li><span>2 BATH</span></li>
@@ -1351,17 +1349,18 @@ $(document).ready(function () {
   // $('#logoModal2').on('shown.bs.modal', function (event) {
   //     $('#jesse-video').currentTime = 0;
   // });
+  $('#logoModal1').on('hidden.bs.modal', function (event) {
+    $('#jesse-video-1')[0].pause();
+    $('#jesse-video-1')[0].currentTime = 0;
+  });
   $('#logoModal2').on('hidden.bs.modal', function (event) {
-    $('#jesse-video')[0].pause();
-    $('#jesse-video')[0].currentTime = 0;
+    console.log('modal2 closed');
+    $('#jesse-video-2')[0].pause();
+    $('#jesse-video-2')[0].currentTime = 0;
   });
   $('#logoModal3').on('hidden.bs.modal', function (event) {
-    $('#mim-video')[0].pause();
-    $('#mim-video')[0].currentTime = 0;
-  });
-  $('#logoModal4').on('hidden.bs.modal', function (event) {
-    $('#scott-video')[0].pause();
-    $('#scott-video')[0].currentTime = 0;
+    $('#jesse-video-3')[0].pause();
+    $('#jesse-video-3')[0].currentTime = 0;
   });
   $('#videoModalFox').on('hidden.bs.modal', function (event) {
     $('#martyVideo')[0].pause();

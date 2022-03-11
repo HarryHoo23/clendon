@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'Palatino';
+    font-family: 'Palatino', sans-serif;
     src: url('../assets/pala.ttf') format('woff'),
     url('../assets/pala.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Palatino Bold";
+  font-family: "Palatino Bold", serif;
   src: url('../assets/palab.ttf') format('woff'),
     url('../assets/palab.ttf') format('truetype');
 }
@@ -24,6 +24,10 @@ body {
 h1, h2, h3, h4, h5, h6, .welcome-title {
     font-family: 'bicyclette';
     font-weight: 300;
+}
+
+strong {
+  font-weight: bold;
 }
 
 a {
@@ -133,6 +137,11 @@ p {
 }
 
 /* Progress scroll bar css */
+.fp-viewing-sd-every #fp-nav {
+  display: none;
+}
+
+
 #fp-nav ul li:hover a span,
 #fp-nav ul li a.active span,
 #fp-nav ul li:hover a.active span {
@@ -752,7 +761,7 @@ ul.nav li:last-child .nav-link {
 }
 
 .logo-row .col-md-4:nth-child(2) .partners-logo-container {
-  background-image: url('../assets/logo/j.svg');
+  background-image: url('../assets/logo/bha.svg');
 }
 
 .logo-row .col-md-4:nth-child(3) .partners-logo-container {
@@ -793,7 +802,7 @@ ul.nav li:last-child .nav-link {
 }
 
 #logoModal2 .modal-logo-div {
-  background-image: url('../assets/logo/logo-color/j.svg');
+  background-image: url('../assets/logo/logo-color/bha.svg');
   width: 30%;
 }
 
@@ -825,10 +834,10 @@ ul.nav li:last-child .nav-link {
 
 .title-box {
   padding-top: 15px;
-  padding-bottom: 30px;
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -841,9 +850,8 @@ span.title {
 }
 
 a.logo-link {
-  color: #969696;
-  font-size: 16px;
-  font-family: "bicyclette";
+  height: 60%;
+  width: 100%;
 }
 
 .quote {
@@ -874,6 +882,8 @@ a.logo-link {
   z-index: 2;
   background: #ffffff;
   padding: 2rem;
+  transition: 0.5s all linear;
+  transition-delay: 0.5s;
 }
 
 .sunday-paragraph.collapse {
@@ -3031,4 +3041,9 @@ textarea.form-control:focus {
 .modal-btn:hover {
   color: #727272;
   border-color: #727272;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  outline: none;
 }
