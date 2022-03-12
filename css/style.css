@@ -1622,7 +1622,7 @@ a.logo-link {
 }
 
 .fixture-content-box {
-  margin-top: 4rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -1635,6 +1635,7 @@ a.logo-link {
   width: 100%;
   margin-left: 15px;
   margin-right: 15px;
+  margin-bottom: 4rem;
 }
 
 .fixture-swiper .swiper-pagination-bullet-active {
@@ -2571,6 +2572,11 @@ ul.sale-contact li a {
   object-fit: contain;
 }
 
+.property-modal .close {
+  right: unset;
+  left: 2rem;
+}
+
 #property-carousel {
   height: 100%;
 }
@@ -2652,7 +2658,7 @@ ul.sale-contact li a {
 }
 
 #fixture-list {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 #fixture-list li.active {
@@ -3033,9 +3039,9 @@ textarea.form-control:focus {
 .modal-btn {
   border: 1px solid #D2D2CB;
   color: #D2D2CB;
-  right: 2rem;
+  left: 7rem;
   position: absolute;
-  bottom: 2rem;
+  top: 2rem;
 }
 
 .modal-btn:hover {
