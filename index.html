@@ -337,17 +337,13 @@
                                             <div class="help-block with-errors"></div>
                                         </div>
 
-                                        <div class="input-groups col-md-12">
-                                            <label>Choose residence</label>
-                                            <select class="custom-select" id="inputGroupSelect01">
-                                                <option value="APT. G01" disabled>APT. G01 (SOLD)</option>
-                                                <option value="APT. G02">APT. G02</option>
-                                                <option value="APT. 103">APT. 103</option>
-                                                <option value="APT. 104">APT. 104</option>
-                                                <option value="APT. 205">APT. 205</option>
-                                                <option value="APT. 206">APT. 206</option>
-                                                <option value="The Penthouse" disabled>The Penthouse (SOLD)</option>
-                                            </select>
+                                        <div class="form-group col-md-12">
+                                            <label>Email</label>
+                                            <input id="form_contact_number" type="email" name="email" class="form-control"
+                                                placeholder required="required"
+                                                data-error="Valid Email address is required.">
+                                            <div class="form-control-border"></div>
+                                            <div class="help-block with-errors"></div>
                                         </div>
 
                                     </div>
@@ -382,7 +378,7 @@
                     <div class="modal-body">
                         <div class="contact-form-container">
                             <form id="purchase-form">
-                                <p class="contact-us-title text-center">PURCHASE</p>
+                                <p class="contact-us-title text-center">RESERVE</p>
                                 <div class="controls">
                                     <div class="row">
                                         <div class="form-group col-md-6">
@@ -402,31 +398,36 @@
                                             <div class="help-block with-errors"></div>
                                         </div>
 
+                                        <div class="form-group col-md-6">
+                                            <label>Email</label>
+                                            <input id="purchase_form_email_address" type="email" name="email"
+                                                class="form-control" placeholder required="required"
+                                                data-error="Valid Email address is required.">
+                                            <div class="form-control-border"></div>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
                                         <div class="input-groups col-md-6">
                                             <label>Choose residence</label>
                                             <select class="custom-select" id="purchaseInputGroupSelect01">
-                                                <option value="APT. G01" disabled>APT. G01</option>
-                                                <option value="APT. G02">APT. G02</option>
-                                                <option value="APT. 103">APT. 103</option>
-                                                <option value="APT. 104">APT. 104</option>
-                                                <option value="APT. 205">APT. 205</option>
-                                                <option value="APT. 206">APT. 206</option>
-                                                <option value="The Penthouse">The Penthouse</option>
+                                                <option value="G01" disabled>G01</option>
+                                                <option value="G02">G02</option>
+                                                <option value="G03">G03</option>
+                                                <option value="G04">G04</option>
+                                                <option value="101">101</option>
+                                                <option value="102">102</option>
+                                                <option value="103">103</option>
+                                                <option value="104">104</option>
+                                                <option value="201">201</option>
+                                                <option value="202">202</option>
+                                                <option value="203">203</option>
+                                                <option value="301">301</option>
+                                                <option value="302">302</option>
                                             </select>
                                         </div>
 
-                                        <div class="input-groups col-md-6">
-                                            <label>Celebratory beverage</label>
-                                            <select class="custom-select" id="purchaseInputGroupSelect02">
-                                                <option value="French Champagne">French Champagne</option>
-                                                <option value="Wine">Wine</option>
-                                                <option value="Non-alcoholic">Non-alcoholic</option>
-                                            </select>
-                                        </div>
+                                        
                                     </div>
-
-
-
 
                                     <div class="form-group" style="margin-top: 25px;">
                                         <label>Message</label>
@@ -475,17 +476,13 @@
                                                 <div class="help-block with-errors"></div>
                                             </div>
     
-                                            <div class="input-groups col-md-12">
-                                                <label>Choose residence</label>
-                                                <select class="custom-select" id="messageInputGroupSelect01">
-                                                    <option value="APT. G01" disabled>APT. G01</option>
-                                                    <option value="APT. G02">APT. G02</option>
-                                                    <option value="APT. 103">APT. 103</option>
-                                                    <option value="APT. 104">APT. 104</option>
-                                                    <option value="APT. 205">APT. 205</option>
-                                                    <option value="APT. 206">APT. 206</option>
-                                                    <option value="The Penthouse">The Penthouse</option>
-                                                </select>
+                                            <div class="form-group col-md-12">
+                                                <label>Email</label>
+                                                <input id="message_form_email_address" type="email" name="email"
+                                                    class="form-control" placeholder required="required"
+                                                    data-error="Valid Email address is required.">
+                                                <div class="form-control-border"></div>
+                                                <div class="help-block with-errors"></div>
                                             </div>
     
                                         </div>
@@ -907,10 +904,10 @@
                     <div class="row">
                         <div class="col-md-4">
                             <ul class="info-list" id="fixture-list">
-                                <li class="fixture-category active">Bathroom</li>
+                                <li class="fixture-category active">Throughout</li>
                                 <li class="fixture-category">Kitchen</li>
+                                <li class="fixture-category">Bathroom</li>
                                 <li class="fixture-category">Laundry</li>
-                                <li class="fixture-category">Throughout</li>
                             </ul>
                         </div>
     
@@ -919,12 +916,12 @@
                                 <p class="fixture-item strong">
                                     Item                            
                                 </p>
-                                <span class="fixture-item-content">Basin Mixer</span>
+                                <span class="fixture-item-content">Carpet</span>
                                 <p class="fixture-item strong" style="margin-top: 20px">
                                     Location
                                 </p>
                                 <span class="fixture-location-content">
-                                    Bathroom <br> Ensuite
+                                    All Apartments
                                 </span>
                             </div>
                         </div>
@@ -936,194 +933,8 @@
                 <!-- Vertical Slider -->
                 <div class="col-md-12 vs-img">
 
-                    <!-- Bathroom fixture swiper -->
-                    <div class="fixture-swiper swiper-container swiper" id="bathroom-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal active">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
-                                    <img src="./assets/img/fixtures/Bathroom/Basin-Mixer---BM1-(MIXER).jpg" alt="bathtub">                                   
-                                </div>                                                                
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>
-                                    <img src="./assets/img/fixtures/Bathroom/Basin-Spout---BM1.jpg" alt="showerhead">                                    
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
-                                    <img src="./assets/img/fixtures/Bathroom/Flush-Plate---PL1.jpg" alt="towerrail">                                   
-                                </div>
-                            </div>   
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>
-                                    <img src="./assets/img/fixtures/Bathroom/Glass---GL1.jpg" alt="wallLight">                                    
-                                </div>
-                            </div> 
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
-                                    <img src="./assets/img/fixtures/Bathroom/Hand-Towel-Rail---HT1.jpg" alt="bathtub">                                   
-                                </div>
-                            </div> 
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
-                                    <img src="./assets/img/fixtures/Bathroom/Handshower---HS1.jpg" alt="bathtub">                                   
-                                </div>
-                            </div> 
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
-                                    <img src="./assets/img/fixtures/Bathroom/Robe-Hook---RBH1.jpg" alt="bathtub">                                   
-                                </div>
-                            </div> 
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
-                                    <img src="./assets/img/fixtures/Bathroom/Shower---SHR1.jpg" alt="bathtub">                                   
-                                </div>
-                            </div> 
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
-                                    <img src="./assets/img/fixtures/Bathroom/Toilet-Roll-Holder---TRH1.jpg" alt="bathtub">                                   
-                                </div>
-                            </div> 
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
-                                    <img src="./assets/img/fixtures/Bathroom/Toilet-Suite---WC1.jpg" alt="bathtub">                                   
-                                </div>
-                            </div> 
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
-                                    <img src="./assets/img/fixtures/Bathroom/Towel-Rail---TR1.jpg" alt="bathtub">                                   
-                                </div>
-                            </div> 
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
-                                    <img src="./assets/img/fixtures/Bathroom/Towel-Rail---TR2.jpg" alt="bathtub">                                   
-                                </div>
-                            </div>    
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
-                                    <img src="./assets/img/fixtures/Bathroom/Ensuites/Bath---BATH1.jpg" alt="bathtub">                                   
-                                </div>
-                            </div>  
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
-                                    <img src="./assets/img/fixtures/Bathroom/Ensuites/Bath-Spout---BS1.jpg" alt="bathtub">                                   
-                                </div>
-                            </div>                       
-                        </div>
-                    </div>
-
-                    <!-- Kitchen Fixture Swiper -->
-                    <div class="fixture-swiper swiper-container swiper" id="kitchen-swiper">
-                        <div class="swiper-wrapper">                            
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
-                                    <img src="./assets/img/fixtures/Kitchen/Cooktop---CK1.jpg" alt="Cooktop_Purchaser">                                   
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>  
-                                    <img src="./assets/img/fixtures/Kitchen/Kitchen-Joinery---PU1.jpg" alt="apartment">                                  
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal active">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>   
-                                    <img src="./assets/img/fixtures/kitchen/Kitchen-Mixer---KM1.jpg" alt="apartment">                                  
-                                </div>                                                                
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>  
-                                    <img src="./assets/img/fixtures/kitchen/Microwave-Oven---OV2.jpg" alt="apartment">                                  
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>
-                                    <img src="./assets/img/fixtures/kitchen/Oven---OV1.jpg" alt="apartment">                                  
-                                </div>
-                            </div> 
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>
-                                    <img src="./assets/img/fixtures/kitchen/Rangehood---RH1.jpg" alt="PANTRY_KITCHEN">                                  
-                                </div>
-                            </div>  
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>
-                                    <img src="./assets/img/fixtures/kitchen/Refrigerator---REF1.jpg" alt="purchaser">                                  
-                                </div>
-                            </div> 
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>
-                                    <img src="./assets/img/fixtures/kitchen/Sink---S1.jpg" alt="purchaser">                                  
-                                </div>
-                            </div> 
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>
-                                    <img src="./assets/img/fixtures/kitchen/Stone-Slab---SL1.jpg" alt="purchaser">                                  
-                                </div>
-                            </div>                             
-                        </div>
-                        <!-- Add Pagination -->
-                    </div>
-
-                    <!-- Laundry Fixture Swiper -->
-                    <div class="fixture-swiper swiper-container swiper" id="laundry-swiper">
-                        <div class="swiper-wrapper">                            
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal active">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>  
-                                    <img src="./assets/img/fixtures/Laundry/Laundry-Mixer---LM1.jpg" alt="JOINERYHANDLE_MASTERWIR">                                  
-                                </div>                                                                
-                            </div>    
-                                                                                    
-                            
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal ">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>  
-                                    <img src="./assets/img/fixtures/Laundry/Laundry-Trough-(Select-Laundries)LT2.jpg" alt="wallbedroom">                                  
-                                </div>
-                            </div> 
-                            
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal ">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>  
-                                    <img src="./assets/img/fixtures/Laundry/Laundry-Trough---LT1.jpg" alt="wallbedroom">                                  
-                                </div>
-                            </div> 
-
-                            <div class="swiper-slide">
-                                <div class="ss-box showModal ">
-                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>  
-                                    <img src="./assets/img/fixtures/Laundry/Stone-Slab---SL3.jpg" alt="wallbedroom">                                  
-                                </div>
-                            </div> 
-                        </div>
-                        <!-- Add Pagination -->
-                    </div>
-
-                    <!-- Throughout Fixture Swiper -->
-                    <div class="fixture-swiper swiper-container swiper" id="throughout-swiper">
+                     <!-- Throughout Fixture Swiper -->
+                     <div class="fixture-swiper swiper-container swiper" id="throughout-swiper">
                         <div class="swiper-wrapper">                            
                             <div class="swiper-slide">
                                 <div class="ss-box showModal active">
@@ -1146,6 +957,247 @@
                         </div>
                         <!-- Add Pagination -->
                     </div>
+
+                    <!-- Kitchen Fixture Swiper -->
+                    <div class="fixture-swiper swiper-container swiper" id="kitchen-swiper">
+                        <div class="swiper-wrapper">                            
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Kitchen/Kitchen-Joinery---PU1.jpg" alt="Cooktop_Purchaser">                                   
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>  
+                                    <img src="./assets/img/fixtures/Kitchen/Stone-Slab---SL1.jpg" alt="apartment">                                  
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal active">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>   
+                                    <img src="./assets/img/fixtures/kitchen/Cooktop---CK1.jpg" alt="apartment">                                  
+                                </div>                                                                
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>  
+                                    <img src="./assets/img/fixtures/kitchen/dishwasher.jpg" alt="apartment">                                  
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>
+                                    <img src="./assets/img/fixtures/kitchen/Kitchen-Mixer---KM1.jpg" alt="kitchen">                                  
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>
+                                    <img src="./assets/img/fixtures/kitchen/Oven---OV1.jpg" alt="PANTRY_KITCHEN">                                  
+                                </div>
+                            </div>  
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>
+                                    <img src="./assets/img/fixtures/kitchen/Microwave-Oven---OV2.jpg" alt="purchaser">                                  
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>
+                                    <img src="./assets/img/fixtures/kitchen/Rangehood---RH1.jpg" alt="purchaser">                                  
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>
+                                    <img src="./assets/img/fixtures/kitchen/Refrigerator---REF1.jpg" alt="purchaser">                                  
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>
+                                    <img src="./assets/img/fixtures/kitchen/Sink---S1.jpg" alt="purchaser">                                  
+                                </div>
+                            </div>                                
+                        </div>
+                        <!-- Add Pagination -->
+                    </div>
+
+                    <!-- Bathroom fixture swiper -->
+                    <div class="fixture-swiper swiper-container swiper" id="bathroom-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal active">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/ct1-tiles.jpg" alt="bathtub">                                   
+                                </div>                                                                
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>
+                                    <img src="./assets/img/fixtures/Bathroom/Glass---GL1.jpg" alt="showerhead">                                    
+                                </div>
+                            </div>
+                            <!-- Missing -->
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/Basin-Mixer---BM1-(MIXER).jpg" alt="towerrail">                                   
+                                </div>
+                            </div>   
+                            <!-- missing -->
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>
+                                    <img src="./assets/img/fixtures/Bathroom/Basin-Mixer---BM1-(MIXER).jpg" alt="wallLight">                                    
+                                </div>
+                            </div> 
+                            <!-- missing -->
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/Basin-Mixer---BM1-(MIXER).jpg" alt="bathtub">                                   
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/sl2-slab.jpg" alt="bathtub">                                   
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/Basin-Spout---BM1.jpg" alt="bathtub">                                   
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/Basin-Mixer---BM1-(MIXER).jpg" alt="bathtub">                                   
+                                </div>
+                            </div> 
+                            <!-- missing -->
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/Basin-Mixer---BM1-(MIXER).jpg" alt="bathtub">                                   
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/Handshower---HS1.jpg" alt="bathtub">                                   
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/Hand-Towel-Rail---HT1.jpg" alt="bathtub">                                   
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/Flush-Plate---PL1.jpg" alt="bathtub">                                   
+                                </div>
+                            </div>    
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/Robe-Hook---RBH1.jpg" alt="bathtub">                                   
+                                </div>
+                            </div>  
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/Shower---SHR1.jpg" alt="bathtub">                                   
+                                </div>
+                            </div>       
+                            <!-- missing shower arm -->
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/Shower---SHR1.jpg" alt="bathtub">                                   
+                                </div>
+                            </div>   
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/Towel-Rail---TR2.jpg" alt="bathtub">                                   
+                                </div>
+                            </div>   
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/Towel-Rail---TR1.jpg" alt="bathtub">                                   
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/Toilet-Roll-Holder---TRH1.jpg" alt="bathtub">                                   
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/Toilet-Suite---WC1.jpg" alt="bathtub">                                   
+                                </div>
+                            </div>  
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/Ensuites/Bath---BATH1.jpg" alt="bathtub">                                   
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
+                                    <img src="./assets/img/fixtures/Bathroom/Ensuites/Bath-Spout---BS1.jpg" alt="bathtub">                                   
+                                </div>
+                            </div>                   
+                        </div>
+                    </div>
+                
+                    <!-- Laundry Fixture Swiper -->
+                    <div class="fixture-swiper swiper-container swiper" id="laundry-swiper">
+                        <div class="swiper-wrapper">                            
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal active">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>  
+                                    <img src="./assets/img/fixtures/Laundry/Stone-Slab---SL3.jpg" alt="JOINERYHANDLE_MASTERWIR">                                  
+                                </div>                                                                
+                            </div>    
+                                                                                    
+                            
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal ">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>  
+                                    <img src="./assets/img/fixtures/Laundry/Laundry-Mixer---LM1.jpg" alt="wallbedroom">                                  
+                                </div>
+                            </div> 
+                            
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal ">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>  
+                                    <img src="./assets/img/fixtures/Laundry/Laundry-Trough---LT1.jpg" alt="wallbedroom">                                  
+                                </div>
+                            </div> 
+
+                            <div class="swiper-slide">
+                                <div class="ss-box showModal ">
+                                    <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a>  
+                                    <img src="./assets/img/fixtures/Laundry/Laundry-Trough-(Select-Laundries)LT2.jpg" alt="wallbedroom">                                  
+                                </div>
+                            </div> 
+                        </div>
+                        <!-- Add Pagination -->
+                    </div>
+
+                   
                 </div>
 
             </div>
@@ -1579,35 +1631,20 @@
                                 <div class="card-body text-left">
                                     <ul>
                                         <a class="zoomIn">
-                                            <li>The Stables of Como</li>
+                                            <li>Fourth Chapter</li>
                                         </a>
                                         <a class="zoomIn">
-                                            <li>Hello James </li>
+                                            <li>Mammoth </li>
                                         </a>
                                         <a class="zoomIn">
-                                            <li>Abacus Bar & Kitchen</li>
+                                            <li>Abacus</li>
                                         </a>
                                         <a class="zoomIn">
-                                            <li>Kanteen</li>
+                                            <li>Morning Market</li>
                                         </a>
                                         <a class="zoomIn">
-                                            <li>Norman </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Lucky Penny </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Tivoli Road</li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Darling Café </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Husband </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Lawson Grove</li>
-                                        </a>
+                                            <li>Moby</li>
+                                        </a>                                        
                                     </ul>
                                 </div>
                             </div>
@@ -1628,50 +1665,21 @@
                                 <div class="card-body text-left">
                                     <ul>
                                         <a class="zoomIn">
-                                            <li>Matilda</li>
+                                            <li>High Street, Armadale</li>
                                         </a>
                                         <a class="zoomIn">
-                                            <li>Omnia</li>
+                                            <li>Hawksburn Village</li>
                                         </a>
                                         <a class="zoomIn">
-                                            <li>Bar Carolina</li>
+                                            <li>Sarah & Sebastian</li>
                                         </a>
                                         <a class="zoomIn">
-                                            <li>Atlas Dining</li>
+                                            <li>Kooyong Lawn Tennis Club</li>
                                         </a>
                                         <a class="zoomIn">
-                                            <li>Gilson</li>
+                                            <li>Studio Pilates</li>
                                         </a>
-                                        <a class="zoomIn">
-                                            <li>France-Soir</li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Cucinetta </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>The Botanical</li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Entrecôte</li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Bistro Thierry</li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>48h Pizza e Gnocchi </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Fratellino Pizzeria </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Bistro Gitan </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Mopho Canteen</li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Thirty Eight Chairs</li>
-                                        </a>
+
                                     </ul>
                                 </div>
                             </div>
@@ -1692,76 +1700,19 @@
                                 <div class="card-body text-left">
                                     <ul>
                                         <a class="zoomIn">
-                                            <li>Como Park </li>
+                                            <li>Amaru</li>
                                         </a>
                                         <a class="zoomIn">
-                                            <li>Fawkner Park </li>
+                                            <li>Bistro Thierry</li>
                                         </a>
                                         <a class="zoomIn">
-                                            <li>Royal Botanic Gardens</li>
+                                            <li>Sonny Chiba</li>
                                         </a>
                                         <a class="zoomIn">
-                                            <li>Rockly Gardens </li>
+                                            <li>Neighbourhood Pizza </li>
                                         </a>
                                         <a class="zoomIn">
-                                            <li>One Hot Yoga </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>REVL Training </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Prahran Aquatic Centre </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Humming Puppy </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>F45 Toorak </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Body Fit Training </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>GRIPT </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Bodhi & Ride</li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Rise Nation </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Barry’s Bootcamp</li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>KX Pilates</li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Toorak Primary School </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Loreto Mandeville Hall </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>St Catherine’s School </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>St Kevin’s College </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Geelong Grammar Toorak </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Lauriston Girls’ School </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Armadale Primary School </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Christ Church Grammar School </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Scotch College </li>
+                                            <li>Chez Bob</li>
                                         </a>
                                     </ul>
                                 </div>
@@ -1783,73 +1734,22 @@
                                 <div class="card-body text-left">
                                     <ul>                                       
                                         <a class="zoomIn">
-                                            <li>LaManna & Sons </li>
+                                            <li>Toorak Cellars </li>
                                         </a>
                                         <a class="zoomIn">
-                                            <li>Prahran Market </li>
+                                            <li>Bouzy Bar à Vins </li>
                                         </a>
                                         <a class="zoomIn">
-                                            <li>Woolworths</li>
+                                            <li>Auterra Wine Bar</li>
                                         </a>
                                         <a class="zoomIn">
-                                            <li>Toscano’s </li>
+                                            <li>Milton Wine Shop </li>
                                         </a>
                                         <a class="zoomIn">
-                                            <li>ALDI </li>
+                                            <li>Missy Lui  </li>
                                         </a>
                                         <a class="zoomIn">
-                                            <li>Coles </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Rocky’s Fruit & Veg </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Gum Tree Good Food </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Harvest</li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>The Essential Ingredient </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Simon Johnson Providore</li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Peter Bouchier Toorak</li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Stocked</li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Chapel Street Precinct </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>The Como Centre</li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>The jam Factory </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Mecca Cosmetica</li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Toorak Village</li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>GRACE </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Husk </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>GANT </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Coco & Lola </li>
-                                        </a>
-                                        <a class="zoomIn">
-                                            <li>Feathers</li>
+                                            <li>Joey Scandizzo </li>
                                         </a>
                                     </ul>
                                 </div>
@@ -1869,21 +1769,22 @@
 
             <div class="contact-container">
                 <div class="sunday-title">
-                    <p>Questions? <br>answers.</p>
+                    <p>Exclusive selling partner - <br>WHITEFOX Real Estate.</p>
                 </div>
 
                 <!-- <button class="property-contact-btn btn btn-secondary btn-contact-purchase" data-toggle="modal"
                     data-target="#purchaseModal">Purchase</button> -->
-                <p>A residence as exclusive in character as the team facilitating the purchasing process. <br> Register your interest and enquire within. </p>
                 <div class="row contacts">
                     <div class="col-md-6 sale-member-container">
                         <div class="sale-img-box">
                             <a data-toggle="modal" data-target="#videoModalFox"><img src="./assets/img/icons/video.svg"
-                                    class="expand-icon" alt="video"></a>
+                                    class="expand-icon d-none" alt="video"></a>
                             <img src="./assets/img/marty.jpg" class="sale-img" alt="Fox">
                             <div class="contact-btn-container">
                                 <button class="email btn btn-outline-secondary" data-toggle="modal"
                                     data-target="#messageModal">Message</button>
+                                <button class="call btn btn-outline-secondary"><a href="facetime:marty@whitefoxrealestate.com.au">Facetime</a></button>
+
                             </div>
                         </div>
                         <div class="sale-info">
@@ -1900,11 +1801,12 @@
                     <div class="col-md-6 sale-member-container">
                         <div class="sale-img-box">
                             <a data-toggle="modal" data-target="#videoModalLana"><img src="./assets/img/icons/video.svg"
-                                    class="expand-icon" alt="video"></a>
+                                    class="expand-icon d-none" alt="video"></a>
                             <img src="./assets/img/lana.jpg" class="sale-img" alt="Fox">
                             <div class="contact-btn-container">
                                 <button class="email btn btn-outline-secondary" data-toggle="modal"
                                     data-target="#messageModal">Message</button>
+                                    <button class="call btn btn-outline-secondary"><a href="facetime:0435165633">Facetime</a></button>
                             </div>
                         </div>
                         <div class="sale-info">

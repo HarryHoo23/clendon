@@ -2211,13 +2211,24 @@ ul.sale-contact li a {
   border: #727272;
 }
 
-.email {
+.email, .call {
   font-weight: 500;
   font-size: 13px;
   letter-spacing: 0.1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.call {
+  background-color: #727272;
+  color: #fff;
+}
+
+.call a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "bicyclette";
 }
 
 .gallery-thumbs {
@@ -2631,7 +2642,7 @@ ul.sale-contact li a {
 
 /* Fixture Swiper css */
 #bathroom-swiper {
-  display: block;
+  display: none;
 }
 
 #kitchen-swiper {
@@ -2639,7 +2650,7 @@ ul.sale-contact li a {
 }
 
 #throughout-swiper {
-  display: none;
+  display: block;
 }
 
 #laundry-swiper {

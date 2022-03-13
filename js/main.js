@@ -1041,17 +1041,17 @@ $(document).ready(function () {
     var fixture_item_content = $('.fixture-item-content');
     var fixture_location_content = $('.fixture-location-content');
     switch (n) {
-      case 0:
+      case 0:       
         dropdownBtn.eq(n).click(function () {
           dropdownBtn.removeClass('active');
           dropdownBtn.eq(n).addClass('active');
-          bathroomSwiper.css('display', 'block');
+          bathroomSwiper.css('display', 'none');
           kitchenSwiper.css('display', 'none');
-          penthouseSwiper.css('display', 'none');
+          penthouseSwiper.css('display', 'block');
           laundrySwiper.css('display', 'none');
-          fixture_item_content.html('Basin Mixer');
-          fixture_location_content.html('Bathroom <br> Ensuite');
-          bathroom_Swiper.update();
+          fixture_item_content.html('Carpet');
+          fixture_location_content.html(`All Apartments`);
+          living_Swiper.update();
         });
         break;
       case 1:
@@ -1067,7 +1067,20 @@ $(document).ready(function () {
           kitchen_Swiper.update();
         });
         break;
-      case 2:
+      case 2:        
+        dropdownBtn.eq(n).click(function () {
+          dropdownBtn.removeClass('active');
+          dropdownBtn.eq(n).addClass('active');
+          bathroomSwiper.css('display', 'block');
+          kitchenSwiper.css('display', 'none');
+          penthouseSwiper.css('display', 'none');
+          laundrySwiper.css('display', 'none');
+          fixture_item_content.html('Basin Mixer');
+          fixture_location_content.html('Bathroom <br> Ensuite');
+          bathroom_Swiper.update();
+        });
+        break;
+      case 3:
         dropdownBtn.eq(n).click(function () {
           dropdownBtn.removeClass('active');
           dropdownBtn.eq(n).addClass('active');
@@ -1078,19 +1091,6 @@ $(document).ready(function () {
           fixture_item_content.html('Laundry Mixer');
           fixture_location_content.html(`Laundry`);
           laundry_Swiper.update();
-        });
-        break;
-      case 3:
-        dropdownBtn.eq(n).click(function () {
-          dropdownBtn.removeClass('active');
-          dropdownBtn.eq(n).addClass('active');
-          bathroomSwiper.css('display', 'none');
-          kitchenSwiper.css('display', 'none');
-          penthouseSwiper.css('display', 'block');
-          laundrySwiper.css('display', 'none');
-          fixture_item_content.html('Carpet');
-          fixture_location_content.html(`Typical apartments`);
-          living_Swiper.update();
         });
         break;
     }
@@ -1299,103 +1299,168 @@ $(document).ready(function () {
     var fixture_item_content = $('.fixture-item-content');
     var fixture_location_content = $('.fixture-location-content');
     switch (id) {
+      case 'throughout-swiper':
+        fixtureBox.eq(0).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Carpet');
+          fixture_location_content.html(`All apartments`);
+        });
+        fixtureBox.eq(1).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Paint');
+          fixture_location_content.html(`All apartments`);
+        });
+        fixtureBox.eq(2).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Timber Flooring');
+          fixture_location_content.html(`All apartments`);
+        });
+        break;
+      
       case 'bathroom-swiper':
         fixtureBox.eq(0).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Basin Mixer');
-          fixture_location_content.html(`Bathroom <br>
-                    Ensuite`);
+          fixture_item_content.html('Floor Tile ');
+          fixture_location_content.html(`Bathrooms <br> Ensuites <br> Powder Rooms <br> Laundry`);
         });
 
         fixtureBox.eq(1).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Basin Spout');
-          fixture_location_content.html(`Bathroom <br>
-          Ensuite`);
+          fixture_item_content.html('Fluted Glass');
+          fixture_location_content.html(`Bathrooms <br>
+          Ensuites`);
         });
 
         fixtureBox.eq(2).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Flush Plate');
+          fixture_item_content.html('Mirror');
           fixture_location_content.html(
-            `Bathrooms <br> Ensuites`
+            `Bathrooms <br> Ensuites <br> Powder Rooms`
           );
         });
 
         fixtureBox.eq(3).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Glass');
-          fixture_location_content.html(`Bathroom <br> Ensuites`);
+          fixture_item_content.html('Metal - Mirror Frames');
+          fixture_location_content.html(`Bathrooms <br> Ensuites <br> Powder Rooms`);
         });
 
         fixtureBox.eq(4).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Tower Rail');
-          fixture_location_content.html('Bathroom <br> Ensuites');
+          fixture_item_content.html('Metal - Shower Door');
+          fixture_location_content.html('Bathrooms <br> Ensuites <br> Powder Rooms');
         });
 
         fixtureBox.eq(5).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Basin - Stone Slab');
+          fixture_location_content.html('Bathrooms <br> Ensuites <br> Powder Rooms');
+        });
+
+        fixtureBox.eq(6).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Basin Spout');
+          fixture_location_content.html('Bathroom <br> Ensuites');
+        });
+
+        fixtureBox.eq(7).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Basin Mixer');
+          fixture_location_content.html('Bathroom <br> Ensuites');
+        });
+
+        fixtureBox.eq(8).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Floor Waste');
+          fixture_location_content.html('Bathroom <br> Ensuites');
+        });
+
+        fixtureBox.eq(9).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Handshower');
           fixture_location_content.html('Bathroom <br> Ensuites');
         });
 
-        fixtureBox.eq(6).click(function () {
-          fixtureSsbox.removeClass('active');
-          fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Robe Hook');
-          fixture_location_content.html('Powder room <br> Bathroom <br> Ensuites');
-        });
-
-        fixtureBox.eq(7).click(function () {
-          fixtureSsbox.removeClass('active');
-          fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Shower');
-          fixture_location_content.html('Apartment');
-        });
-
-        fixtureBox.eq(8).click(function () {
-          fixtureSsbox.removeClass('active');
-          fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Toilet Roll Holder');
-          fixture_location_content.html('Powder room <br> Bathroom <br> Ensuites');
-        });
-
-        fixtureBox.eq(9).click(function () {
-          fixtureSsbox.removeClass('active');
-          fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Toilet Suite');
-          fixture_location_content.html('Powder room <br> Bathroom <br> Ensuites');
-        });
-
         fixtureBox.eq(10).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Towel Rail');
-          fixture_location_content.html('Ensuites');
+          fixture_item_content.html('Hand Towel Rail');
+          fixture_location_content.html('Bathroom <br> Ensuites <br> Powder Rooms');
         });
 
         fixtureBox.eq(11).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Towel Rail');
-          fixture_location_content.html('Bathroom <br> Ensuites');
+          fixture_item_content.html('Flush Plate');
+          fixture_location_content.html('Bathroom <br> Ensuites <br> Powder Rooms');
         });
 
         fixtureBox.eq(12).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Bath');
-          fixture_location_content.html('Ensuites');
+          fixture_item_content.html('Robe Hook ');
+          fixture_location_content.html('Bathroom <br> Ensuites <br> Powder Rooms');
         });
 
         fixtureBox.eq(13).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Shower');
+          fixture_location_content.html('Bathroom <br> Ensuites');
+        });
+
+        fixtureBox.eq(14).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Shower Arm');
+          fixture_location_content.html('Bathroom <br> Ensuites');
+        });
+
+        fixtureBox.eq(15).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Towel Rail ');
+          fixture_location_content.html('Bathroom <br> Ensuites');
+        });
+
+        fixtureBox.eq(16).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Towel Rail ');
+          fixture_location_content.html('Bathroom <br> Ensuites');
+        });
+        fixtureBox.eq(17).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Toilet Roll Holder');
+          fixture_location_content.html('Bathroom <br> Ensuites <br> Powder Rooms');
+        });
+        fixtureBox.eq(18).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Toilet Suite');
+          fixture_location_content.html('Bathroom <br> Ensuites <br> Powder Rooms');
+        });
+        fixtureBox.eq(19).click(function () {
+          fixtureSsbox.removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Bath');
+          fixture_location_content.html('Ensuites');
+        });
+        fixtureBox.eq(20).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Bath Spout');
@@ -1407,54 +1472,66 @@ $(document).ready(function () {
         fixtureBox.eq(0).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Cooktop');
+          fixture_item_content.html('Kitchen Joinery');
           fixture_location_content.html(`Kitchen`);
         });
 
         fixtureBox.eq(1).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('2PAC');
-          fixture_location_content.html(`Kitchen joinen`);
+          fixture_item_content.html('Stone Slab');
+          fixture_location_content.html(`Kitchen`);
         });
 
         fixtureBox.eq(2).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Kitchen Mixer');
+          fixture_item_content.html('Miele 5 Burner Gas Cooktop');
           fixture_location_content.html(`Kitchen`);
         });
 
         fixtureBox.eq(3).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Microwave Oven');
+          fixture_item_content.html('Miele Fully Integrated Dishwasher');
           fixture_location_content.html(`Kitchen`);
         });
 
         fixtureBox.eq(4).click(function () {
           fixtureSsbox.children().removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Oven');
-          fixture_location_content.html(`Kitchen`);
+          fixture_item_content.html('Tap Mixer');
+          fixture_location_content.html(`Kitchen <br> Laundry`);
         });
 
         fixtureBox.eq(5).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Rangehood');
+          fixture_item_content.html('Miele 60cm Oven ');
           fixture_location_content.html(`Kitchen`);
         });
         fixtureBox.eq(6).click(function () {
           fixtureSsbox.children().removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Refrigerator');
+          fixture_item_content.html('Miele 60cm Microwave Oven');
           fixture_location_content.html(`Kitchen`);
         });
         fixtureBox.eq(7).click(function () {
           fixtureSsbox.children().removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Stone Slab');
+          fixture_item_content.html('Miele 88cm Under Cupboard Rangehood');
+          fixture_location_content.html(`Kitchen`);
+        });
+        fixtureBox.eq(8).click(function () {
+          fixtureSsbox.children().removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Fisher & Paykel Freestanding Refrigerator Freezer ');
+          fixture_location_content.html(`Kitchen`);
+        });
+        fixtureBox.eq(9).click(function () {
+          fixtureSsbox.children().removeClass('active');
+          fixtureActiveSlide.addClass('active');
+          fixture_item_content.html('Double Square Sink');
           fixture_location_content.html(`Kitchen`);
         });
         break;
@@ -1463,60 +1540,41 @@ $(document).ready(function () {
         fixtureBox.eq(0).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Laundry Mixer');
-          fixture_location_content.html(`Laundry`);
+          fixture_item_content.html('Floor Tile');
+          fixture_location_content.html(`Powder room <br> Bathroom <br> Ensuite <br> Laundry`);
         });
   
         fixtureBox.eq(1).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Laundry Trough');
-          fixture_location_content.html(`Select Laundries`);
+          fixture_item_content.html('Tap Mixer');
+          fixture_location_content.html(`Kitchent <br> Laundry`);
         });
         fixtureBox.eq(2).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Laundry Trough');
           fixture_location_content.html(
-            `Select Laundries`
+            `All Apartments`
           );
         });
         fixtureBox.eq(3).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Tile');
-          fixture_location_content.html(`Powder room <br> Bathroom <br> Ensuite <br> Laundry floors`);
+          fixture_item_content.html('Laundry Trough');
+          fixture_location_content.html(`Select Apartments`);
         });
   
       break;
        
-      case 'penthouse-swiper':
-        fixtureBox.eq(0).click(function () {
-          fixtureSsbox.removeClass('active');
-          fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Carpet');
-          fixture_location_content.html(`Typical apartments`);
-        });
-        fixtureBox.eq(1).click(function () {
-          fixtureSsbox.removeClass('active');
-          fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Paint');
-          fixture_location_content.html(`Typical apartments`);
-        });
-        fixtureBox.eq(2).click(function () {
-          fixtureSsbox.removeClass('active');
-          fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Timber Flooring');
-          fixture_location_content.html(`Typical apartments`);
-        });
-        break;
+      
       
       }
     }
-    clickFixtureBox('bathroom-swiper');
-    clickFixtureBox('kitchen-swiper');
-    clickFixtureBox('laundry-swiper');
     clickFixtureBox('throughout-swiper');
+    clickFixtureBox('kitchen-swiper');
+    clickFixtureBox('bathroom-swiper');
+    clickFixtureBox('laundry-swiper');
 
   //Form Controls
   $('.form-control')
@@ -1888,9 +1946,42 @@ $(document).ready(function () {
 
 function initMap() {
   const sunday = {
-    lat: -37.84075,
-    lng: 145.00199,
+    lat: -37.849627,
+    lng: 145.017087,
   };
+  var locationsInfo = [
+    "Fourth Chapter - 385 High St, Prahran VIC 3181",
+    "Mammoth - 736 Malvern Rd, Armadale VIC 3143",
+    "Abacus - 383 Chapel St, South Yarra VIC 3141",
+    "Morning Market - 579 High St, Prahran VIC 3181",
+    "Moby - 1150 High St, Armadale VIC 3143",
+    "High Street Armadale - ",
+    "Hawksburn Village - 505 Malvern Road, Toorak 3142",
+    "Sarah & Sebastian - Shop 2/1025 High St, Armadale VIC 3143",
+    "Kooyong Lawn Tennis Club - 489 Glenferrie Rd, Kooyong VIC 3144",
+    "Studio Pilates - 1113 High Street Armadale VIC 3143",
+    "Amaru - 1121 High St, Armadale VIC 3143",
+    "Bistro Thierry - 511 Malvern Rd, Toorak VIC 3142",
+    "Sonny Chiba - 14 Beatty Ave, Armadale VIC 3143",
+    "Neighbourhood Pizza - 20 Beatty Ave, Armadale VIC 3143",
+    "Chez Bob - 22 Beatty Ave, Armadale VIC 3143",
+    "Toorak Cellars - 18 Beatty Ave, Armadale VIC 3143",
+    "Bouzy Bar a Vins - 976 High St, Armadale VIC 3143",
+    "Auterra Wine Bar - 1160 High St, Armadale VIC 3143",
+    "Milton Wine Shop - 1427 Malvern Rd, Malvern VIC 3144",
+    "Missy Lui - 1/1161 High St, Armadale VIC 3143",
+    "Ormond Collective - 17 Moubray St, Melbourne VIC 3004 ",
+    "Joey Scandizzo - 168/172 Toorak Rd, South Yarra VIC 3141"
+  ];
+  let locationName = [];
+  let locationAddress = [];
+  for (i = 0; i < locationsInfo.length; i++) {
+    locationName.push((locationsInfo[i].split(" - ")[0]));
+    locationAddress.push((locationsInfo[i].split(" - ")[1]));
+  };
+
+
+  console.log(locationAddress);
   const map = new google.maps.Map(document.getElementById('map'), {
     center: sunday,
     zoom: 16,
@@ -2092,305 +2183,99 @@ function initMap() {
 
   const locations = [
     {
-      position: new google.maps.LatLng(-37.83852, 145.00508),
+      position: new google.maps.LatLng(-37.852764,145.001226), //1
       type: cafeMarker,
     },
     {
-      position: new google.maps.LatLng(-37.84834, 145.00948),
+      position: new google.maps.LatLng( -37.849514,145.013148), // 2
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.845661, 144.994156),
+      position: new google.maps.LatLng(-37.845675,144.994142),// 3
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.83164, 145.00508),
+      position: new google.maps.LatLng(-37.85363,145.007624), // 4
       type: cafeMarker,
     },
     {
-      position: new google.maps.LatLng(-37.83848, 144.98666),
+      position: new google.maps.LatLng(-37.856219,145.025458), //5
       type: cafeMarker,
     },
     {
-      position: new google.maps.LatLng(-37.8350858, 144.9964926),
+      position: new google.maps.LatLng(-37.855285,145.019091), // 6
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.83937, 144.99819), // tvolio road
+      position: new google.maps.LatLng(-37.847904,145.003398), // 7
       type: cafeMarker,
     },
     {
-      position: new google.maps.LatLng(-37.8385, 144.99141),
+      position: new google.maps.LatLng(-37.855381,145.021629), // 8
       type: cafeMarker,
     },
     {
-      position: new google.maps.LatLng(-37.84754, 144.99918),
+      position: new google.maps.LatLng(-37.838909,145.031984), // 9
       type: cafeMarker,
     },
     {
-      position: new google.maps.LatLng(-37.83348, 144.99031),
-      type: foodMarker,
-    }, // food grove;
-    // Sunday Service
-    {
-      position: new google.maps.LatLng(-37.8341565, 144.9814522),
+      position: new google.maps.LatLng(-37.855855,145.024691), // 10
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.8570368, 144.9925459),
+      position: new google.maps.LatLng(-37.85589,145.024664), // 11
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.839447021484375, 144.99560546875), // latest bar carolina
+      position: new google.maps.LatLng(-37.847958,145.003506), //12
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.8460252, 144.987745),
+      position: new google.maps.LatLng(-37.850637,145.014318), // latest bar carolina
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.83403, 144.98176), //gilson
+      position: new google.maps.LatLng(-37.850486,145.014106), //14
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.8381528, 144.98667), //soir
+      position: new google.maps.LatLng(-37.850355,145.014041), //15
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.8384, 144.99026),
+      position: new google.maps.LatLng(-37.850533,145.014192), //16
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.83405, 144.98186), //domain road needs to double check
+      position: new google.maps.LatLng(-37.855623,145.020359), //17
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.83387, 144.98051), //same
+      position: new google.maps.LatLng(-37.856378,145.025956), //18
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.84813, 145.00347), //malvern road needs to double check
+      position: new google.maps.LatLng(-37.852994,145.041796), //19
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.84753, 144.99907),
+      position: new google.maps.LatLng(-37.856082,145.026374), //20
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.84771, 145.00039), //pizzeria
+      position: new google.maps.LatLng(-37.847823,144.981496), //21
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.83741, 144.97925), //bistro
+      position: new google.maps.LatLng(-37.837999,144.985632), //22
       type: foodMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.86874, 144.9933),
-      type: foodMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84099, 144.99472), //thirty eight chairs
-      type: foodMarker,
-    },
-    // Sunday Sweat
-    {
-      position: new google.maps.LatLng(-37.83577, 145.00562),
-      type: movingMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84506, 144.98039),
-      type: movingMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.81739, 144.96752), //royal garden
-      type: movingMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.83912, 144.99271), //rockly garden
-      type: movingMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.83809, 144.99747), //hot yoga
-      type: movingMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84888, 144.99382),
-      type: movingMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84797, 144.99662), // aquatic
-      type: movingMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.85055, 144.99482),
-      type: movingMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.85482, 145.0156),
-      type: movingMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.83644, 144.99781),
-      type: movingMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.844, 144.9974), //double check gript
-      type: movingMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84403, 144.99759),
-      type: movingMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.83958, 144.9964), //double rise nation
-      type: movingMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.8392149, 144.9964991),
-      type: movingMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.85192, 144.9939),
-      type: movingMarker,
-    },
-    // Sunday Market
-    {
-      position: new google.maps.LatLng(-37.83712, 144.99609),
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84659, 144.99217),
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.83712, 144.99629),
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84827, 145.0046),
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84569, 144.99375), //aldi
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.83975, 144.99782), //coles
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84338, 144.99764),
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.8388, 144.99015), //gumtree
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.83693, 144.99706), //harvest
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84573, 144.99375),
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84106, 145.00869),
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84829, 145.00475),
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84828, 145.00465),
-      type: shopMarker,
-    },
-    // Sunday Best
-    {
-      position: new google.maps.LatLng(-37.84828, 144.99213),
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.83949, 144.99559),
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84251, 144.99501),
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.83862, 144.98889),
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84146, 145.01208),
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84845, 145.00596),
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.8483, 145.00485),
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84033, 144.99545),
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84847, 145.00607),
-      type: shopMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84832, 145.00496),
-      type: shopMarker,
-    },
-    // Sunday School
-    {
-      position: new google.maps.LatLng(-37.84301, 145.01042),
-      type: bookMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.84864, 145.01435),
-      type: bookMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.83775, 145.02198),
-      type: bookMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.83889, 145.02774),
-      type: bookMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.83914, 145.00888),
-      type: bookMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.85212, 145.02467),
-      type: bookMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.85218, 145.01794),
-      type: bookMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.8391, 144.98636),
-      type: bookMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.83405, 145.02944),
-      type: bookMarker,
-    },
+    }
   ];
 
   var markers = [];
-
   for (i = 0; i < locations.length; i++) {
     const infowindow = new google.maps.InfoWindow({
-      content: locationsName[i] + '<br> <br>' + locationsAddress[i],
+      content: locationName[i] + '<br> <br>' + locationAddress[i],
     });
 
     const marker = new google.maps.Marker({
@@ -2471,154 +2356,4 @@ var imgSrc = [
   './assets/img/residence/THE_PENTHOUSE/slider-9.jpg',
   './assets/img/residence/THE_PENTHOUSE/slider-10.jpg',
   './assets/img/residence/THE_PENTHOUSE/slider-11.jpg',
-];
-
-var locationsName = [
-  'The Stables of Como',
-  'Hello James',
-  'Abacus Bar & Kitchen',
-  'Kanteen',
-  'Norman',
-  'Lucky Penny',
-  'Tivoli Road Bakery',
-  'Darling Café',
-  'Husband',
-  'Lawson Grove',
-  'Matilda',
-  'Omnia',
-  'Bar Carolina',
-  'Atlas Dining',
-  'Gilson',
-  'France-Soir',
-  'Cucinetta',
-  'The Botanic',
-  'Entrecôte',
-  'Bistro Thierry',
-  '48h Pizza e Gnocchi',
-  'Fratellino Pizzeria',
-  'Bistro Gitan',
-  'Mopho Canteen',
-  'Thirty Eight Chairs',
-  'Como Park',
-  'Fawkner Park',
-  'Royal Botanical Gardens',
-  'Rockly Gardens',
-  'One Hot Yoga',
-  'REVL Training ',
-  'Prahran Aquatic Centre',
-  'Humming Puppy',
-  'F45 Toorak',
-  'Body Fit Training',
-  'GRIPT ',
-  'Bodhi & Ride',
-  'Rise Nation',
-  'Barry’s Bootcamp',
-  'Pilates',
-  'LaManna & Sons',
-  'Prahran Market',
-  'Woolworths',
-  'Toscano’s',
-  'ALDI',
-  'Coles',
-  'Rocky’s Fruit & Veg',
-  'Gum Tree Good Food',
-  'Harvest',
-  'The Essential Ingredient',
-  'Simon Johnson Providore',
-  'Peter Bouchier Toorak',
-  'Stocked',
-  'Chapel Street Precinct',
-  'The Como Centre',
-  'The Jam Factory',
-  'Mecca Cosmetica',
-  'Toorak Village',
-  'GRACE',
-  'Husk',
-  'GANT',
-  'Coco & Lola',
-  'Feathers',
-  'Toorak Primary School',
-  'Loreto Mandeville Hall',
-  'St Catherine’s School',
-  'St Kevin’s College',
-  'Geelong Grammar Toorak',
-  'Lauriston Girls’ School',
-  'Armadale Primary School',
-  'Christ Church Grammar School',
-  'Scotch College',
-];
-
-var locationsAddress = [
-  'Williams Rd &, Lechlade Ave, South Yarra VIC 3141',
-  '8/145 Canterbury Rd, Toorak VIC 3142',
-  '383 Chapel St, South Yarra VIC 3141',
-  '154 Alexandra Ave, South Yarra VIC 3141',
-  '2/300 Toorak Rd, South Yarra VIC 3141',
-  '481 Chapel St, South Yarra VIC 3141',
-  '3 Tivoli Road, South Yarra 3141',
-  '2 Darling St, South Yarra VIC 3141',
-  '377 Malvern Rd, South Yarra VIC 3141',
-  '1 Lawson Grove, South Yarra & Toorak, South Yarra, Melbourne',
-  '159 Domain Rd, South Yarra VIC 3141',
-  '625 Chapel St, South Yarra VIC 3141',
-  '44 Toorak Rd, South Yarra VIC 3141 ',
-  '133 Commercial Rd, South Yarra VIC 3141',
-  '171 Domain Rd, South Yarra VIC 3141',
-  '11 Toorak Rd, South Yarra VIC 3141',
-  '4/3 Murphy St, South Yarra VIC 3141',
-  '169 Domain Rd, South Yarra VIC 3141',
-  '131-133 Domain Rd, South Yarra VIC 3141',
-  '511 Malvern Rd, Toorak VIC 3142',
-  '373 Malvern Rd, South Yarra VIC 3141',
-  '415 Malvern Rd, South Yarra VIC 3141',
-  '52 Toorak Rd West, South Yarra VIC 3141',
-  '197 Carlisle St, Balaclava VIC 3183',
-  '4 Bond St, South Yarra VIC 3141',
-  '305-325 Williams Rd, South Yarra VIC 3141',
-  '24-88 Commercial Rd, South Yarra VIC 3141',
-  'Melbourne VIC 3004',
-  'South Yarra VIC 3141',
-  '36 River St, South Yarra VIC 3141',
-  '276 Chapel St, Prahran VIC 3181',
-  '41 Essex St, Prahran VIC 3181',
-  '2/22 Cecil Pl, Prahran VIC 3181',
-  '832 High St, Armadale VIC 3143',
-  '84 River St, South Yarra VIC 3141',
-  '50 Wilson Street, Ellis St, South Yarra VIC 3141',
-  '54 Wilson St, South Yarra VIC 3141',
-  '299 Toorak Rd, Melbourne VIC 3141',
-  'Level 2, Como Centre, 299 Toorak Rd, South Yarra VIC',
-  '1/173-175 High St, Prahran VIC 3181 ',
-  '670 Chapel St, South Yarra VIC 3141',
-  '163 Commercial Rd, South Yarra VIC 3141',
-  '670 Chapel St, South Yarra VIC 3141',
-  '547 Malvern Rd, Toorak VIC 3142',
-  '34 Elizabeth St, Prahran VIC 3181',
-  '325 Toorak Rd &, Tivoli Rd, South Yarra VIC 3141',
-  '45 Garden St, South Yarra VIC 3141',
-  '114 Toorak Rd, South Yarra VIC 3141',
-  '23 Malcolm St, South Yarra VIC 3141',
-  '32 Elizabeth St, South Yarra VIC 3141',
-  '471 Toorak Rd, Toorak VIC 3142',
-  '551 Malvern Rd, Toorak VIC 3142',
-  '549 Malvern Rd, Toorak VIC 3142',
-  'Chapel Street, South Yarra',
-  'Toorak Rd, South Yarra VIC 3141',
-  '500 Chapel St, South Yarra VIC 3141',
-  '79 Toorak Rd, South Yarra VIC 3141',
-  'Toorak VIC 3142',
-  '595 Malvern Rd, Toorak VIC 3142',
-  '557 Malvern Rd, Toorak VIC 3142',
-  '577 Chapel St, South Yarra VIC 3141',
-  '597 Malvern Rd, Toorak VIC 3181',
-  '562 Malvern Rd, Toorak VIC 3142',
-  'Canterbury Rd, Toorak VIC 3142',
-  '10 Mandeville Cres, Toorak VIC 3142',
-  '17 Heyington Pl, Toorak VIC 3142',
-  '31 Moonga Rd, Toorak VIC 3142',
-  '14 Douglas St, Toorak VIC 3142',
-  '38 Huntingtower Rd, Armadale VIC 3143',
-  'Densham Rd, Armadale VIC 3143',
-  '677 Punt Rd, South Yarra VIC 3141',
-  '1 Morrison St, Hawthorn VIC 3122',
 ];
