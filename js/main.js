@@ -332,6 +332,24 @@ $(document).ready(function () {
         case 6:
           dropdownBtn.eq(n).trigger('click');
           break;
+        case 7:
+          dropdownBtn.eq(n).trigger('click');
+          break;
+        case 8:
+          dropdownBtn.eq(n).trigger('click');
+         break;
+        case 9:
+          dropdownBtn.eq(n).trigger('click');
+        break;
+        case 10:
+          dropdownBtn.eq(n).trigger('click');
+        break;
+        case 11:
+          dropdownBtn.eq(n).trigger('click');
+        break;
+        case 12:
+          dropdownBtn.eq(n).trigger('click');
+          break;
       }
     });
   }
@@ -1596,18 +1614,18 @@ $(document).ready(function () {
       } else {
         e.preventDefault();
         // Contact Form Working Functions
-        var select_1 = $('#inputGroupSelect01');
+        // var select_1 = $('#inputGroupSelect01');
 
-        var residenceChoice = '';
-        var celebratoryBeverage = '';
-        select_1.on('change', function (e) {
-          residenceChoice = $(e.target).val();
-        });
-        select_1.trigger('change');
+        // var residenceChoice = '';
+        // select_1.on('change', function (e) {
+        //   residenceChoice = $(e.target).val();
+        // });
+        // select_1.trigger('change');
 
         const user = $('#form_name').val();
         const number = $('#form_contact_number').val();
         const message = $('#form_message').val();
+        const email = $('form_contact_email').val();
 
         const formMessage =
           'Hi, ' +
@@ -1617,12 +1635,12 @@ $(document).ready(function () {
           'and here is my mobile number: ' +
           number +
           '. ' +
-          'I am interested in: ' +
-          residenceChoice +
+          'my email address is: ' +
+          email +
           ', ' +
-          "Extra message is: '" +
+          "Extra message is: " +
           message +
-          "', " +
+          ". " +
           'please give me a call when you are free, thank you!';
 
         var data = {
@@ -1630,7 +1648,7 @@ $(document).ready(function () {
           template_id: 'template_ym5qrt8',
           user_id: 'user_ePbhQ0zjSmeO3JyJIjYUV',
           template_params: {
-            from_name: user + '- Sunday Hawksburn',
+            from_name: user + '- Cledon',
             message_html: formMessage,
           },
         };
@@ -1662,39 +1680,33 @@ $(document).ready(function () {
         e.preventDefault();
         // Contact Form Working Functions
         var select_1 = $('#purchaseInputGroupSelect01');
-        var select_2 = $('#purchaseInputGroupSelect02');
 
         var residenceChoice = '';
-        var celebratoryBeverage = '';
 
         select_1.on('change', function (e) {
           residenceChoice = $(e.target).val();
         });
         select_1.trigger('change');
 
-        select_2.on('change', function (e) {
-          celebratoryBeverage = $(e.target).val();
-        });
-        select_2.trigger('change');
-
         const user = $('#purchase_form_name').val();
         const number = $('#purchase_form_contact_number').val();
         const message = $('#purchase_form_message').val();
+        const email = $('#purchase_form_email_address').val();
 
         const formMessage =
           'Hi, ' +
           'My Name is ' +
           user +
           ', ' +
-          'and here is my mobile number: ' +
+          'and my mobile number is: ' +
           number +
           '. ' +
+          'Email address is: ' +
+          email +
           'I am interested in purchasing: ' +
           residenceChoice +
-          ', ' +
-          'My choice of celebratory beverage is: ' +
-          celebratoryBeverage +
-          '. ' +
+          ', '
+          +
           "Extra message is: '" +
           message +
           "', " +
@@ -1734,17 +1746,18 @@ $(document).ready(function () {
       } else {
         e.preventDefault();
         // Contact Form Working Functions
-        var select_1 = $('#messageInputGroupSelect01');
-        var residenceChoice = '';
+        // var select_1 = $('#messageInputGroupSelect01');
+        // var residenceChoice = '';
 
-        select_1.on('change', function (e) {
-          residenceChoice = $(e.target).val();
-        });
-        select_1.trigger('change');
-
+        // select_1.on('change', function (e) {
+        //   residenceChoice = $(e.target).val();
+        // });
+        // select_1.trigger('change');
+        
         const user = $('#message_form_name').val();
         const number = $('#message_form_contact_number').val();
         const message = $('#message_form_message').val();
+        const email = $('#message_form_email_address').val();
 
         const formMessage =
           'Hi, ' +
@@ -1754,12 +1767,12 @@ $(document).ready(function () {
           'and here is my mobile number: ' +
           number +
           '. ' +
-          'I am interested in purchasing: ' +
-          residenceChoice +
+          'my email address is: ' +
+          email +
           ', ' +
-          "Extra message is: '" +
+          "Extra message is: " +
           message +
-          "', " +
+          ", " +
           'please give me a call when you are free, thank you!';
 
         var data = {

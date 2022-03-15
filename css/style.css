@@ -34,6 +34,15 @@ a {
   font-family: "Palatino";
 }
 
+.contact-link {
+  font-family: 'bicyclette';
+  position: absolute;
+  bottom: 4rem;
+  font-size: 14px;
+  color: #656565;
+  text-transform: uppercase;
+}
+
 p {
   font-size: 15px;
   line-height: 24px;
@@ -761,7 +770,8 @@ ul.nav li:last-child .nav-link {
 }
 
 .logo-row .col-md-4:nth-child(2) .partners-logo-container {
-  background-image: url('../assets/logo/bha.svg');
+  background-image: url('../assets/logo/BHI-logo.png');
+  background-size: 45%;
 }
 
 .logo-row .col-md-4:nth-child(3) .partners-logo-container {
@@ -802,8 +812,8 @@ ul.nav li:last-child .nav-link {
 }
 
 #logoModal2 .modal-logo-div {
-  background-image: url('../assets/logo/logo-color/bha.svg');
-  width: 30%;
+  background-image: url('../assets/logo/logo-color/bha-interiors.jpg');
+  width: 50%;
 }
 
 #logoModal3 .modal-logo-div {
