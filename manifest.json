@@ -1,7 +1,7 @@
 {
     "name": "Clendon",
     "short_name": "Clendon",
-    "start_url": "https://sundayhawksburn.com.au/client",
+    "start_url": "http://clendonapp.com.au/",
     "scope": "/app/",
     "display": "standalone"
   }
