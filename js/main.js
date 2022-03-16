@@ -53,6 +53,7 @@ $(document).ready(function () {
 
     afterLoad: function (anchorLink, index) {
       if ($('body').hasClass('fp-viewing-sd-home')) {
+        $('#scroll-down').text('Introduction');
       }
 
       if ($('body').hasClass('fp-viewing-sd-intro')) {
@@ -65,7 +66,7 @@ $(document).ready(function () {
 
       if ($('body').hasClass('fp-viewing-sd-every')) {
         $('#scroll-down').text('creative partners');
-        $('#scroll-up').text('Living in Toorak');
+        $('#scroll-up').text('Introduction');
         $('#sd-everyday-carousel').addClass('show');
         $('.sunday-paragraph').removeClass('collapse')
       }
@@ -75,52 +76,47 @@ $(document).ready(function () {
         $('#scroll-up').text('Creative partners');
       }
 
-      // if ($('body').hasClass('fp-viewing-sd-welcomeHome')) {
-      //   $('#scroll-down').text('Floor plans');
-      //   $('#scroll-up').text('Welcome Home');
-      // }
-
       if ($('body').hasClass('fp-viewing-sd-floorplans')) {
-        $('#scroll-down').text('Fixtures & finishes');
-        $('#scroll-up').text('Residences');
+        $('#scroll-down').text('The interior');
+        $('#scroll-up').text('Creative partners');
       }
 
       if ($('body').hasClass('fp-viewing-sd-fixtures')) {
-        $('#scroll-down').text('On your Doorstep');
-        $('#scroll-up').text('Fixtures & finishes');
+        $('#scroll-down').text('Early mornings');
+        $('#scroll-up').text('Residences');
       }
 
       if ($('body').hasClass('fp-viewing-sd-doorstep-1')) {
-        $('#scroll-down').text('ON YOUR DOORSTEP');
-        $('#scroll-up').text('ON YOUR DOORSTEP');
+        $('#scroll-down').text(`hours of leisure`);
+        $('#scroll-up').text('The interior');
         $('#doorstep-1 .dp-container-left').addClass('show');
         $('#doorstep-1 .doorstep-container-mid .col-md-4').addClass('show');
       }
 
       if ($('body').hasClass('fp-viewing-sd-doorstep-2')) {
-        $('#scroll-down').text('ON YOUR DOORSTEP');
-        $('#scroll-up').text('ON YOUR DOORSTEP');
+        $('#scroll-down').text(`dinner's served`);
+        $('#scroll-up').text(`early mornings`);
         $('#doorstep-2 .dp-container-right').addClass('show');
         $('#doorstep-2 .doorstep-container-mid .col-md-4').addClass('show');
       }
 
       if ($('body').hasClass('fp-viewing-sd-doorstep-3')) {
-        $('#scroll-down').text('ON YOUR DOORSTEP');
-        $('#scroll-up').text('ON YOUR DOORSTEP');
+        $('#scroll-down').text('after dark');
+        $('#scroll-up').text('hours of leisure');
         $('#doorstep-3 .dp-container-left').addClass('show');
         $('#doorstep-3 .doorstep-container-mid .col-md-4').addClass('show');
       }
 
       if ($('body').hasClass('fp-viewing-sd-doorstep-4')) {
-        $('#scroll-down').text('ON YOUR DOORSTEP');
-        $('#scroll-up').text('ON YOUR DOORSTEP');
+        $('#scroll-down').text('locale');
+        $('#scroll-up').text(`dinner's served`);
         $('#doorstep-4 .dp-container-right').addClass('show');
         $('#doorstep-4 .doorstep-container-mid .col-md-4').addClass('show');
       }
 
       if ($('body').hasClass('fp-viewing-sd-map')) {
         $('#scroll-down').text('Contact');
-        $('#scroll-up').text('Out and about');
+        $('#scroll-up').text('after dark');
       }
 
       if ($('body').hasClass('fp-viewing-sd-contact-us')) {
@@ -389,24 +385,7 @@ $(document).ready(function () {
                         <li><span>222 sqm TOTAL</span></li>
                     </ul>`);
           modalImg.attr('src', './assets/img/floorplan/floorplans-g1.jpg');
-          modalPlateImg.attr('src', './assets/img/floorplate/floorplate-g-1.jpg');
-          carouselImg.eq(0).attr('src', imgSrc[5]);
-          carouselImg.eq(1).attr('src', imgSrc[6]);
-          carouselImg.eq(2).attr('src', imgSrc[7]);
-          carouselImg.eq(3).attr('src', imgSrc[8]);
-
-          carouselPopup.attr('data-gallery', 'property-gallery');
-          carouselPopup.eq(0).attr('href', imgSrc[5]);
-          carouselPopup.eq(1).attr('href', imgSrc[6]);
-          carouselPopup.eq(2).attr('href', imgSrc[7]);
-          carouselPopup.eq(3).attr('href', imgSrc[8]);
-          propertySwiper.removeSlide([4, 5, 6, 7]);
-          propertySwiper.appendSlide(`<div class="swiper-slide"> <!-- 5 -->
-                    <a class="expand-icon" href="./assets/img/residence/APTG02/slider-8.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/APTG02/slider-8.jpg" alt="Popup slide">
-                    </div>`);
+          modalPlateImg.attr('src', './assets/img/floorplate/floorplate-g-1.jpg');                    
           modalTitle.html('G01');
           paragraph.html('Complemented by expansive courtyard space, the clever layout expands from the inside out. ')
         });
@@ -431,24 +410,6 @@ $(document).ready(function () {
             </ul>`);
           modalImg.attr('src', './assets/img/floorplan/floorplans-g2.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-g-2.jpg');
-          carouselImg.eq(0).attr('src', imgSrc[5]);
-          carouselImg.eq(1).attr('src', imgSrc[6]);
-          carouselImg.eq(2).attr('src', imgSrc[7]);
-          carouselImg.eq(3).attr('src', imgSrc[8]);
-
-          carouselPopup.attr('data-gallery', 'property-gallery');
-
-          carouselPopup.eq(0).attr('href', imgSrc[5]);
-          carouselPopup.eq(1).attr('href', imgSrc[6]);
-          carouselPopup.eq(2).attr('href', imgSrc[7]);
-          carouselPopup.eq(3).attr('href', imgSrc[8]);
-          propertySwiper.removeSlide([4, 5, 6, 7]);
-          propertySwiper.appendSlide(`<div class="swiper-slide"> <!-- 5 -->
-                    <a class="expand-icon" href="./assets/img/residence/APTG02/slider-8.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/APTG02/slider-8.jpg" alt="Popup slide">
-                    </div>`);
           modalTitle.html('G02');
           paragraph.html('Welcomed by views over the open living space and manicured outdoors, you’ll feel home, instantly. ')
         });
@@ -471,23 +432,7 @@ $(document).ready(function () {
             </ul>`);
           modalImg.attr('src', './assets/img/floorplan/floorplans-g3.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-g-3.jpg');
-          carouselImg.eq(0).attr('src', imgSrc[10]);
-          carouselImg.eq(1).attr('src', imgSrc[11]);
-          carouselImg.eq(2).attr('src', imgSrc[12]);
-
-          carouselPopup.attr('data-gallery', 'property-gallery-1');
-
-          carouselPopup.eq(0).attr('href', imgSrc[10]);
-          carouselPopup.eq(1).attr('href', imgSrc[11]);
-          carouselPopup.eq(2).attr('href', imgSrc[12]);
-          modalTitle.html('G03');
-          propertySwiper.removeSlide([3, 4, 5, 6, 7]);
-          propertySwiper.appendSlide(`<div class="swiper-slide"> 
-                    <a class="expand-icon" href="./assets/img/residence/APT103/slider-11.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-1">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/APT103/slider-11.jpg" alt="Popup slide">
-                    </div>`);
+          modalTitle.html('G03');          
           paragraph.html('North-facing and with two outdoor areas, this residence invites you to find a new favourite place, every day. ');
         });
         break;
@@ -510,24 +455,6 @@ $(document).ready(function () {
           modalImg.attr('src', './assets/img/floorplan/floorplans-g4.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-g-4.jpg');
           modalTitle.html('G04');
-
-          carouselImg.eq(0).attr('src', imgSrc[14]);
-          carouselImg.eq(1).attr('src', imgSrc[15]);
-          carouselImg.eq(2).attr('src', imgSrc[16]);
-
-          carouselPopup.attr('data-gallery', 'property-gallery-1');
-
-          carouselPopup.eq(0).attr('href', imgSrc[14]);
-          carouselPopup.eq(1).attr('href', imgSrc[15]);
-          carouselPopup.eq(2).attr('href', imgSrc[16]);
-          propertySwiper.removeSlide([3, 4, 5, 6, 7]);
-
-          propertySwiper.appendSlide(`<div class="swiper-slide"> <!-- 5 -->
-                    <a class="expand-icon" href="./assets/img/residence/APT104/slider-11.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-1">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/APT104/slider-11.jpg" alt="Popup slide">
-                    </div>`);
           paragraph.html(' Where green vistas follow your every move. Surrounded by lush courtyard space, serenity sets the tone.');
         });
         break;
@@ -552,26 +479,7 @@ $(document).ready(function () {
           modalImg.attr('src', `./assets/img/floorplan/floorplans-1-${n - 3}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-1.${n - 3}.jpg`);
           modalTitle.html(`LEVEL 10${n - 3}`);
-
-          carouselImg.eq(0).attr('src', imgSrc[18]);
-          carouselImg.eq(1).attr('src', imgSrc[19]);
-          carouselImg.eq(2).attr('src', imgSrc[20]);
-
-          carouselPopup.attr('data-gallery', 'property-gallery-1');
-
-          carouselPopup.eq(0).attr('href', imgSrc[18]);
-          carouselPopup.eq(1).attr('href', imgSrc[19]);
-          carouselPopup.eq(2).attr('href', imgSrc[20]);
-
-          propertySwiper.removeSlide([3, 4, 5, 6, 7]);
-
-          propertySwiper.appendSlide(`<div class="swiper-slide"> <!-- 5 -->
-                    <a class="expand-icon" href="./assets/img/residence/APT205/slider-11.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-1">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/APT205/slider-11.jpg" alt="Popup slide">
-                    </div>`);
-                    paragraph.html('Designed with purposeful flow of movement in mind; comfort and connection inform life inside.');
+          paragraph.html('Designed with purposeful flow of movement in mind; comfort and connection inform life inside.');
         });
         break;
       case 5:
@@ -595,25 +503,7 @@ $(document).ready(function () {
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-1.${n - 3}.jpg`);
           modalTitle.html(`LEVEL 10${n - 3}`);
 
-          carouselImg.eq(0).attr('src', imgSrc[22]);
-          carouselImg.eq(1).attr('src', imgSrc[23]);
-          carouselImg.eq(2).attr('src', imgSrc[24]);
-
-          carouselPopup.attr('data-gallery', 'property-gallery-1');
-
-          carouselPopup.eq(0).attr('href', imgSrc[22]);
-          carouselPopup.eq(1).attr('href', imgSrc[23]);
-          carouselPopup.eq(2).attr('href', imgSrc[24]);
-
-          propertySwiper.removeSlide([3, 4, 5, 6, 7]);
-
-          propertySwiper.appendSlide(`<div class="swiper-slide"> <!-- 5 -->
-                    <a class="expand-icon" href="./assets/img/residence/APT206/slider-11.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-1">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/APT206/slider-11.jpg" alt="Popup slide">
-                    </div>`);
-                    paragraph.html('For those who take entertaining seriously, this strategically considered layout provides plenty of appeal. ');
+          paragraph.html('For those who take entertaining seriously, this strategically considered layout provides plenty of appeal. ');
         });
         break;
 
@@ -637,44 +527,7 @@ $(document).ready(function () {
           modalImg.attr('src', `./assets/img/floorplan/floorplans-1-${n - 3}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-1.${n - 3}.jpg`);
           modalTitle.html(`LEVEL 10${n - 3}`);
-
-          propertySwiper.appendSlide([
-            `<div class="swiper-slide"> <!-- 6 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-8.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-8.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 7 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-9.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-9.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 8 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-10.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-10.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 9 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-11.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-11.jpg" alt="Popup slide">
-                    </div>`,
-          ]);
-          carouselImg.eq(0).attr('src', imgSrc[26]);
-          carouselImg.eq(1).attr('src', imgSrc[27]);
-          carouselImg.eq(2).attr('src', imgSrc[28]);
-          carouselImg.eq(3).attr('src', imgSrc[29]);
-
-          carouselPopup.attr('data-gallery', 'property-gallery-2');
-
-          carouselPopup.eq(0).attr('href', imgSrc[26]);
-          carouselPopup.eq(1).attr('href', imgSrc[27]);
-          carouselPopup.eq(2).attr('href', imgSrc[28]);
-          carouselPopup.eq(3).attr('href', imgSrc[29]);
+       
           paragraph.html('Anchoring the centre of daily life with poles of quiet; tranquil is what describes this residence best. ');
         });
         break;
@@ -699,44 +552,7 @@ $(document).ready(function () {
           modalImg.attr('src', `./assets/img/floorplan/floorplans-1-${n - 3}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-1.${n - 3}.jpg`);
           modalTitle.html(`LEVEL 10${n - 3}`);
-
-          propertySwiper.appendSlide([
-            `<div class="swiper-slide"> <!-- 6 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-8.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-8.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 7 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-9.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-9.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 8 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-10.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-10.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 9 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-11.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-11.jpg" alt="Popup slide">
-                    </div>`,
-          ]);
-          carouselImg.eq(0).attr('src', imgSrc[26]);
-          carouselImg.eq(1).attr('src', imgSrc[27]);
-          carouselImg.eq(2).attr('src', imgSrc[28]);
-          carouselImg.eq(3).attr('src', imgSrc[29]);
-
-          carouselPopup.attr('data-gallery', 'property-gallery-2');
-
-          carouselPopup.eq(0).attr('href', imgSrc[26]);
-          carouselPopup.eq(1).attr('href', imgSrc[27]);
-          carouselPopup.eq(2).attr('href', imgSrc[28]);
-          carouselPopup.eq(3).attr('href', imgSrc[29]);
+          
           paragraph.html('North-east facing living areas are flooded with natural light while the master suite enjoys tucked away calm.  ');
         });
         break;
@@ -760,44 +576,7 @@ $(document).ready(function () {
           modalImg.attr('src', `./assets/img/floorplan/floorplans-2-${n - 7}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-2.${n - 7}.jpg`);
           modalTitle.html(`LEVEL 20${n - 7}`);
-
-          propertySwiper.appendSlide([
-            `<div class="swiper-slide"> <!-- 6 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-8.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-8.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 7 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-9.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-9.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 8 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-10.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-10.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 9 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-11.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-11.jpg" alt="Popup slide">
-                    </div>`,
-          ]);
-          carouselImg.eq(0).attr('src', imgSrc[26]);
-          carouselImg.eq(1).attr('src', imgSrc[27]);
-          carouselImg.eq(2).attr('src', imgSrc[28]);
-          carouselImg.eq(3).attr('src', imgSrc[29]);
-
-          carouselPopup.attr('data-gallery', 'property-gallery-2');
-
-          carouselPopup.eq(0).attr('href', imgSrc[26]);
-          carouselPopup.eq(1).attr('href', imgSrc[27]);
-          carouselPopup.eq(2).attr('href', imgSrc[28]);
-          carouselPopup.eq(3).attr('href', imgSrc[29]);
+          
           paragraph.html('The home unfolds as you step inside, creating balance between life and living naturally and spatially. ');
         });
         break;
@@ -821,44 +600,7 @@ $(document).ready(function () {
           modalImg.attr('src', `./assets/img/floorplan/floorplans-2-${n - 7}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-2.${n - 7}.jpg`);
           modalTitle.html(`LEVEL 20${n - 7}`);
-
-          propertySwiper.appendSlide([
-            `<div class="swiper-slide"> <!-- 6 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-8.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-8.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 7 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-9.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-9.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 8 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-10.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-10.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 9 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-11.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-11.jpg" alt="Popup slide">
-                    </div>`,
-          ]);
-          carouselImg.eq(0).attr('src', imgSrc[26]);
-          carouselImg.eq(1).attr('src', imgSrc[27]);
-          carouselImg.eq(2).attr('src', imgSrc[28]);
-          carouselImg.eq(3).attr('src', imgSrc[29]);
-
-          carouselPopup.attr('data-gallery', 'property-gallery-2');
-
-          carouselPopup.eq(0).attr('href', imgSrc[26]);
-          carouselPopup.eq(1).attr('href', imgSrc[27]);
-          carouselPopup.eq(2).attr('href', imgSrc[28]);
-          carouselPopup.eq(3).attr('href', imgSrc[29]);
+          
           paragraph.html('There’s a level of luxury that surrounds a secluded master bedroom — one that’s best experienced.');
         });
         break;
@@ -882,44 +624,7 @@ $(document).ready(function () {
           modalImg.attr('src', `./assets/img/floorplan/floorplans-2-${n - 7}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-2.${n - 7}.jpg`);
           modalTitle.html(`LEVEL 20${n - 7}`);
-
-          propertySwiper.appendSlide([
-            `<div class="swiper-slide"> <!-- 6 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-8.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-8.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 7 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-9.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-9.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 8 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-10.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-10.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 9 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-11.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-11.jpg" alt="Popup slide">
-                    </div>`,
-          ]);
-          carouselImg.eq(0).attr('src', imgSrc[26]);
-          carouselImg.eq(1).attr('src', imgSrc[27]);
-          carouselImg.eq(2).attr('src', imgSrc[28]);
-          carouselImg.eq(3).attr('src', imgSrc[29]);
-
-          carouselPopup.attr('data-gallery', 'property-gallery-2');
-
-          carouselPopup.eq(0).attr('href', imgSrc[26]);
-          carouselPopup.eq(1).attr('href', imgSrc[27]);
-          carouselPopup.eq(2).attr('href', imgSrc[28]);
-          carouselPopup.eq(3).attr('href', imgSrc[29]);
+          
           paragraph.html('Where the heart of the home meets consideration in every detail; this is life and living at residence 2.03. ');
         });
         break;
@@ -944,44 +649,7 @@ $(document).ready(function () {
           modalImg.attr('src', `./assets/img/floorplan/floorplans-3-${n - 10}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-3.${n - 10}.jpg`);
           modalTitle.html(`LEVEL 30${n - 10}`);
-
-          propertySwiper.appendSlide([
-            `<div class="swiper-slide"> <!-- 6 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-8.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-8.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 7 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-9.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-9.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 8 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-10.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-10.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 9 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-11.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-11.jpg" alt="Popup slide">
-                    </div>`,
-          ]);
-          carouselImg.eq(0).attr('src', imgSrc[26]);
-          carouselImg.eq(1).attr('src', imgSrc[27]);
-          carouselImg.eq(2).attr('src', imgSrc[28]);
-          carouselImg.eq(3).attr('src', imgSrc[29]);
-
-          carouselPopup.attr('data-gallery', 'property-gallery-2');
-
-          carouselPopup.eq(0).attr('href', imgSrc[26]);
-          carouselPopup.eq(1).attr('href', imgSrc[27]);
-          carouselPopup.eq(2).attr('href', imgSrc[28]);
-          carouselPopup.eq(3).attr('href', imgSrc[29]);
+          
           paragraph.html('Contoured by lush greenery highlighted by a north-facing aspect, this residence affords you unparalleled privacy and pleasure.');
         });
         break;
@@ -1005,44 +673,6 @@ $(document).ready(function () {
           modalImg.attr('src', `./assets/img/floorplan/floorplans-3-${n - 10}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-3.${n - 10}.jpg`);
           modalTitle.html(`LEVEL 30${n - 10}`);
-
-          propertySwiper.appendSlide([
-            `<div class="swiper-slide"> <!-- 6 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-8.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-8.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 7 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-9.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-9.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 8 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-10.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-10.jpg" alt="Popup slide">
-                    </div>`,
-            `<div class="swiper-slide"> <!-- 9 -->
-                    <a class="expand-icon" href="./assets/img/residence/THE_PENTHOUSE/slider-11.jpg" data-toggle="lightbox"
-                        data-gallery="property-gallery-2">
-                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                    <img class="property-show-img" src="./assets/img/residence/THE_PENTHOUSE/slider-11.jpg" alt="Popup slide">
-                    </div>`,
-          ]);
-          carouselImg.eq(0).attr('src', imgSrc[26]);
-          carouselImg.eq(1).attr('src', imgSrc[27]);
-          carouselImg.eq(2).attr('src', imgSrc[28]);
-          carouselImg.eq(3).attr('src', imgSrc[29]);
-
-          carouselPopup.attr('data-gallery', 'property-gallery-2');
-
-          carouselPopup.eq(0).attr('href', imgSrc[26]);
-          carouselPopup.eq(1).attr('href', imgSrc[27]);
-          carouselPopup.eq(2).attr('href', imgSrc[28]);
-          carouselPopup.eq(3).attr('href', imgSrc[29]);
           paragraph.html('Expansive views over the city welcome you as you walk through the doors. Sights that inspire, quality of life that mirrors exactly that.');
         });
         break;
@@ -2335,38 +1965,10 @@ function initMap() {
 }
 
 var imgSrc = [
-  './assets/img/residence/APTG01/slider-11.jpg',
-  './assets/img/residence/APTG01/slider-3.jpg',
-  './assets/img/residence/APTG01/slider-4.jpg',
-  './assets/img/residence/APTG01/slider-7.jpg',
-  './assets/img/residence/APTG01/slider-8.jpg',
-  './assets/img/residence/APTG02/slider-3.jpg',
-  './assets/img/residence/APTG02/slider-11.jpg',
-  './assets/img/residence/APTG02/slider-4.jpg',
-  './assets/img/residence/APTG02/slider-7.jpg',
-  './assets/img/residence/APTG02/slider-8.jpg',
-  './assets/img/residence/APT103/slider-7.jpg',
-  './assets/img/residence/APT103/slider-3.jpg',
-  './assets/img/residence/APT103/slider-8.jpg',
-  './assets/img/residence/APT103/slider-11.jpg',
-  './assets/img/residence/APT104/slider-3.jpg',
-  './assets/img/residence/APT104/slider-8.jpg',
-  './assets/img/residence/APT104/slider-7.jpg',
-  './assets/img/residence/APT104/slider-11.jpg',
-  './assets/img/residence/APT205/slider-11.jpg',
-  './assets/img/residence/APT205/slider-7.jpg',
-  './assets/img/residence/APT205/slider-3.jpg',
-  './assets/img/residence/APT205/slider-8.jpg',
-  './assets/img/residence/APT206/slider-7.jpg',
-  './assets/img/residence/APT206/slider-3.jpg',
-  './assets/img/residence/APT206/slider-8.jpg',
-  './assets/img/residence/APT206/slider-11.jpg',
-  './assets/img/residence/THE_PENTHOUSE/slider-5.jpg',
-  './assets/img/residence/THE_PENTHOUSE/slider-2.jpg',
-  './assets/img/residence/THE_PENTHOUSE/slider-8.jpg',
-  './assets/img/residence/THE_PENTHOUSE/slider-6.jpg',
-  './assets/img/residence/THE_PENTHOUSE/slider-7.jpg',
-  './assets/img/residence/THE_PENTHOUSE/slider-9.jpg',
-  './assets/img/residence/THE_PENTHOUSE/slider-10.jpg',
-  './assets/img/residence/THE_PENTHOUSE/slider-11.jpg',
+  './assets/img/1.jpg',
+  './assets/img/2.jpg',
+  './assets/img/3.jpg',
+  './assets/img/4.jpg',
+  './assets/img/5.jpg',
+  './assets/img/6.jpg'
 ];

@@ -765,13 +765,17 @@ ul.nav li:last-child .nav-link {
   transform: translateY(-50%);
 }
 
+.logo-row .col-md-4 {
+  padding: 0 50px;
+}
+
 .logo-row .col-md-4:nth-child(1) .partners-logo-container {
   background-image: url('../assets/logo/bha.svg');
 }
 
 .logo-row .col-md-4:nth-child(2) .partners-logo-container {
   background-image: url('../assets/logo/BHI-logo.png');
-  background-size: 45%;
+  background-size: 55%;
 }
 
 .logo-row .col-md-4:nth-child(3) .partners-logo-container {
@@ -2942,10 +2946,11 @@ textarea.form-control:focus {
 }
 
 .back-btn {
-  color: #fff;
+  color: #ccc8c2;
   z-index: 2000;
-  font-weight: 400;
+  font-weight: 300;
   border: 1px solid #ffffff;
+  background-color: #ffffff;
   padding: 0.5rem 1rem;
   margin-left: 30px;
   display: inline;

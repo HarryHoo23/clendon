@@ -29,6 +29,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="White Fox">
     <meta name="googlebot" content="noindex">
+    <meta name="robots" content="noindex">
 
 
     <link rel="manifest" href="./manifest.json">
@@ -806,26 +807,50 @@
                             <div class="swiper-wrapper">
                                 <!-- 1 -->
                                 <div class="swiper-slide">
-                                    <a class="expand-icon" href="./assets/img/residence/APTG01/slider-11.jpg"
+                                    <a class="expand-icon" href="./assets/img/1.jpg"
                                         data-toggle="lightbox" data-gallery="property-gallery">
                                         <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                                    <img class="property-show-img" src="./assets/img/residence/APTG01/slider-11.jpg"
+                                    <img class="property-show-img" src="./assets/img/1.jpg"
                                         alt="Popup slide">
                                 </div>                                
                                 <div class="swiper-slide">
                                     <!-- 3-->
-                                    <a class="expand-icon" href="./assets/img/residence/APTG01/slider-4.jpg"
+                                    <a class="expand-icon" href="./assets/img/2.jpg"
                                         data-toggle="lightbox" data-gallery="property-gallery">
                                         <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                                    <img class="property-show-img" src="./assets/img/residence/APTG01/slider-4.jpg"
+                                    <img class="property-show-img" src="./assets/img/2.jpg"
                                         alt="Popup slide">
                                 </div>
                                 <div class="swiper-slide">
                                     <!-- 4 -->
-                                    <a class="expand-icon" href="./assets/img/residence/APTG01/slider-7.jpg"
+                                    <a class="expand-icon" href="./assets/img/3.jpg"
                                         data-toggle="lightbox" data-gallery="property-gallery">
                                         <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
-                                    <img class="property-show-img" src="./assets/img/residence/APTG01/slider-7.jpg"
+                                    <img class="property-show-img" src="./assets/img/3.jpg"
+                                        alt="Popup slide">
+                                </div>
+                                <div class="swiper-slide">
+                                    <!-- 4 -->
+                                    <a class="expand-icon" href="./assets/img/4.jpg"
+                                        data-toggle="lightbox" data-gallery="property-gallery">
+                                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
+                                    <img class="property-show-img" src="./assets/img/4.jpg"
+                                        alt="Popup slide">
+                                </div>
+                                <div class="swiper-slide">
+                                    <!-- 4 -->
+                                    <a class="expand-icon" href="./assets/img/5.jpg"
+                                        data-toggle="lightbox" data-gallery="property-gallery">
+                                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
+                                    <img class="property-show-img" src="./assets/img/5.jpg"
+                                        alt="Popup slide">
+                                </div>
+                                <div class="swiper-slide">
+                                    <!-- 4 -->
+                                    <a class="expand-icon" href="./assets/img/6.jpg"
+                                        data-toggle="lightbox" data-gallery="property-gallery">
+                                        <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
+                                    <img class="property-show-img" src="./assets/img/6.jpg"
                                         alt="Popup slide">
                                 </div>
                             </div>
@@ -1083,7 +1108,7 @@
                             <div class="swiper-slide">
                                 <div class="ss-box showModal">
                                     <a class="expand-icon"><img src="./assets/img/icons/expand.svg" alt="expand"></a> 
-                                    <img src="./assets/img/fixtures/Bathroom/Basin-Mixer---BM1-(MIXER).jpg" alt="bathtub">                                   
+                                    <img src="./assets/img/fixtures/Bathroom/floorwaste.jpg" alt="bathtub">                                   
                                 </div>
                             </div> 
                             <div class="swiper-slide">
@@ -1912,7 +1937,7 @@
             event.preventDefault();
             $(this).ekkoLightbox({
                 alwaysShowClose: true,
-                wrapping: true,
+                wrapping: false,
                 onContentLoaded: function () { console.log('fully loaded!'); }
             });
         });
