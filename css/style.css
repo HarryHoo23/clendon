@@ -879,7 +879,7 @@ a.logo-link {
   width: 18px;
   height: 1px;
   background-color: rgba(136, 145, 139, 0.25);
-  top: -20px;
+  top: -10px;
 }
 
 .everyday-section .sunday-title {
@@ -3078,4 +3078,10 @@ textarea.form-control:focus {
 .swiper-button-next,
 .swiper-button-prev {
   outline: none;
+}
+
+.info-list li,
+.info-area li {
+  display: flex;
+  justify-content: space-between;
 }

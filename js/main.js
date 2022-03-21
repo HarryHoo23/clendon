@@ -357,7 +357,7 @@ $(document).ready(function () {
     var modalPlateImg = $('#floorplateModal .modal-body img');
     var modalTitle = $('#floorplanModal .modal-body .floorplan-modal-title');
     var carouselPopup = $('#property-carousel .swiper-slide .expand-icon');
-    var carouselImg = $('#property-carousel .swiper-slide .property-show-img');
+    var carouselImg = $('#property-carousel .swiper-wrapper');
     var paragraph = $('.property-desc p');
     dropdownBtn.eq(n).click(function () {
       propertySwiper.update();
@@ -369,189 +369,242 @@ $(document).ready(function () {
     switch (n) {
       case 0:
         dropdownBtn.eq(n).click(function () {
-          console.log('number1 clicked' + 'the number is: ' + n);
+          $('.ground-floor').remove();
+          propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
           $('#replaced-content .sunday-title p').html('G01');
           $('.property-info').html(`<ul class="info-list">
-                        <li><span>3 BED</span></li>
-                        <li><span>2 BATH</span></li>
-                        <li><span>2 CAR</span></li>
+                        <li>BEDROOM <span>3</span></li>
+                        <li>BATHROOM<span> 2</span></li>
+                        <li>CAR SPACE<span> 2</span></li>
                     </ul>
 
                     <ul class="info-area">
-                        <li><span>128 sqm INTERIOR</span></li>
-                        <li><span>94 sqm EXTERIOR</span></li>
-                        <li><span>222 sqm TOTAL</span></li>
+                        <li>INTERIOR<span> 128sqm</span></li>
+                        <li>EXTERIOR<span> 94sqm</span></li>
+                        <li>TOTAL AREA<span> 222sqm</span></li>
                     </ul>`);
           modalImg.attr('src', './assets/img/floorplan/floorplans-g1.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-g-1.jpg');                    
           modalTitle.html('G01');
-          paragraph.html('Complemented by expansive courtyard space, the clever layout expands from the inside out. ')
+          paragraph.html('Complemented by expansive courtyard space, the clever layout expands from the inside out. ');
+
+          propertySwiper.appendSlide(`<div class="swiper-slide ground-floor">
+          <a class="expand-icon" href="./assets/img/1.jpg"
+          data-toggle="lightbox" data-gallery="property-gallery">
+          <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
+          <img class="property-show-img" src="./assets/img/1.jpg"
+          alt="Popup slide">
+          </div>       `)
+          carouselImg.addClass('ground-level');
         });
         break;
       case 1:
         dropdownBtn.eq(n).click(function () {
+          $('.ground-floor').remove();
+          propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
           $('#replaced-content .sunday-title p').html(
             `G02`
           );
           $('.property-info').html(`<ul class="info-list">
-                <li><span>2 BED</span></li>
-                <li><span>2 BATH</span></li>
-                <li><span>2 CAR</span></li>
+                <li>BEDROOM<span>2 </span></li>
+                <li>BATHROOM<span> 2</span></li>
+                <li>CAR SPACE<span>2 </span></li>
             </ul>
 
             <ul class="info-area">
-              <li><span>108 sqm INTERIOR</span></li>
-              <li><span>40 sqm EXTERIOR</span></li>
-              <li><span>147 sqm TOTAL</span></li>
+              <li>INTERIOR<span>108 sqm </span></li>
+              <li>EXTERIOR<span>40 sqm </span></li>
+              <li>TOTAL AREA<span> 147sqm </span></li>
             </ul>`);
           modalImg.attr('src', './assets/img/floorplan/floorplans-g2.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-g-2.jpg');
           modalTitle.html('G02');
-          paragraph.html('Welcomed by views over the open living space and manicured outdoors, you’ll feel home, instantly. ')
+          paragraph.html('Welcomed by views over the open living space and manicured outdoors, you’ll feel home, instantly. ');
+
+          propertySwiper.appendSlide(`<div class="swiper-slide ground-floor">
+          <a class="expand-icon" href="./assets/img/1.jpg"
+          data-toggle="lightbox" data-gallery="property-gallery">
+          <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
+          <img class="property-show-img" src="./assets/img/1.jpg"
+          alt="Popup slide">
+          </div>       `)
+          carouselImg.addClass('ground-level');
         });
         break;
       case 2:
         dropdownBtn.eq(n).click(function () {
+          $('.ground-floor').remove();
+          propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
           $('#replaced-content .sunday-title p').html('G03');
           $('.property-info').html(`<ul class="info-list">
-                <li><span>3 BED</span></li>
-                <li><span>2 BATH</span></li>
-                <li><span>2 CAR</span></li>
+                <li>BEDROOM<span> 3</span></li>
+                <li>BATHROOM<span> 2</span></li>
+                <li>CAR SPACE<span> 2</span></li>
             </ul>
 
             <ul class="info-area">
-            <li><span>131 sqm INTERIOR</span></li>
-            <li><span>118 sqm EXTERIOR</span></li>
-            <li><span>249 sqm TOTAL</span></li>
+            <li>INTERIOR<span> 131 sqm</span></li>
+            <li>EXTERIOR<span> 118 sqm</span></li>
+            <li>TOTAL AREA<span> 249 sqm</span></li>
             </ul>`);
           modalImg.attr('src', './assets/img/floorplan/floorplans-g3.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-g-3.jpg');
           modalTitle.html('G03');          
           paragraph.html('North-facing and with two outdoor areas, this residence invites you to find a new favourite place, every day. ');
+          $('.ground-floor').remove();
+
+          propertySwiper.appendSlide(`<div class="swiper-slide ground-floor">
+          <a class="expand-icon" href="./assets/img/1.jpg"
+          data-toggle="lightbox" data-gallery="property-gallery">
+          <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
+          <img class="property-show-img" src="./assets/img/1.jpg"
+          alt="Popup slide">
+          </div>       `)
+          carouselImg.addClass('ground-level');
         });
         break;
       case 3:
         dropdownBtn.eq(n).click(function () {
+          $('.ground-floor').remove();
+          propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
           $('#replaced-content .sunday-title p').html('G04');
           $('.property-info').html(`<ul class="info-list">
-                  <li><span>3 BED</span></li>
-                  <li><span>2 BATH</span></li>
-                  <li><span>2 CAR</span></li>
+                  <li>BEDROOM<span> 3</span></li>
+                  <li>BATHROOM<span> 2</span></li>
+                  <li>CAR SPACE<span> 2</span></li>
               </ul>
 
               <ul class="info-area">
-                <li><span>141 sqm INTERIOR</span></li>
-                <li><span>118 sqm EXTERIOR</span></li>
-                <li><span>259 sqm TOTAL</span></li>
+                <li>INTERIOR<span> 141 sqm</span></li>
+                <li>EXTERIOR<span> 118 sqm</span></li>
+                <li>TOTAL AREA<span> 259 sqm</span></li>
               </ul>`);
           modalImg.attr('src', './assets/img/floorplan/floorplans-g4.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-g-4.jpg');
           modalTitle.html('G04');
           paragraph.html(' Where green vistas follow your every move. Surrounded by lush courtyard space, serenity sets the tone.');
+          propertySwiper.appendSlide(`<div class="swiper-slide ground-floor">
+          <a class="expand-icon" href="./assets/img/1.jpg"
+              data-toggle="lightbox" data-gallery="property-gallery">
+              <img src="./assets/img/icons/lightbox-expand.svg" alt="expand"></a>
+          <img class="property-show-img" src="./assets/img/1.jpg"
+              alt="Popup slide">
+      </div>       `)
+          carouselImg.addClass('ground-level');
         });
         break;
 
       case 4:
         //101
         dropdownBtn.eq(n).click(function () {
+          $('.ground-floor').remove();
+          propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`LEVEL 10${n - 3}`);
+          $('#replaced-content .sunday-title p').html(`LEVEL 01.0${n - 3}`);
           $('.property-info').html(`<ul class="info-list">
-                  <li><span>3 BED</span></li>
-                  <li><span>2 BATH</span></li>
-                  <li><span>2 CAR</span></li>
+                  <li>BEDROOM<span> 3</span></li>
+                  <li>BATHROOM<span> 2</span></li>
+                  <li>CAR SPACE<span> 2</span></li>
               </ul>
 
               <ul class="info-area">
-              <li><span>128 sqm INTERIOR</span></li>
-              <li><span>13 sqm EXTERIOR</span></li>
-              <li><span>141 sqm TOTAL</span></li>
+              <li>INTERIOR<span> 128 sqm</span></li>
+              <li>EXTERIOR<span> 13 sqm</span></li>
+              <li>TOTAL AREA<span> 141 sqm</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-1-${n - 3}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-1.${n - 3}.jpg`);
-          modalTitle.html(`LEVEL 10${n - 3}`);
+          modalTitle.html(`LEVEL 01.0${n - 3}`);          
           paragraph.html('Designed with purposeful flow of movement in mind; comfort and connection inform life inside.');
         });
         break;
       case 5:
-        //102
+        //01.02
         dropdownBtn.eq(n).click(function () {
+          $('.ground-floor').remove();
+          propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`LEVEL 10${n - 3}`);
+          $('#replaced-content .sunday-title p').html(`LEVEL 01.0${n - 3}`);
           $('.property-info').html(`<ul class="info-list">
-                  <li><span>3 BED</span></li>
-                  <li><span>2 BATH</span></li>
-                  <li><span>2 CAR</span></li>
+                  <li>BEDROOM<span> 3</span></li>
+                  <li>BATHROOM<span> 2</span></li>
+                  <li>CAR SPACE<span> 2</span></li>
               </ul>
 
               <ul class="info-area">
-              <li><span>130 sqm INTERIOR</span></li>
-              <li><span>13 sqm EXTERIOR</span></li>
-              <li><span>143 sqm TOTAL</span></li>
+              <li>INTERIOR<span> 130 sqm</span></li>
+              <li>EXTERIOR<span> 13 sqm</span></li>
+              <li>TOTAL AREA<span> 143 sqm</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-1-${n - 3}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-1.${n - 3}.jpg`);
-          modalTitle.html(`LEVEL 10${n - 3}`);
+          modalTitle.html(`LEVEL 01.0${n - 3}`);
 
+          propertySwiper.update();          
           paragraph.html('For those who take entertaining seriously, this strategically considered layout provides plenty of appeal. ');
         });
         break;
 
       case 6:
-        //103
+        //01.03
         dropdownBtn.eq(n).click(function () {
+          $('.ground-floor').remove();
+          propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`LEVEL 10${n - 3}`);
+          $('#replaced-content .sunday-title p').html(`LEVEL 01.0${n - 3}`);
           $('.property-info').html(`<ul class="info-list">
-                  <li><span>3 BED</span></li>
-                  <li><span>2 BATH</span></li>
-                  <li><span>2 CAR</span></li>
+                  <li>BEDROOM<span> 3</span></li>
+                  <li>BATHROOM<span> 2</span></li>
+                  <li>CAR SPACE<span> 2</span></li>
               </ul>
 
               <ul class="info-area">
-              <li><span>129 sqm INTERIOR</span></li>
-              <li><span>12 sqm EXTERIOR</span></li>
-              <li><span>141 sqm TOTAL</span></li>
+              <li>INTERIOR<span> 129 sqm</span></li>
+              <li>EXTERIOR<span> 12 sqm</span></li>
+              <li>TOTAL AREA<span> 141 sqm</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-1-${n - 3}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-1.${n - 3}.jpg`);
-          modalTitle.html(`LEVEL 10${n - 3}`);
+          modalTitle.html(`LEVEL 01.0${n - 3}`);
        
+          propertySwiper.update();          
           paragraph.html('Anchoring the centre of daily life with poles of quiet; tranquil is what describes this residence best. ');
         });
         break;
       
       case 7: 
-        //104
+        //01.04
         dropdownBtn.eq(n).click(function () {
+          $('.ground-floor').remove();
+          propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`LEVEL 10${n - 3}`);
+          $('#replaced-content .sunday-title p').html(`LEVEL 01.0${n - 3}`);
           $('.property-info').html(`<ul class="info-list">
-                  <li><span>3 BED</span></li>
-                  <li><span>2 BATH</span></li>
-                  <li><span>2 CAR</span></li>
+                  <li>BEDROOM<span> 3</span></li>
+                  <li>BATHROOM<span> 2</span></li>
+                  <li>CAR SPACE<span> 2</span></li>
               </ul>
 
               <ul class="info-area">
-              <li><span>129 sqm INTERIOR</span></li>
-              <li><span>12 sqm EXTERIOR</span></li>
-              <li><span>141 sqm TOTAL</span></li>
+              <li>INTERIOR<span> 129 sqm</span></li>
+              <li>EXTERIOR<span> 12 sqm</span></li>
+              <li>TOTAL AREA<span> 141 sqm</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-1-${n - 3}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-1.${n - 3}.jpg`);
-          modalTitle.html(`LEVEL 10${n - 3}`);
+          modalTitle.html(`LEVEL 01.0${n - 3}`);
           
           paragraph.html('North-east facing living areas are flooded with natural light while the master suite enjoys tucked away calm.  ');
         });
@@ -559,72 +612,81 @@ $(document).ready(function () {
       case 8:
         //201
         dropdownBtn.eq(n).click(function () {
+          $('.ground-floor').remove();
+          propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`LEVEL 20${n - 7}`);
+          $('#replaced-content .sunday-title p').html(`LEVEL 02.0${n - 7}`);
           $('.property-info').html(`<ul class="info-list">
-                  <li><span>3 BED</span></li>
-                  <li><span>2 BATH</span></li>
-                  <li><span>2 CAR</span></li>
+                  <li>BEDROOM<span> 3</span></li>
+                  <li>BATHROOM<span> 2</span></li>
+                  <li>CAR SPACE<span> 2</span></li>
               </ul>
 
               <ul class="info-area">
-              <li><span>184 sqm INTERIOR</span></li>
-              <li><span>27 sqm EXTERIOR</span></li>
-              <li><span>211 sqm TOTAL</span></li>
+              <li>INTERIOR<span> 184 sqm</span></li>
+              <li>EXTERIOR<span> 27 sqm</span></li>
+              <li>TOTAL AREA<span> 211 sqm</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-2-${n - 7}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-2.${n - 7}.jpg`);
-          modalTitle.html(`LEVEL 20${n - 7}`);
+          modalTitle.html(`LEVEL 02.0${n - 7}`);
           
+          propertySwiper.update();          
           paragraph.html('The home unfolds as you step inside, creating balance between life and living naturally and spatially. ');
         });
         break;
       case 9: 
-        //202
+        //02.02
         dropdownBtn.eq(n).click(function () {
+          $('.ground-floor').remove();
+          propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`LEVEL 20${n - 7}`);
+          $('#replaced-content .sunday-title p').html(`LEVEL 02.0${n - 7}`);
           $('.property-info').html(`<ul class="info-list">
-                  <li><span>3 BED</span></li>
-                  <li><span>2 BATH</span></li>
-                  <li><span>2 CAR</span></li>
+                  <li>BEDROOM<span> 3</span></li>
+                  <li>BATHROOM<span> 2</span></li>
+                  <li>CAR SPACE<span> 2</span></li>
               </ul>
 
               <ul class="info-area">
-              <li><span>142 sqm INTERIOR</span></li>
-              <li><span>40 sqm EXTERIOR</span></li>
-              <li><span>182 sqm TOTAL</span></li>
+              <li>INTERIOR<span> 142 sqm </span></li>
+              <li>EXTERIOR<span> 40 sqm </span></li>
+              <li>TOTAL AREA<span> 182 sqm</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-2-${n - 7}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-2.${n - 7}.jpg`);
-          modalTitle.html(`LEVEL 20${n - 7}`);
+          modalTitle.html(`LEVEL 02.0${n - 7}`);
           
+          propertySwiper.update();          
           paragraph.html('There’s a level of luxury that surrounds a secluded master bedroom — one that’s best experienced.');
         });
-        break;
+       break;
       case 10: 
-        //203
+        //02.03
         dropdownBtn.eq(n).click(function () {
+          $('.ground-floor').remove();
+          propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`LEVEL 20${n - 7}`);
+          $('#replaced-content .sunday-title p').html(`LEVEL 02.0${n - 7}`);
           $('.property-info').html(`<ul class="info-list">
-                  <li><span>3 BED</span></li>
-                  <li><span>2 BATH</span></li>
-                  <li><span>2 CAR</span></li>
+                  <li>BEDROOM<span> 3</span></li>
+                  <li>BATHROOM<span> 2</span></li>
+                  <li>CAR SPACE<span> 2</span></li>
               </ul>
 
               <ul class="info-area">
-              <li><span>153 sqm INTERIOR</span></li>
-              <li><span>12 sqm EXTERIOR</span></li>
-              <li><span>165 sqm TOTAL</span></li>
+              <li>INTERIOR<span> 153 sqm</span></li>
+              <li>EXTERIOR<span> 12 sqm </span></li>
+              <li>TOTAL AREA<span> 165 sqm</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-2-${n - 7}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-2.${n - 7}.jpg`);
-          modalTitle.html(`LEVEL 20${n - 7}`);
+          modalTitle.html(`LEVEL 02.0${n - 7}`);
           
+          propertySwiper.update();          
           paragraph.html('Where the heart of the home meets consideration in every detail; this is life and living at residence 2.03. ');
         });
         break;
@@ -632,47 +694,53 @@ $(document).ready(function () {
       case 11: 
         //301
         dropdownBtn.eq(n).click(function () {
+          $('.ground-floor').remove();
+          propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
           $('#replaced-content .sunday-title p').html(`LEVEL 30${n - 10}`);
           $('.property-info').html(`<ul class="info-list">
-                  <li><span>2 BED</span></li>
-                  <li><span>2 BATH</span></li>
-                  <li><span>2 CAR</span></li>
+                  <li>BEDROOM<span> 2</span></li>
+                  <li>BATHROOM<span> 2</span></li>
+                  <li>CAR SPACE<span> 2</span></li>
               </ul>
 
               <ul class="info-area">
-              <li><span>120 sqm INTERIOR</span></li>
-              <li><span>104 sqm EXTERIOR</span></li>
-              <li><span>225 sqm TOTAL</span></li>
+              <li>INTERIOR<span> 120 sqm</span></li>
+              <li>EXTERIOR<span> 104 sqm</span></li>
+              <li>TOTAL AREA<span> 225 sqm</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-3-${n - 10}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-3.${n - 10}.jpg`);
           modalTitle.html(`LEVEL 30${n - 10}`);
           
+          propertySwiper.update();          
           paragraph.html('Contoured by lush greenery highlighted by a north-facing aspect, this residence affords you unparalleled privacy and pleasure.');
         });
         break;
       case 12: 
         //301
         dropdownBtn.eq(n).click(function () {
+          $('.ground-floor').remove();
+          propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
           $('#replaced-content .sunday-title p').html(`LEVEL 30${n - 10}`);
           $('.property-info').html(`<ul class="info-list">
-                  <li><span>2 BED</span></li>
-                  <li><span>2 BATH</span></li>
-                  <li><span>2 CAR</span></li>
+                  <li>BEDROOM<span> 2</span></li>
+                  <li>BATHROOM<span> 2</span></li>
+                  <li>CAR SPACE<span> 2</span></li>
               </ul>
 
               <ul class="info-area">
-              <li><span>130 sqm INTERIOR</span></li>
-              <li><span>84 sqm EXTERIOR</span></li>
-              <li><span>214 sqm TOTAL</span></li>
+              <li>INTERIOR<span> 130 sqm</span></li>
+              <li>EXTERIOR<span> 84 sqm</span></li>
+              <li>TOTAL AREA<span> 214 sqm</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-3-${n - 10}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-3.${n - 10}.jpg`);
           modalTitle.html(`LEVEL 30${n - 10}`);
+          propertySwiper.update();          
           paragraph.html('Expansive views over the city welcome you as you walk through the doors. Sights that inspire, quality of life that mirrors exactly that.');
         });
         break;
