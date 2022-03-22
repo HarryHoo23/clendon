@@ -2505,6 +2505,11 @@ ul.sale-contact li a {
 
 #replaced-content .sunday-title p {
   color: #969696;
+  font-size: 24px;
+}
+
+#replaced-content .sunday-title p span {
+  font-size: 36px;
 }
 
 #replaced-content .row {

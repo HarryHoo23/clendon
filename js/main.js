@@ -373,7 +373,7 @@ $(document).ready(function () {
           propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html('G01');
+          $('#replaced-content .sunday-title p').html('<span>GROUND</span> 01');
           $('.property-info').html(`<ul class="info-list">
                         <li>BEDROOM <span>3</span></li>
                         <li>BATHROOM<span> 2</span></li>
@@ -381,13 +381,13 @@ $(document).ready(function () {
                     </ul>
 
                     <ul class="info-area">
-                        <li>INTERIOR<span> 128sqm</span></li>
-                        <li>EXTERIOR<span> 94sqm</span></li>
-                        <li>TOTAL AREA<span> 222sqm</span></li>
+                        <li>INTERIOR<span> 128 m2</span></li>
+                        <li>EXTERIOR<span> 94 m2</span></li>
+                        <li>TOTAL AREA<span> 222 m2</span></li>
                     </ul>`);
           modalImg.attr('src', './assets/img/floorplan/floorplans-g1.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-g-1.jpg');                    
-          modalTitle.html('G01');
+          modalTitle.html('<span>GROUND</span> 01');
           paragraph.html('Complemented by expansive courtyard space, the clever layout expands from the inside out. ');
 
           propertySwiper.appendSlide(`<div class="swiper-slide ground-floor">
@@ -407,7 +407,7 @@ $(document).ready(function () {
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
           $('#replaced-content .sunday-title p').html(
-            `G02`
+            `<span>GROUND</span> 02`
           );
           $('.property-info').html(`<ul class="info-list">
                 <li>BEDROOM<span>2 </span></li>
@@ -416,13 +416,13 @@ $(document).ready(function () {
             </ul>
 
             <ul class="info-area">
-              <li>INTERIOR<span>108 sqm </span></li>
-              <li>EXTERIOR<span>40 sqm </span></li>
-              <li>TOTAL AREA<span> 147sqm </span></li>
+              <li>INTERIOR<span>108 m2 </span></li>
+              <li>EXTERIOR<span>40 m2 </span></li>
+              <li>TOTAL AREA<span> 147m2 </span></li>
             </ul>`);
           modalImg.attr('src', './assets/img/floorplan/floorplans-g2.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-g-2.jpg');
-          modalTitle.html('G02');
+          modalTitle.html('<span>GROUND</span> 02');
           paragraph.html('Welcomed by views over the open living space and manicured outdoors, you’ll feel home, instantly. ');
 
           propertySwiper.appendSlide(`<div class="swiper-slide ground-floor">
@@ -441,7 +441,7 @@ $(document).ready(function () {
           propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html('G03');
+          $('#replaced-content .sunday-title p').html('<span>GROUND</span> 03');
           $('.property-info').html(`<ul class="info-list">
                 <li>BEDROOM<span> 3</span></li>
                 <li>BATHROOM<span> 2</span></li>
@@ -449,13 +449,13 @@ $(document).ready(function () {
             </ul>
 
             <ul class="info-area">
-            <li>INTERIOR<span> 131 sqm</span></li>
-            <li>EXTERIOR<span> 118 sqm</span></li>
-            <li>TOTAL AREA<span> 249 sqm</span></li>
+            <li>INTERIOR<span> 131 m2</span></li>
+            <li>EXTERIOR<span> 118 m2</span></li>
+            <li>TOTAL AREA<span> 249 m2</span></li>
             </ul>`);
           modalImg.attr('src', './assets/img/floorplan/floorplans-g3.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-g-3.jpg');
-          modalTitle.html('G03');          
+          modalTitle.html('<span>GROUND</span> 03');          
           paragraph.html('North-facing and with two outdoor areas, this residence invites you to find a new favourite place, every day. ');
           $('.ground-floor').remove();
 
@@ -475,7 +475,7 @@ $(document).ready(function () {
           propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html('G04');
+          $('#replaced-content .sunday-title p').html('<span>GROUND</span> 04');
           $('.property-info').html(`<ul class="info-list">
                   <li>BEDROOM<span> 3</span></li>
                   <li>BATHROOM<span> 2</span></li>
@@ -483,13 +483,13 @@ $(document).ready(function () {
               </ul>
 
               <ul class="info-area">
-                <li>INTERIOR<span> 141 sqm</span></li>
-                <li>EXTERIOR<span> 118 sqm</span></li>
-                <li>TOTAL AREA<span> 259 sqm</span></li>
+                <li>INTERIOR<span> 141 m2</span></li>
+                <li>EXTERIOR<span> 118 m2</span></li>
+                <li>TOTAL AREA<span> 259 m2</span></li>
               </ul>`);
           modalImg.attr('src', './assets/img/floorplan/floorplans-g4.jpg');
           modalPlateImg.attr('src', './assets/img/floorplate/floorplate-g-4.jpg');
-          modalTitle.html('G04');
+          modalTitle.html('<span>GROUND</span> 04');
           paragraph.html(' Where green vistas follow your every move. Surrounded by lush courtyard space, serenity sets the tone.');
           propertySwiper.appendSlide(`<div class="swiper-slide ground-floor">
           <a class="expand-icon" href="./assets/img/1.jpg"
@@ -509,7 +509,7 @@ $(document).ready(function () {
           propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`LEVEL 01.0${n - 3}`);
+          $('#replaced-content .sunday-title p').html(`<span>LEVEL</span> 01.0${n - 3}`);
           $('.property-info').html(`<ul class="info-list">
                   <li>BEDROOM<span> 3</span></li>
                   <li>BATHROOM<span> 2</span></li>
@@ -517,13 +517,13 @@ $(document).ready(function () {
               </ul>
 
               <ul class="info-area">
-              <li>INTERIOR<span> 128 sqm</span></li>
-              <li>EXTERIOR<span> 13 sqm</span></li>
-              <li>TOTAL AREA<span> 141 sqm</span></li>
+              <li>INTERIOR<span> 128 m2</span></li>
+              <li>EXTERIOR<span> 13 m2</span></li>
+              <li>TOTAL AREA<span> 141 m2</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-1-${n - 3}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-1.${n - 3}.jpg`);
-          modalTitle.html(`LEVEL 01.0${n - 3}`);          
+          modalTitle.html(`<span>LEVEL</span> 01.0${n - 3}`);          
           paragraph.html('Designed with purposeful flow of movement in mind; comfort and connection inform life inside.');
         });
         break;
@@ -534,7 +534,7 @@ $(document).ready(function () {
           propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`LEVEL 01.0${n - 3}`);
+          $('#replaced-content .sunday-title p').html(`<span>LEVEL</span> 01.0${n - 3}`);
           $('.property-info').html(`<ul class="info-list">
                   <li>BEDROOM<span> 3</span></li>
                   <li>BATHROOM<span> 2</span></li>
@@ -542,13 +542,13 @@ $(document).ready(function () {
               </ul>
 
               <ul class="info-area">
-              <li>INTERIOR<span> 130 sqm</span></li>
-              <li>EXTERIOR<span> 13 sqm</span></li>
-              <li>TOTAL AREA<span> 143 sqm</span></li>
+              <li>INTERIOR<span> 130 m2</span></li>
+              <li>EXTERIOR<span> 13 m2</span></li>
+              <li>TOTAL AREA<span> 143 m2</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-1-${n - 3}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-1.${n - 3}.jpg`);
-          modalTitle.html(`LEVEL 01.0${n - 3}`);
+          modalTitle.html(`<span>LEVEL</span> 01.0${n - 3}`);
 
           propertySwiper.update();          
           paragraph.html('For those who take entertaining seriously, this strategically considered layout provides plenty of appeal. ');
@@ -562,7 +562,7 @@ $(document).ready(function () {
           propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`LEVEL 01.0${n - 3}`);
+          $('#replaced-content .sunday-title p').html(`<span>LEVEL</span> 01.0${n - 3}`);
           $('.property-info').html(`<ul class="info-list">
                   <li>BEDROOM<span> 3</span></li>
                   <li>BATHROOM<span> 2</span></li>
@@ -570,13 +570,13 @@ $(document).ready(function () {
               </ul>
 
               <ul class="info-area">
-              <li>INTERIOR<span> 129 sqm</span></li>
-              <li>EXTERIOR<span> 12 sqm</span></li>
-              <li>TOTAL AREA<span> 141 sqm</span></li>
+              <li>INTERIOR<span> 129 m2</span></li>
+              <li>EXTERIOR<span> 12 m2</span></li>
+              <li>TOTAL AREA<span> 141 m2</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-1-${n - 3}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-1.${n - 3}.jpg`);
-          modalTitle.html(`LEVEL 01.0${n - 3}`);
+          modalTitle.html(`<span>LEVEL</span> 01.0${n - 3}`);
        
           propertySwiper.update();          
           paragraph.html('Anchoring the centre of daily life with poles of quiet; tranquil is what describes this residence best. ');
@@ -590,7 +590,7 @@ $(document).ready(function () {
           propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`LEVEL 01.0${n - 3}`);
+          $('#replaced-content .sunday-title p').html(`<span>LEVEL</span> 01.0${n - 3}`);
           $('.property-info').html(`<ul class="info-list">
                   <li>BEDROOM<span> 3</span></li>
                   <li>BATHROOM<span> 2</span></li>
@@ -598,13 +598,13 @@ $(document).ready(function () {
               </ul>
 
               <ul class="info-area">
-              <li>INTERIOR<span> 129 sqm</span></li>
-              <li>EXTERIOR<span> 12 sqm</span></li>
-              <li>TOTAL AREA<span> 141 sqm</span></li>
+              <li>INTERIOR<span> 129 m2</span></li>
+              <li>EXTERIOR<span> 12 m2</span></li>
+              <li>TOTAL AREA<span> 141 m2</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-1-${n - 3}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-1.${n - 3}.jpg`);
-          modalTitle.html(`LEVEL 01.0${n - 3}`);
+          modalTitle.html(`<span>LEVEL</span> 01.0${n - 3}`);
           
           paragraph.html('North-east facing living areas are flooded with natural light while the master suite enjoys tucked away calm.  ');
         });
@@ -616,7 +616,7 @@ $(document).ready(function () {
           propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`LEVEL 02.0${n - 7}`);
+          $('#replaced-content .sunday-title p').html(`<span>LEVEL</span> 02.0${n - 7}`);
           $('.property-info').html(`<ul class="info-list">
                   <li>BEDROOM<span> 3</span></li>
                   <li>BATHROOM<span> 2</span></li>
@@ -624,13 +624,13 @@ $(document).ready(function () {
               </ul>
 
               <ul class="info-area">
-              <li>INTERIOR<span> 184 sqm</span></li>
-              <li>EXTERIOR<span> 27 sqm</span></li>
-              <li>TOTAL AREA<span> 211 sqm</span></li>
+              <li>INTERIOR<span> 184 m2</span></li>
+              <li>EXTERIOR<span> 27 m2</span></li>
+              <li>TOTAL AREA<span> 211 m2</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-2-${n - 7}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-2.${n - 7}.jpg`);
-          modalTitle.html(`LEVEL 02.0${n - 7}`);
+          modalTitle.html(`<span>LEVEL</span> 02.0${n - 7}`);
           
           propertySwiper.update();          
           paragraph.html('The home unfolds as you step inside, creating balance between life and living naturally and spatially. ');
@@ -643,7 +643,7 @@ $(document).ready(function () {
           propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`LEVEL 02.0${n - 7}`);
+          $('#replaced-content .sunday-title p').html(`<span>LEVEL</span> 02.0${n - 7}`);
           $('.property-info').html(`<ul class="info-list">
                   <li>BEDROOM<span> 3</span></li>
                   <li>BATHROOM<span> 2</span></li>
@@ -651,13 +651,13 @@ $(document).ready(function () {
               </ul>
 
               <ul class="info-area">
-              <li>INTERIOR<span> 142 sqm </span></li>
-              <li>EXTERIOR<span> 40 sqm </span></li>
-              <li>TOTAL AREA<span> 182 sqm</span></li>
+              <li>INTERIOR<span> 142 m2 </span></li>
+              <li>EXTERIOR<span> 40 m2 </span></li>
+              <li>TOTAL AREA<span> 182 m2</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-2-${n - 7}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-2.${n - 7}.jpg`);
-          modalTitle.html(`LEVEL 02.0${n - 7}`);
+          modalTitle.html(`<span>LEVEL</span> 02.0${n - 7}`);
           
           propertySwiper.update();          
           paragraph.html('There’s a level of luxury that surrounds a secluded master bedroom — one that’s best experienced.');
@@ -670,7 +670,7 @@ $(document).ready(function () {
           propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`LEVEL 02.0${n - 7}`);
+          $('#replaced-content .sunday-title p').html(`<span>LEVEL</span> 02.0${n - 7}`);
           $('.property-info').html(`<ul class="info-list">
                   <li>BEDROOM<span> 3</span></li>
                   <li>BATHROOM<span> 2</span></li>
@@ -678,13 +678,13 @@ $(document).ready(function () {
               </ul>
 
               <ul class="info-area">
-              <li>INTERIOR<span> 153 sqm</span></li>
-              <li>EXTERIOR<span> 12 sqm </span></li>
-              <li>TOTAL AREA<span> 165 sqm</span></li>
+              <li>INTERIOR<span> 153 m2</span></li>
+              <li>EXTERIOR<span> 12 m2 </span></li>
+              <li>TOTAL AREA<span> 165 m2</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-2-${n - 7}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-2.${n - 7}.jpg`);
-          modalTitle.html(`LEVEL 02.0${n - 7}`);
+          modalTitle.html(`<span>LEVEL</span> 02.0${n - 7}`);
           
           propertySwiper.update();          
           paragraph.html('Where the heart of the home meets consideration in every detail; this is life and living at residence 2.03. ');
@@ -698,7 +698,7 @@ $(document).ready(function () {
           propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`LEVEL 30${n - 10}`);
+          $('#replaced-content .sunday-title p').html(`<span>LEVEL</span> 30${n - 10}`);
           $('.property-info').html(`<ul class="info-list">
                   <li>BEDROOM<span> 2</span></li>
                   <li>BATHROOM<span> 2</span></li>
@@ -706,13 +706,13 @@ $(document).ready(function () {
               </ul>
 
               <ul class="info-area">
-              <li>INTERIOR<span> 120 sqm</span></li>
-              <li>EXTERIOR<span> 104 sqm</span></li>
-              <li>TOTAL AREA<span> 225 sqm</span></li>
+              <li>INTERIOR<span> 120 m2</span></li>
+              <li>EXTERIOR<span> 104 m2</span></li>
+              <li>TOTAL AREA<span> 225 m2</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-3-${n - 10}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-3.${n - 10}.jpg`);
-          modalTitle.html(`LEVEL 30${n - 10}`);
+          modalTitle.html(`<span>LEVEL</span> 30${n - 10}`);
           
           propertySwiper.update();          
           paragraph.html('Contoured by lush greenery highlighted by a north-facing aspect, this residence affords you unparalleled privacy and pleasure.');
@@ -725,7 +725,7 @@ $(document).ready(function () {
           propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`LEVEL 30${n - 10}`);
+          $('#replaced-content .sunday-title p').html(`<span>LEVEL</span> 30${n - 10}`);
           $('.property-info').html(`<ul class="info-list">
                   <li>BEDROOM<span> 2</span></li>
                   <li>BATHROOM<span> 2</span></li>
@@ -733,13 +733,13 @@ $(document).ready(function () {
               </ul>
 
               <ul class="info-area">
-              <li>INTERIOR<span> 130 sqm</span></li>
-              <li>EXTERIOR<span> 84 sqm</span></li>
-              <li>TOTAL AREA<span> 214 sqm</span></li>
+              <li>INTERIOR<span> 130 m2</span></li>
+              <li>EXTERIOR<span> 84 m2</span></li>
+              <li>TOTAL AREA<span> 214 m2</span></li>
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-3-${n - 10}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-3.${n - 10}.jpg`);
-          modalTitle.html(`LEVEL 30${n - 10}`);
+          modalTitle.html(`<span>LEVEL</span> 30${n - 10}`);
           propertySwiper.update();          
           paragraph.html('Expansive views over the city welcome you as you walk through the doors. Sights that inspire, quality of life that mirrors exactly that.');
         });
@@ -1666,23 +1666,64 @@ function initMap() {
     "Abacus - 383 Chapel St, South Yarra VIC 3141",
     "Morning Market - 579 High St, Prahran VIC 3181",
     "Moby - 1150 High St, Armadale VIC 3143",
-    "High Street Armadale - ",
-    "Hawksburn Village - 505 Malvern Road, Toorak 3142",
-    "Sarah & Sebastian - Shop 2/1025 High St, Armadale VIC 3143",
-    "Kooyong Lawn Tennis Club - 489 Glenferrie Rd, Kooyong VIC 3144",
-    "Studio Pilates - 1113 High Street Armadale VIC 3143",
+    "The Stables of Como - Williams Rd &, Lechlade Ave, South Yarra VIC 3141",
+    "Hello James - 8/145 Canterbury Rd, Toorak VIC 3142",
+    "Abacus Bar & Kitchen - 383 Chapel St, South Yarra VIC 3141",
+    "Kanteen - 154 Alexandra Ave, South Yarra VIC 3141",
+    "Norman - 2/300 Toorak Rd, South Yarra VIC 3141",
+    "Lucky Penny - 481 Chapel St, South Yarra VIC 3141",
+    "Tivoli Road Bakery - 3 Tivoli Road, South Yarra VIC 3141", //tivoli 
+    "Officine Zero - 534 Malvern Road, Prahran VIC 3181", // END OF EARLY MORNINGS
+
     "Amaru - 1121 High St, Armadale VIC 3143",
     "Bistro Thierry - 511 Malvern Rd, Toorak VIC 3142",
     "Sonny Chiba - 14 Beatty Ave, Armadale VIC 3143",
     "Neighbourhood Pizza - 20 Beatty Ave, Armadale VIC 3143",
     "Chez Bob - 22 Beatty Ave, Armadale VIC 3143",
+    "Omnia - 625 Chapel St, South Yarra VIC 3141",
+    "Bar Carolina - 44 Toorak Rd, South Yarra VIC 3141",
+    "Atlas Dining - 133 Commercial Rd, South Yarra VIC 3141",
+    "France-Soir - 11 Toorak Rd, South Yarra VIC 3141",
+    "Cucinetta - 4/3 Murphy St, South Yarra VIC 3141",
+    "Mt Erica Hotel - 420 High St, Prahran VIC", // mt erica
+    
+    "48h Pizza e Gnocchi - 373 Malvern Rd, South Yarra VIC 3141",
+    "Fratellino Pizzeria - 415 Malvern Rd, South Yarra VIC 3141",
+    "Bistro Gitan - 52 Toorak Rd West, South Yarra VIC 3141",
+    "Mopho Canteen - 197 Carlisle St, Balaclava VIC 3183",
+    "Thirty Eight Chairs - 4 Bond St, South Yarra VIC 3141",
+    
     "Toorak Cellars - 18 Beatty Ave, Armadale VIC 3143",
     "Bouzy Bar a Vins - 976 High St, Armadale VIC 3143",
     "Auterra Wine Bar - 1160 High St, Armadale VIC 3143",
     "Milton Wine Shop - 1427 Malvern Rd, Malvern VIC 3144",
-    "Missy Lui - 1/1161 High St, Armadale VIC 3143",
-    "Ormond Collective - 17 Moubray St, Melbourne VIC 3004 ",
-    "Joey Scandizzo - 168/172 Toorak Rd, South Yarra VIC 3141"
+    "Neptune Food & Wine - 212 High St, Windsor VIC 3181",
+    "Galah boozery - 216 High St, Windsor VIC 3181", // AFTER DARK END
+    //HOURS OF LEISURE
+    "Como Park - 305-325 Williams Rd, South Yarra VIC 3141",
+    "Fawkner Park - 24-88 Commercial Rd, South Yarra VIC 3141",
+    "Royal Botanical Gardens - Melbourne VIC 3004",
+    "Rockly Gardens - South Yarra VIC 3141",
+    "Kooyong Lawn Tennis Club - 489 Glenferrie Rd, Kooyong VIC 3144",
+    "Orrong Park - ",
+    "Toorak Bowling Club - 9 Mandeville Cres, Toorak VIC 3142",
+    "Royal Burnley Golf Club - 102 Madden Grove, Burnley VIC 3121",
+    "Studio Pilates - 1113 High Street Armadale VIC 3143",
+    "Ora Pilates - 3-5 Carters Ave, Toorak VIC 3142",
+    "Prahran Aquatic Centre - 41 Essex St, Prahran VIC 3181",
+    "F45 Toorak - 2/22 Cecil Pl, Prahran VIC 3181",
+    "Body Fit Training - 832 High St, Armadale VIC 3143",
+    "Barry’s Bootcamp - 299 Toorak Rd, Melbourne VIC 3141",
+    
+    "Toorak Primary School - Canterbury Rd, Toorak VIC 3142",
+    "Loreto Mandeville Hall - 10 Mandeville Cres, Toorak VIC 3142",
+    "St Catherine’s School - 17 Heyington Pl, Toorak VIC 3142",
+    "St Kevin’s College - 31 Moonga Rd, Toorak VIC 3142",
+    "Geelong Grammar Toorak - 14 Douglas St, Toorak VIC 3142",
+    "Lauriston Girls’ School - 38 Huntingtower Rd, Armadale VIC 3143",
+    "Armadale Primary School - Densham Rd, Armadale VIC 3143",
+    "Christ Church Grammar School - 677 Punt Rd, South Yarra VIC 3141",
+    "Scotch College - 1 Morrison St, Hawthorn VIC 3122",
   ];
   let locationName = [];
   let locationAddress = [];
@@ -1914,73 +1955,230 @@ function initMap() {
       type: cafeMarker,
     },
     {
-      position: new google.maps.LatLng(-37.855285,145.019091), // 6
-      type: foodMarker,
-    },
-    {
-      position: new google.maps.LatLng(-37.847904,145.003398), // 7
+      position: new google.maps.LatLng(-37.838520, 145.005080), //stables
       type: cafeMarker,
     },
     {
-      position: new google.maps.LatLng(-37.855381,145.021629), // 8
+      position: new google.maps.LatLng(-37.848340, 145.009480), // james
+      type: foodMarker,
+    },
+    {
+      position: new google.maps.LatLng(-37.845661, 144.994156), //Abacus
+      type: foodMarker,
+    },
+    {
+      position: new google.maps.LatLng(-37.831640, 145.005080),
       type: cafeMarker,
     },
     {
-      position: new google.maps.LatLng(-37.838909,145.031984), // 9
+      position: new google.maps.LatLng(-37.838480, 144.986660),
       type: cafeMarker,
     },
     {
-      position: new google.maps.LatLng(-37.855855,145.024691), // 10
+      position: new google.maps.LatLng(-37.8350858, 144.9964926),
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.85589,145.024664), // 11
+      position: new google.maps.LatLng(-37.83937, 144.99819), // tvolio road
+      type: cafeMarker,
+    },
+    {
+      position: new google.maps.LatLng(-37.848389, 145.004105), // OFFICINE ZERO
+      type: cafeMarker,
+    },
+
+    // DINNERS SERVED
+    {
+      position: new google.maps.LatLng(-37.85589,145.024664), // 11 AMARU
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.847958,145.003506), //12
+      position: new google.maps.LatLng(-37.847958,145.003506), //12 BISTRO
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.850637,145.014318), // latest bar carolina
+      position: new google.maps.LatLng(-37.850637,145.014318), // SONNY CHIBA
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.850486,145.014106), //14
+      position: new google.maps.LatLng(-37.850486,145.014106), //14 NEIGHBOURHOOD PIZZA
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.850355,145.014041), //15
+      position: new google.maps.LatLng(-37.850355,145.014041), //15 CHEZ
+      type: foodMarker,
+    },
+
+    {
+      position: new google.maps.LatLng(-37.8570368, 144.9925459),
+      type: foodMarker,
+    },
+  
+    {
+        position: new google.maps.LatLng(-37.839447021484375, 144.99560546875), // latest bar carolina
+        type: foodMarker,
+    },
+    {
+        position: new google.maps.LatLng(-37.8460252, 144.987745),
+        type: foodMarker,
+    },
+    {
+        position: new google.maps.LatLng(-37.8381528, 144.98667), //soir
+        type: foodMarker,
+    },
+    {
+        position: new google.maps.LatLng(-37.8384, 144.99026), // cucinetta
+        type: foodMarker,
+    },
+    {
+      position: new google.maps.LatLng(-37.853291, 145.002747), // MT ERICA HOTL
+      type: foodMarker,
+    },
+    
+    {
+      position: new google.maps.LatLng(-37.84753, 144.99907),
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.850533,145.014192), //16
+        position: new google.maps.LatLng(-37.84771, 145.00039), //pizzeria
+        type: foodMarker,
+    },
+    {
+        position: new google.maps.LatLng(-37.83741, 144.97925), //bistro
+        type: foodMarker,
+    },
+    {
+        position: new google.maps.LatLng(-37.86874, 144.9933),
+        type: foodMarker,
+    },
+    {
+        position: new google.maps.LatLng(-37.84099, 144.99472), //thirty eight chairs
+        type: foodMarker,
+    },
+    
+        
+    // AFTER DARK
+    {
+      position: new google.maps.LatLng(-37.850533,145.014192), //16 TOORAK
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.855623,145.020359), //17
+      position: new google.maps.LatLng(-37.855623,145.020359), //17 BOUZY
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.856378,145.025956), //18
+      position: new google.maps.LatLng(-37.856378,145.025956), //18 AUTERRA
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.852994,145.041796), //19
+      position: new google.maps.LatLng(-37.852994,145.041796), //19 MILTON WINE SHOP
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.856082,145.026374), //20
+      position: new google.maps.LatLng(-37.852325,144.995225), //NEPTUNE FOOD WINE
       type: foodMarker,
     },
     {
-      position: new google.maps.LatLng(-37.847823,144.981496), //21
+      position: new google.maps.LatLng(-378524076, 144.9932039), //GALAH BOOZERY
       type: foodMarker,
     },
+     
+    // HOURS OF LEISURE
     {
-      position: new google.maps.LatLng(-37.837999,144.985632), //22
-      type: foodMarker,
-    }
+      position: new google.maps.LatLng(-37.83577, 145.00562),
+      type: movingMarker,
+  },
+  {
+      position: new google.maps.LatLng(-37.84506, 144.98039),
+      type: movingMarker,
+  },
+  {
+      position: new google.maps.LatLng(-37.81739, 144.96752), //royal garden
+      type: movingMarker,
+  },
+  {
+      position: new google.maps.LatLng(-37.83912, 144.99271), //rockly garden
+      type: movingMarker,
+    },
+    {
+      position: new google.maps.LatLng(-37.838909,145.031984), // 9 KOOYONG
+      type: movingMarker,
+    },
+    {
+      position: new google.maps.LatLng(-37.8506209,145.0088932), // 9 ORRONG
+      type: movingMarker,
+    },
+    {
+      position: new google.maps.LatLng(-37.8486147,145.0112253), // 9 TOORAK BOWLING
+      type: movingMarker,
+    },
+    {
+      position: new google.maps.LatLng(-37.827999,145.013785), // 9 BURNLEY GOLF
+      type: movingMarker,
+    },
+    {
+      position: new google.maps.LatLng(-37.855855,145.024691), // 10 STUDIO PILATES
+      type: movingMarker,
+    },
+    {
+      position: new google.maps.LatLng(-37.84167,144.9391012), // 10 ORA PILATES
+      type: movingMarker,
+    },
+    {
+      position: new google.maps.LatLng(-37.84797, 144.99662), // aquatic
+      type: movingMarker,
+  },
+  {
+      position: new google.maps.LatLng(-37.85055, 144.99482),
+      type: movingMarker,
+  },
+  {
+      position: new google.maps.LatLng(-37.85482, 145.0156), // BODY FIT
+      type: movingMarker,
+    },
+    {
+      position: new google.maps.LatLng(-37.83958, 144.9964), // BARRY'S
+      type: movingMarker,
+  },
+  //End of leisures
+
+    // Schools
+    {
+      position: new google.maps.LatLng(-37.84301, 145.01042),
+      type: bookMarker,
+  },
+  {
+      position: new google.maps.LatLng(-37.84864, 145.01435),
+      type: bookMarker,
+  },
+  {
+      position: new google.maps.LatLng(-37.83775, 145.02198),
+      type: bookMarker,
+  },
+  {
+      position: new google.maps.LatLng(-37.83889, 145.02774),
+      type: bookMarker,
+  },
+  {
+      position: new google.maps.LatLng(-37.83914, 145.00888),
+      type: bookMarker,
+  },
+  {
+      position: new google.maps.LatLng(-37.85212, 145.02467),
+      type: bookMarker,
+  },
+  {
+      position: new google.maps.LatLng(-37.85218, 145.01794),
+      type: bookMarker,
+  },
+  {
+      position: new google.maps.LatLng(-37.8391, 144.98636),
+      type: bookMarker,
+  },
+  {
+      position: new google.maps.LatLng(-37.83405, 145.02944),
+      type: bookMarker,
+  },
   ];
 
   var markers = [];
