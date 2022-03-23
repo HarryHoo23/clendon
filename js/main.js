@@ -46,7 +46,7 @@ $(document).ready(function () {
     scrollHorizontally: true,
     scrollingSpeed: 800,
     autoScrolling: true,
-    normalScrollElements: '.sale-intro, #map',
+    normalScrollElements: '.sale-intro, #map, #replaced-content',
     touchSensitivity: 15,
     fitToSectionDelay: 100,
     fitToSection: true,
@@ -78,7 +78,7 @@ $(document).ready(function () {
 
       if ($('body').hasClass('fp-viewing-sd-floorplans')) {
         $('#scroll-down').text('The interior');
-        $('#scroll-up').text('Creative partners');
+        $('#scroll-up').text('Creative partners');        
       }
 
       if ($('body').hasClass('fp-viewing-sd-fixtures')) {
@@ -257,6 +257,7 @@ $(document).ready(function () {
   // var newdes = des.attr('data-gallery', 'data-gallery2');
 
   $('.back-btn').click(function () {
+    fullpage_api.setAllowScrolling(true);
     $('#original-content').css('display', 'block');
     $('#replaced-content').css('display', 'none');
     $('.residencies-dropdown').removeClass('dropdown-movetop');
@@ -306,6 +307,7 @@ $(document).ready(function () {
     var dropdownBtn = $('#floorplan-dropdown .dropdown-item');
     floorplan_links.eq(n).click(function () {
       propertySwiper.update();
+      fullpage_api.setAllowScrolling(false);
       switch (n) {
         case 0:
           dropdownBtn.eq(n).trigger('click');
@@ -778,7 +780,7 @@ $(document).ready(function () {
           kitchenSwiper.css('display', 'block');
           penthouseSwiper.css('display', 'none');
           laundrySwiper.css('display', 'none');
-          fixture_item_content.html('Cooktop');
+          fixture_item_content.html('Kitchen Joinery');
           fixture_location_content.html(`Kitchen`);
           kitchen_Swiper.update();
         });
@@ -895,10 +897,10 @@ $(document).ready(function () {
           });
         });
         break;
-      case 'dusk-dawn-accordion':
+      case 'dinner-served-accordion':
         accordionBtn.eq(0).click(function () {
           $('#doorstep-3 .dp-container-left').css({
-            background: "url('./assets/img/doorstep/amura.jpg')",
+            background: "url('./assets/img/doorstep/amaru.jpg')",
             'background-size': 'auto 100%',
             'background-position': '50% 50%',
             'background-repeat': 'no-repeat',
@@ -961,7 +963,7 @@ $(document).ready(function () {
   }
   clickAccordion('slow-start-accordion');
   clickAccordion('hours-leisure-accordion');
-  clickAccordion('dusk-dawn-accordion');
+  clickAccordion('dinner-served-accordion');
   clickAccordion('after-dark-accordion');
 
   function clickTabs() {
@@ -1264,7 +1266,7 @@ $(document).ready(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Tap Mixer');
-          fixture_location_content.html(`Kitchent <br> Laundry`);
+          fixture_location_content.html(`Kitchen <br> Laundry`);
         });
         fixtureBox.eq(2).click(function () {
           fixtureSsbox.removeClass('active');

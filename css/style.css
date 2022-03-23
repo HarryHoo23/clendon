@@ -2597,7 +2597,7 @@ ul.sale-contact li a {
 }
 
 .property-modal img {
-  height: auto;
+  height: 80%;
   width: 100%;
   object-fit: contain;
 }
