@@ -701,7 +701,7 @@ $(document).ready(function () {
           propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`<span>LEVEL</span> 30${n - 10}`);
+          $('#replaced-content .sunday-title p').html(`<span>LEVEL</span> 03.0${n - 10}`);
           $('.property-info').html(`<ul class="info-list">
                   <li>BEDROOM<span> 2</span></li>
                   <li>BATHROOM<span> 2</span></li>
@@ -715,7 +715,7 @@ $(document).ready(function () {
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-3-${n - 10}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-3.${n - 10}.jpg`);
-          modalTitle.html(`<span>LEVEL</span> 30${n - 10}`);
+          modalTitle.html(`<span>LEVEL</span> 03.0${n - 10}`);
           
           propertySwiper.update();          
           paragraph.html('Contoured by lush greenery highlighted by a north-facing aspect, this residence affords you unparalleled privacy and pleasure.');
@@ -728,7 +728,7 @@ $(document).ready(function () {
           propertySwiper.update();
           $('#original-content').css('display', 'none');
           $('#replaced-content').css('display', 'flex');
-          $('#replaced-content .sunday-title p').html(`<span>LEVEL</span> 30${n - 10}`);
+          $('#replaced-content .sunday-title p').html(`<span>LEVEL</span> 03.0${n - 10}`);
           $('.property-info').html(`<ul class="info-list">
                   <li>BEDROOM<span> 2</span></li>
                   <li>BATHROOM<span> 2</span></li>
@@ -742,7 +742,7 @@ $(document).ready(function () {
               </ul>`);
           modalImg.attr('src', `./assets/img/floorplan/floorplans-3-${n - 10}.jpg`);
           modalPlateImg.attr('src', `./assets/img/floorplate/floorplate-3.${n - 10}.jpg`);
-          modalTitle.html(`<span>LEVEL</span> 30${n - 10}`);
+          modalTitle.html(`<span>LEVEL</span> 03.0${n - 10}`);
           propertySwiper.update();          
           paragraph.html('Expansive views over the city welcome you as you walk through the doors. Sights that inspire, quality of life that mirrors exactly that.');
         });
@@ -1285,9 +1285,6 @@ $(document).ready(function () {
         });
   
       break;
-       
-      
-      
       }
     }
     clickFixtureBox('throughout-swiper');
@@ -1329,7 +1326,7 @@ $(document).ready(function () {
         const email = $('form_contact_email').val();
 
         const formMessage =
-          'Hi, ' +
+          'Hi, this message is coming from Clendon website,' +
           'My Name is ' +
           user +
           ', ' +
@@ -1395,7 +1392,7 @@ $(document).ready(function () {
         const email = $('#purchase_form_email_address').val();
 
         const formMessage =
-          'Hi, ' +
+          'Hi, this message is coming from Clendon website,' +
           'My Name is ' +
           user +
           ', ' +
@@ -1461,7 +1458,7 @@ $(document).ready(function () {
         const email = $('#message_form_email_address').val();
 
         const formMessage =
-          'Hi, ' +
+          'Hi, this message is coming from Clendon website,' +
           'My Name is ' +
           user +
           ', ' +
