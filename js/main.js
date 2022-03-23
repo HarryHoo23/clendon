@@ -794,8 +794,8 @@ $(document).ready(function () {
           kitchenSwiper.css('display', 'none');
           penthouseSwiper.css('display', 'none');
           laundrySwiper.css('display', 'none');
-          fixture_item_content.html('Basin Mixer');
-          fixture_location_content.html('Bathroom <br> Ensuite');
+          fixture_item_content.html('Floor Tile');
+          fixture_location_content.html('Bathrooms <br> Ensuites <br>  Powder Rooms <br> Laundry');
           bathroom_Swiper.update();
         });
         break;
@@ -807,8 +807,8 @@ $(document).ready(function () {
           kitchenSwiper.css('display', 'none');
           penthouseSwiper.css('display', 'none');
           laundrySwiper.css('display', 'block');
-          fixture_item_content.html('Laundry Mixer');
-          fixture_location_content.html(`Laundry`);
+          fixture_item_content.html('Floor Tile');
+          fixture_location_content.html(`Powder room <br> Bathroom <br> Ensuite <br> Laundry`);
           laundry_Swiper.update();
         });
         break;
