@@ -1058,128 +1058,112 @@ $(document).ready(function () {
         fixtureBox.eq(2).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Mirror');
-          fixture_location_content.html(
-            `Bathrooms <br> Ensuites <br> Powder Rooms`
-          );
-        });
-
-        fixtureBox.eq(3).click(function () {
-          fixtureSsbox.removeClass('active');
-          fixtureActiveSlide.addClass('active');
-          fixture_item_content.html('Metal - Mirror Frames');
-          fixture_location_content.html(`Bathrooms <br> Ensuites <br> Powder Rooms`);
-        });
-
-        fixtureBox.eq(4).click(function () {
-          fixtureSsbox.removeClass('active');
-          fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Metal - Shower Door');
           fixture_location_content.html('Bathrooms <br> Ensuites <br> Powder Rooms');
         });
 
-        fixtureBox.eq(5).click(function () {
+        fixtureBox.eq(3).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Basin - Stone Slab');
           fixture_location_content.html('Bathrooms <br> Ensuites <br> Powder Rooms');
         });
 
-        fixtureBox.eq(6).click(function () {
+        fixtureBox.eq(4).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Basin Spout');
           fixture_location_content.html('Bathroom <br> Ensuites');
         });
 
-        fixtureBox.eq(7).click(function () {
+        fixtureBox.eq(5).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Basin Mixer');
           fixture_location_content.html('Bathroom <br> Ensuites');
         });
 
-        fixtureBox.eq(8).click(function () {
+        fixtureBox.eq(6).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Floor Waste');
           fixture_location_content.html('Bathroom <br> Ensuites');
         });
 
-        fixtureBox.eq(9).click(function () {
+        fixtureBox.eq(7).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Handshower');
           fixture_location_content.html('Bathroom <br> Ensuites');
         });
 
-        fixtureBox.eq(10).click(function () {
+        fixtureBox.eq(8).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Hand Towel Rail');
           fixture_location_content.html('Bathroom <br> Ensuites <br> Powder Rooms');
         });
 
-        fixtureBox.eq(11).click(function () {
+        fixtureBox.eq(9).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Flush Plate');
           fixture_location_content.html('Bathroom <br> Ensuites <br> Powder Rooms');
         });
 
-        fixtureBox.eq(12).click(function () {
+        fixtureBox.eq(10).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Robe Hook ');
           fixture_location_content.html('Bathroom <br> Ensuites <br> Powder Rooms');
         });
 
-        fixtureBox.eq(13).click(function () {
+        fixtureBox.eq(11).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Shower');
           fixture_location_content.html('Bathroom <br> Ensuites');
         });
 
-        fixtureBox.eq(14).click(function () {
+        fixtureBox.eq(12).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Shower Arm');
           fixture_location_content.html('Bathroom <br> Ensuites');
         });
 
-        fixtureBox.eq(15).click(function () {
+        fixtureBox.eq(13).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Towel Rail ');
           fixture_location_content.html('Bathroom <br> Ensuites');
         });
 
-        fixtureBox.eq(16).click(function () {
+        fixtureBox.eq(14).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Towel Rail ');
           fixture_location_content.html('Bathroom <br> Ensuites');
         });
-        fixtureBox.eq(17).click(function () {
+        fixtureBox.eq(15).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Toilet Roll Holder');
           fixture_location_content.html('Bathroom <br> Ensuites <br> Powder Rooms');
         });
-        fixtureBox.eq(18).click(function () {
+        fixtureBox.eq(16).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Toilet Suite');
           fixture_location_content.html('Bathroom <br> Ensuites <br> Powder Rooms');
         });
-        fixtureBox.eq(19).click(function () {
+        fixtureBox.eq(17).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Bath');
           fixture_location_content.html('Ensuites');
         });
-        fixtureBox.eq(20).click(function () {
+        fixtureBox.eq(18).click(function () {
           fixtureSsbox.removeClass('active');
           fixtureActiveSlide.addClass('active');
           fixture_item_content.html('Bath Spout');
