@@ -363,6 +363,7 @@ $(document).ready(function () {
     var paragraph = $('.property-desc p');
     dropdownBtn.eq(n).click(function () {
       propertySwiper.update();
+      fullpage_api.setAllowScrolling(false);
       $('.residencies-dropdown').addClass('dropdown-movetop');
       $('.back-btn').removeClass('unshown');
       $('.nav-top-row').css('visibility', 'hidden');
