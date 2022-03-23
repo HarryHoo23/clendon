@@ -46,7 +46,7 @@ $(document).ready(function () {
     scrollHorizontally: true,
     scrollingSpeed: 800,
     autoScrolling: true,
-    normalScrollElements: '.sale-intro, #map, #replaced-content',
+    normalScrollElements: '.sale-intro, #map',
     touchSensitivity: 15,
     fitToSectionDelay: 100,
     fitToSection: true,

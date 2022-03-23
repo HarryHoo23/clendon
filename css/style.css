@@ -828,7 +828,8 @@ ul.nav li:last-child .nav-link {
   height: 70% !important;
 }
 
-.modal-bottom-row .col-md-4 {
+.modal-bottom-row .col-md-4,
+.modal-bottom-row .col-md-5 {
   border-top: 1px solid #dddfdd;
 }
 
