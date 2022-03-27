@@ -1307,7 +1307,7 @@ $(document).ready(function () {
         const user = $('#form_name').val();
         const number = $('#form_contact_number').val();
         const message = $('#form_message').val();
-        const email = $('form_contact_email').val();
+        const email = $('#form_contact_email').val();
 
         const formMessage =
           'Hi, this message is coming from Clendon website,' +
@@ -1326,11 +1326,11 @@ $(document).ready(function () {
           'please give me a call when you are free, thank you!';
 
         var data = {
-          service_id: 'service_qz90776',
-          template_id: 'template_ym5qrt8',
-          user_id: 'user_ePbhQ0zjSmeO3JyJIjYUV',
+          service_id: 'service_vc5qd0f',
+          template_id: 'template_rn0wlcdT',
+          user_id: 'user_yUW74rtEDmz3gmHu9aBnl',
           template_params: {
-            from_name: user + '- Cledon',
+            from_name: user + '- Clendon',
             message_html: formMessage,
           },
         };
@@ -1395,9 +1395,9 @@ $(document).ready(function () {
           'please give me a call when you are free, thank you!';
 
         var data = {
-          service_id: 'service_qz90776',
-          template_id: 'template_6d3js9m',
-          user_id: 'user_ePbhQ0zjSmeO3JyJIjYUV',
+          service_id: 'service_vc5qd0f',
+          template_id: 'template_tfxm5kl',
+          user_id: 'user_yUW74rtEDmz3gmHu9aBnl',
           template_params: {
             from_name: user + '- Sunday Hawksburn',
             message_html: formMessage,
@@ -1458,9 +1458,9 @@ $(document).ready(function () {
           'please give me a call when you are free, thank you!';
 
         var data = {
-          service_id: 'service_qz90776',
-          template_id: 'template_6d3js9m',
-          user_id: 'user_ePbhQ0zjSmeO3JyJIjYUV',
+          service_id: 'service_vc5qd0f',
+          template_id: 'template_rn0wlcdT',
+          user_id: 'user_yUW74rtEDmz3gmHu9aBnl',
           template_params: {
             from_name: user + '- Sunday Hawksburn',
             message_html: formMessage,
