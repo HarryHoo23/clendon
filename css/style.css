@@ -3091,3 +3091,26 @@ textarea.form-control:focus {
   display: flex;
   justify-content: space-between;
 }
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.floorplan-links.disabled {
+    opacity: 1;
+}
+
+.sold {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
